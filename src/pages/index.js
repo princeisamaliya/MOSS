@@ -29,7 +29,7 @@ export default function Home() {
             </h1>
 
             <div className="grid md:grid-cols-2">
-              <div className="hidden space-y-24 text-left lg:block">
+              <div className="hidden space-y-24 text-left md:block">
                 <div>
                   <h1 className="text-4xl ">OUR SPACE</h1>
                 </div>
@@ -82,17 +82,17 @@ export default function Home() {
           </div>
 
           <div
-            className="bg-center bg-cover"
+            className="bg-bottom bg-cover md:bg-center"
             style={{
               backgroundImage: "url(/images/section-bg.png)",
             }}
           >
-            <div className="min-h-screen px-4 py-16 bg-top bg-cover  lg:min-h-min md:py-0 lg:px-0">
+            <div className="px-4 py-16 bg-top bg-cover lg:min-h-min md:py-0 lg:px-0">
               <img
                 src="/images/section-2.png"
                 className="hidden w-full opacity-0 md:block"
               />
-              <div className="space-y-8 text-left lg:hidden">
+              <div className="space-y-8 text-left md:hidden md:my-0 my-[20%]">
                 <div>
                   <h1 className="text-3xl font-semibold">OUR SPACE</h1>
                 </div>
@@ -113,34 +113,34 @@ export default function Home() {
                   <p className="text-xl font-light">clarity of mind + peace</p>
                 </div>
               </div>
+            </div>
 
-              <div className="px-4 py-20 bg-bottom bg-cover bg-opacity-[.75] lg:py-36 lg:px-0 relative z-[2] shadow-md">
-                <div className="block max-w-5xl mx-auto lg:px-10 lg:py-16 lg:bg-brown lg:bg-opacity-70">
-                  <div className="grid gap-10 md:grid-cols-2 md:gap-0">
-                    <div className="p-8 text-center lg:text-left lg:bg-transparent bg-brown bg-opacity-70 lg:bg-opacity-0 lg:p-0">
-                      <h2 className="mb-5 text-2xl leading-normal md:text-4xl drop-shadow-title">
-                        MOSS WELLNESS OPTIONS
-                      </h2>
-                      <ul className="space-y-1 text-xl leading-normal list-none md:text-3xl drop-shadow-title">
-                        <li>cozy lofts</li>
-                        <li>bicycle storage</li>
-                        <li>tea + coffee bar</li>
-                        <li>recording studio</li>
-                        <li>rooftop garden + patio</li>
-                      </ul>
-                    </div>
-                    <div className="p-8 text-center lg:text-left lg:bg-transparent bg-brown bg-opacity-70 lg:p-0">
-                      <h2 className="mb-5 text-2xl leading-normal md:text-4xl drop-shadow-title">
-                        MOSS OFFERINGS
-                      </h2>
-                      <ul className="space-y-1 text-xl leading-normal list-none md:text-3xl drop-shadow-title">
-                        <li>nap pod room</li>
-                        <li>no-tech tea time</li>
-                        <li>red light therapy</li>
-                        <li>meditation studio</li>
-                        <li>sauna + cold plunge</li>
-                      </ul>
-                    </div>
+            <div className="px-4 py-20 bg-bottom bg-cover bg-opacity-[.75] lg:py-36 lg:px-0 relative z-[2] shadow-md">
+              <div className="block max-w-5xl mx-auto lg:px-10 lg:py-16 lg:bg-brown lg:bg-opacity-70">
+                <div className="grid gap-10 md:grid-cols-2 md:gap-0">
+                  <div className="p-8 text-center md:text-left lg:bg-transparent bg-brown bg-opacity-70 lg:bg-opacity-0 lg:p-0">
+                    <h2 className="mb-5 text-2xl leading-normal md:text-4xl drop-shadow-title">
+                      MOSS WELLNESS OPTIONS
+                    </h2>
+                    <ul className="space-y-1 text-xl leading-normal list-none md:text-3xl drop-shadow-title">
+                      <li>cozy lofts</li>
+                      <li>bicycle storage</li>
+                      <li>tea + coffee bar</li>
+                      <li>recording studio</li>
+                      <li>rooftop garden + patio</li>
+                    </ul>
+                  </div>
+                  <div className="p-8 text-center md:text-left lg:bg-transparent bg-brown bg-opacity-70 lg:p-0">
+                    <h2 className="mb-5 text-2xl leading-normal md:text-4xl drop-shadow-title">
+                      MOSS OFFERINGS
+                    </h2>
+                    <ul className="space-y-1 text-xl leading-normal list-none md:text-3xl drop-shadow-title">
+                      <li>nap pod room</li>
+                      <li>no-tech tea time</li>
+                      <li>red light therapy</li>
+                      <li>meditation studio</li>
+                      <li>sauna + cold plunge</li>
+                    </ul>
                   </div>
                 </div>
               </div>
@@ -269,7 +269,7 @@ export default function Home() {
                       src="/images/new_landing/map.png"
                     />
                   </div>
-                  <div className="flex justify-end">
+                  <div className="flex md:justify-end">
                     <ul className="pt-2 pl-5 space-y-1 text-xl leading-relaxed list-disc md:text-3xl">
                       <li>$3500</li>
                       <li>2 months free</li>
