@@ -82,63 +82,65 @@ export default function Home() {
           </div>
 
           <div
-            className=" min-h-screen px-4 py-16 lg:min-h-min md:py-0 lg:px-0 bg-[#dbd4c2] bg-cover"
+            className="bg-center bg-cover"
             style={{
-              backgroundImage: "url(/images/Dandelion.png",
+              backgroundImage: "url(/images/section-bg.png)",
             }}
           >
-            <img
-              src="/images/section-2.png"
-              className="hidden w-full md:block"
-            />
-            <div className="space-y-8 text-left lg:hidden">
-              <div>
-                <h1 className="text-3xl font-semibold">OUR SPACE</h1>
+            <div className="min-h-screen px-4 py-16 bg-top bg-cover  lg:min-h-min md:py-0 lg:px-0">
+              <img
+                src="/images/section-2.png"
+                className="hidden w-full opacity-0 md:block"
+              />
+              <div className="space-y-8 text-left lg:hidden">
+                <div>
+                  <h1 className="text-3xl font-semibold">OUR SPACE</h1>
+                </div>
+                <div>
+                  <p className="text-2xl">Bio-architecture</p>
+                  <p className="text-xl font-light ">
+                    live + work in communion with nature
+                  </p>
+                </div>
+                <div>
+                  <p className="text-2xl">Wabi Sabi</p>
+                  <p className="text-xl font-light">
+                    find beauty in the perfectly imperfect
+                  </p>
+                </div>
+                <div>
+                  <p className="text-2xl">Minimalism</p>
+                  <p className="text-xl font-light">clarity of mind + peace</p>
+                </div>
               </div>
-              <div>
-                <p className="text-2xl">Bio-architecture</p>
-                <p className="text-xl font-light ">
-                  live + work in communion with nature
-                </p>
-              </div>
-              <div>
-                <p className="text-2xl">Wabi Sabi</p>
-                <p className="text-xl font-light">
-                  find beauty in the perfectly imperfect
-                </p>
-              </div>
-              <div>
-                <p className="text-2xl">Minimalism</p>
-                <p className="text-xl font-light">clarity of mind + peace</p>
-              </div>
-            </div>
 
-            <div className="px-4 py-20 bg-bottom bg-cover bg-opacity-[.75] lg:py-36 lg:px-0 relative z-[2] shadow-md">
-              <div className="block max-w-5xl mx-auto lg:px-10 lg:py-16 lg:bg-brown lg:bg-opacity-70">
-                <div className="grid gap-10 md:grid-cols-2 md:gap-0">
-                  <div className="p-8 text-center lg:text-left lg:bg-transparent bg-brown bg-opacity-70 lg:bg-opacity-0 lg:p-0">
-                    <h2 className="mb-5 text-2xl leading-normal md:text-4xl drop-shadow-title">
-                      MOSS WELLNESS OPTIONS
-                    </h2>
-                    <ul className="space-y-1 text-xl leading-normal list-none md:text-3xl drop-shadow-title">
-                      <li>cozy lofts</li>
-                      <li>bicycle storage</li>
-                      <li>tea + coffee bar</li>
-                      <li>recording studio</li>
-                      <li>rooftop garden + patio</li>
-                    </ul>
-                  </div>
-                  <div className="p-8 text-center lg:text-left lg:bg-transparent bg-brown bg-opacity-70 lg:p-0">
-                    <h2 className="mb-5 text-2xl leading-normal md:text-4xl drop-shadow-title">
-                      MOSS OFFERINGS
-                    </h2>
-                    <ul className="space-y-1 text-xl leading-normal list-none md:text-3xl drop-shadow-title">
-                      <li>nap pod room</li>
-                      <li>no-tech tea time</li>
-                      <li>red light therapy</li>
-                      <li>meditation studio</li>
-                      <li>sauna + cold plunge</li>
-                    </ul>
+              <div className="px-4 py-20 bg-bottom bg-cover bg-opacity-[.75] lg:py-36 lg:px-0 relative z-[2] shadow-md">
+                <div className="block max-w-5xl mx-auto lg:px-10 lg:py-16 lg:bg-brown lg:bg-opacity-70">
+                  <div className="grid gap-10 md:grid-cols-2 md:gap-0">
+                    <div className="p-8 text-center lg:text-left lg:bg-transparent bg-brown bg-opacity-70 lg:bg-opacity-0 lg:p-0">
+                      <h2 className="mb-5 text-2xl leading-normal md:text-4xl drop-shadow-title">
+                        MOSS WELLNESS OPTIONS
+                      </h2>
+                      <ul className="space-y-1 text-xl leading-normal list-none md:text-3xl drop-shadow-title">
+                        <li>cozy lofts</li>
+                        <li>bicycle storage</li>
+                        <li>tea + coffee bar</li>
+                        <li>recording studio</li>
+                        <li>rooftop garden + patio</li>
+                      </ul>
+                    </div>
+                    <div className="p-8 text-center lg:text-left lg:bg-transparent bg-brown bg-opacity-70 lg:p-0">
+                      <h2 className="mb-5 text-2xl leading-normal md:text-4xl drop-shadow-title">
+                        MOSS OFFERINGS
+                      </h2>
+                      <ul className="space-y-1 text-xl leading-normal list-none md:text-3xl drop-shadow-title">
+                        <li>nap pod room</li>
+                        <li>no-tech tea time</li>
+                        <li>red light therapy</li>
+                        <li>meditation studio</li>
+                        <li>sauna + cold plunge</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
