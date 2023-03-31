@@ -5,9 +5,11 @@
 /* This file is for your main application CSS */
 @font-face {
   font-family: "35-ftr";
-  src: local("35-ftr"), url("/fonts/35-FTR\ Regular.woff") format("woff");
+  src: url("/fonts/35-FTR-Regular.woff2") format("woff2"),
+    url("/fonts/35-FTR-Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 * {
