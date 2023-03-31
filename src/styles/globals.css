@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* This file is for your main application CSS */
+@font-face {
+  font-family: "35-ftr";
+  src: local("35-ftr"), url("/fonts/35-FTR\ Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  font-family: "35-ftr";
+}
+
+.text-offwhite {
+  color: #f7f7ff;
+}
+
+.drop-shadow-title {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.drop-shadow-title-darker {
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.4));
+}
+
+.rounded-3\.5xl {
+  border-radius: 1.875rem; /* 30px */
+}
+
+.bg-brown-500 {
+  background-color: #564632;
+}
+
+.bg-beige-500 {
+  background-color: rgba(192, 186, 139, 0.81);
+}
+
+.hover\:bg-beige-700:hover {
+  background-color: rgba(247, 238, 166, 0.81);
+}
+
+.hover\:bg-brown-700:hover {
+  background-color: #3e3224;
+}
+
+.bg-tan {
+  background-color: #dbd4c2;
+}
+
+.text-brown {
+  color: #715c56;
+}
+
+/* MOSS + MEMBER-LED EVENTS */
+.category-button {
+  font-size: 1.125rem;
+  font-weight: 600;
+  text-decoration: none;
+  border-top: 2px solid transparent;
+  padding-top: 12px;
+  transition: border-color 0.2s ease-in-out;
+}
+
+.category-button:hover,
+.category-button:focus {
+  border-top-color: #565454;
+}
+
+.category-button.active {
+  border-top-color: #565454;
+}
+
+.accordion-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  padding: 10px 0;
+}
+
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-out;
+}
+
+.accordion-item.active .accordion-content {
+  max-height: 1000px;
+  transition: max-height 0.2s ease-in;
+}
