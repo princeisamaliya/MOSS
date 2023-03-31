@@ -11,27 +11,27 @@ export default function Home() {
   return (
     <>
       <div className="antialiased bg-black">
-        <div className="mx-auto text-white bg-black text-opacity-90 max-w-7xl">
+        <div className="mx-auto text-white bg-black text-opacity-90 max-w-[1447px]">
           <div
             className="px-4 py-10 text-center bg-no-repeat bg-cover"
             style={{
               backgroundImage: "url(/images/new_landing/hero_compressed.webp)",
             }}
           >
-            <h1 className="mt-32 text-6xl tracking-widest md:mt-40 md:text-9xl leading-1">
+            <h1 className="mt-32 text-6xl tracking-widest md:mt-32 md:text-9xl leading-1">
               MOSS
             </h1>
             <p className="pb-10 text-xl font-light md:-mt-2">
               co-working + events
             </p>
-            <h1 className="text-2xl tracking-widest mb-44 md:mb-64 md:text-3xl">
+            <h1 className="text-2xl tracking-widest mb-44 md:mb-64 md:pb-24 md:text-3xl">
               in the heart of venice
             </h1>
 
             <div className="grid md:grid-cols-2">
-              <div className="hidden space-y-20 text-left lg:block">
+              <div className="hidden space-y-24 text-left lg:block">
                 <div>
-                  <h1 className="text-4xl font-semibold">OUR SPACE</h1>
+                  <h1 className="text-4xl ">OUR SPACE</h1>
                 </div>
                 <div>
                   <p className="text-3xl">Bio-architecture</p>
@@ -50,18 +50,16 @@ export default function Home() {
                   <p className="text-xl font-light">clarity of mind + peace</p>
                 </div>
               </div>
-              <div className="flex items-end justify-end">
-                <div className="text-left">
-                  <h1 className="text-2xl font-semibold md:text-4xl">
-                    YOU ARE INVITED ⋆
-                  </h1>
+              <div className="flex justify-end">
+                <div className="max-w-2xl text-left md:mt-5">
+                  <h1 className="text-2xl md:text-4xl">YOU ARE INVITED ⋆</h1>
                   <div>
                     <h1 className="mt-3 text-xl md:text-4xl drop-shadow-title">
                       co-working by day | event space by night
                     </h1>
                   </div>
                   <div>
-                    <p className="mt-10 text-xl font-light leading-normal md:mt-16 md:text-3xl">
+                    <p className="mt-10 text-xl font-light leading-normal md:mb-24 md:mt-16 md:text-3xl">
                       MOSS is a place for leaders, technologists, creators,
                       artists, writers, and healers to explore, create, and grow
                       together.
@@ -71,7 +69,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="flex justify-center mt-10">
+            <div className="flex justify-center mt-10 md:mt-[-3.6rem]">
               <a
                 href="https://buy.stripe.com/test_7sIeW8g7t6VP17afYY"
                 className="bg-beige-500 hover:bg-beige-700 text-white py-5 px-8 rounded-3.5xl tracking-tight"
@@ -117,18 +115,18 @@ export default function Home() {
           </div>
 
           <div
-            className="px-4 py-20 bg-top bg-cover lg:px-0"
+            className="px-4 py-20 bg-white bg-center bg-cover bg-opacity-80 lg:py-32 lg:px-0 relative z-[2] shadow-md"
             style={{
-              backgroundImage: "url(/images/section-3.png",
+              backgroundImage: "url(/images/Dandelion.png",
             }}
           >
-            <div className="block max-w-5xl mx-auto lg:px-5 lg:py-10 lg:bg-brown bg-opacity-70">
+            <div className="block max-w-5xl mx-auto lg:px-10 lg:py-16 lg:bg-brown lg:bg-opacity-70">
               <div className="grid gap-10 md:grid-cols-2 md:gap-0">
-                <div className="p-8 text-center lg:text-left lg:bg-transparent bg-brown bg-opacity-70 lg:p-0">
+                <div className="p-8 text-center lg:text-left lg:bg-transparent bg-brown bg-opacity-70 lg:bg-opacity-0 lg:p-0">
                   <h2 className="text-2xl leading-normal md:text-4xl drop-shadow-title">
                     MOSS WELLNESS OPTIONS
                   </h2>
-                  <ul className="text-xl leading-normal list-none md:text-2xl drop-shadow-title">
+                  <ul className="text-xl leading-normal list-none md:text-3xl drop-shadow-title">
                     <li>cozy lofts</li>
                     <li>bicycle storage</li>
                     <li>tea + coffee bar</li>
@@ -140,7 +138,7 @@ export default function Home() {
                   <h2 className="text-2xl leading-normal md:text-4xl drop-shadow-title">
                     MOSS OFFERINGS
                   </h2>
-                  <ul className="text-xl leading-normal list-none md:text-2xl drop-shadow-title">
+                  <ul className="text-xl leading-normal list-none md:text-3xl drop-shadow-title">
                     <li>nap pod room</li>
                     <li>no-tech tea time</li>
                     <li>red light therapy</li>
@@ -152,7 +150,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="px-4 py-16 text-xl text-center md:p-12 md:text-2xl text-offwhite bg-green">
+          <div className="px-4 py-16 text-xl text-center md:p-12 md:text-2xl text-offwhite bg-green ">
             <p>
               Without value-aligned spaces to regularly gather, individuals are
               left to create community by themselves.
@@ -163,7 +161,7 @@ export default function Home() {
             </p>
           </div>
           <div
-            className="relative flex flex-wrap pb-40 text-white bg-tan font-size-0"
+            className="relative flex flex-wrap pb-40 text-white md:pb-60 bg-tan font-size-0"
             style={{
               backgroundImage:
                 "url(/images/new_landing/member_background.webp)",
@@ -210,7 +208,7 @@ export default function Home() {
                   </div>
                   <Tab.Panels className="mt-6 text-2xl text-white md:text-3xl category-content ">
                     <Tab.Panel>
-                      <ul className="pl-0 list-disc list-inside category-list connect active">
+                      <ul className="pl-0 space-y-5 list-disc list-inside category-list connect active">
                         <li>live music jams</li>
                         <li>community dinners</li>
                         <li>art shows + gallery</li>
@@ -218,7 +216,7 @@ export default function Home() {
                       </ul>
                     </Tab.Panel>
                     <Tab.Panel>
-                      <ul className="pl-0 list-disc list-inside category-list learn">
+                      <ul className="pl-0 space-y-5 list-disc list-inside category-list learn">
                         <li>creator jams</li>
                         <li>group focus flow</li>
                         <li>bookclubs + discussion</li>
@@ -226,7 +224,7 @@ export default function Home() {
                       </ul>
                     </Tab.Panel>
                     <Tab.Panel>
-                      <ul className="pl-0 list-disc list-inside category-list grow">
+                      <ul className="pl-0 space-y-5 list-disc list-inside category-list grow">
                         <li>art + drawing</li>
                         <li>group journaling</li>
                         <li>creative writing club</li>
@@ -234,7 +232,7 @@ export default function Home() {
                       </ul>
                     </Tab.Panel>
                     <Tab.Panel>
-                      <ul className="pl-0 list-disc list-inside category-list embody">
+                      <ul className="pl-0 space-y-5 list-disc list-inside category-list embody">
                         <li>dance classes</li>
                         <li>group hikes + travel</li>
                         <li>sauna + ice bath cycles</li>
@@ -274,21 +272,23 @@ export default function Home() {
                       src="/images/new_landing/map.png"
                     />
                   </div>
-                  <ul className="pt-2 pl-5 text-xl leading-relaxed list-disc md:text-2xl">
-                    <li>$3500</li>
-                    <li>2 months free</li>
-                    <li>private rooms</li>
-                    <li>full wellness access</li>
-                    <li>1 year of membership</li>
-                    <li>MOSS opening launch</li>
-                    <li>unlimited event access</li>
-                    <li>10 day access per month</li>
-                    <li>unlimited +1 guest passes</li>
-                  </ul>
+                  <div className="flex justify-end">
+                    <ul className="pt-2 pl-5 space-y-1 text-xl leading-relaxed list-disc md:text-3xl">
+                      <li>$3500</li>
+                      <li>2 months free</li>
+                      <li>private rooms</li>
+                      <li>full wellness access</li>
+                      <li>1 year of membership</li>
+                      <li>MOSS opening launch</li>
+                      <li>unlimited event access</li>
+                      <li>10 day access per month</li>
+                      <li>unlimited +1 guest passes</li>
+                    </ul>
+                  </div>
                 </div>
               </div>
 
-              <div className="flex-grow w-full mt-10">
+              <div className="flex-grow w-full mt-10 md:mt-72 md:pt-5">
                 <div className="flex flex-row justify-center w-full">
                   <button className="px-16 py-5 mt-6 text-base text-white bg-brown-500 rounded-3xl drop-shadow-title">
                     <a href="https://buy.stripe.com/test_7sIeW8g7t6VP17afYY">
@@ -298,7 +298,7 @@ export default function Home() {
                     </a>
                   </button>
                 </div>
-                <div className="container px-4 mx-auto mt-16 text-lg md:px-20">
+                <div className="container px-4 mx-auto mt-16 text-lg md:px-20 pb-[38%]">
                   <h1 className="mb-4 text-4xl font-semibold drop-shadow-title">
                     FAQ
                   </h1>
@@ -307,7 +307,7 @@ export default function Home() {
                       {({ open }) => (
                         <>
                           <Disclosure.Button className={"w-full"}>
-                            <div className="flex justify-between text-xl md:text-2xl accordion-title">
+                            <div className="flex justify-between text-xl md:text-3xl accordion-title">
                               <h3>Can I host an event at MOSS?</h3>
                               <span className="icon">
                                 <svg
@@ -344,7 +344,7 @@ export default function Home() {
                       {({ open }) => (
                         <>
                           <Disclosure.Button className={"w-full"}>
-                            <div className="flex justify-between text-xl md:text-2xl accordion-title">
+                            <div className="flex justify-between text-xl md:text-3xl accordion-title">
                               <h3>What are your hours of operation?</h3>
                               <span className="icon">
                                 <svg
@@ -380,7 +380,7 @@ export default function Home() {
                       {({ open }) => (
                         <>
                           <Disclosure.Button className={"w-full"}>
-                            <div className="flex justify-between text-xl md:text-2xl accordion-title">
+                            <div className="flex justify-between text-xl md:text-3xl accordion-title">
                               <h3>Can anyone join MOSS?</h3>
                               <span className="icon">
                                 <svg
