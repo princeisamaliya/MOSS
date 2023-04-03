@@ -1,38 +1,68 @@
+import React, { useState, useEffect } from "react";
 import Head from "next/head";
 import Image from "next/image";
-import { Inter } from "next/font/google";
 import { Tab, Disclosure } from "@headlessui/react";
 import { isMobile } from "mobile-device-detect";
 
 import styles from "@/styles/Home.module.css";
 
-const inter = Inter({ subsets: ["latin"] });
+function useWindowSize() {
+  // Initialize state with undefined width/height so server and client renders match
+  // Learn more here: https://joshwcomeau.com/react/the-perils-of-rehydration/
+  const [windowSize, setWindowSize] = useState({
+    width: undefined,
+    height: undefined,
+  });
+  useEffect(() => {
+    // Handler to call on window resize
+    function handleResize() {
+      // Set window width/height to state
+      setWindowSize({
+        width: window.innerWidth,
+        height: window.innerHeight,
+      });
+    }
+    // Add event listener
+    window.addEventListener("resize", handleResize);
+    // Call handler right away so state gets updated with initial window size
+    handleResize();
+    // Remove event listener on cleanup
+    return () => window.removeEventListener("resize", handleResize);
+  }, []); // Empty array ensures that effect is only run on mount
+  return windowSize;
+}
 
 export default function Home() {
   console.log(isMobile, "isMobile");
+  const size = useWindowSize();
   function getMainBg() {
-    return isMobile
-      ? { backgroundImage: `url(/images/main-bg-mobile.jpg)` }
-      : { backgroundImage: `url(/images/main-top-bg.png)` };
+    if (size.width <= 769) {
+      return { backgroundImage: `url(/images/main-bg-mobile.jpg)` };
+    } else {
+      return { backgroundImage: `url(/images/main-top-bg.png)` };
+    }
   }
   return (
     <>
       <div className="antialiased bg-black">
         <div className="mx-auto text-white bg-[#dbd4c2] text-opacity-90 max-w-[1427px]">
-          <div className="bg-top bg-no-repeat bg-cover " style={getMainBg()}>
+          <div
+            className="bg-top bg-no-repeat lg:bg-cover md:bg-cover "
+            style={getMainBg()}
+          >
             <div className="px-4 py-10 text-center ">
-              <h1 className="text-6xl tracking-widest mt-30 lg:mt-36 md:mt-30 md:text-9xl leading-1">
+              <h1 className="text-6xl tracking-widest mt-30 lg:mt-36 md:mt-16 md:text-9xl leading-1">
                 MOSS
               </h1>
               <p className="pb-10 text-xl font-light md:-mt-2">
                 co-working + events
               </p>
-              <h1 className="text-2xl tracking-widest mb-44 lg:mb-64 lg:pb-24 md:text-3xl">
+              <h1 className="text-2xl tracking-widest mb-60 lg:mb-64 lg:pb-24 md:text-3xl">
                 in the heart of venice
               </h1>
 
               <div className="grid md:grid-cols-2">
-                <div className="hidden max-w-[220px] text-left space-y-14 lg:space-y-24 md:block lg:max-w-none">
+                <div className="hidden max-w-[220px] text-left space-y-10 lg:space-y-24 md:block lg:max-w-none">
                   <div>
                     <h1 className="text-3xl lg:text-4xl ">OUR SPACE</h1>
                   </div>
@@ -55,16 +85,16 @@ export default function Home() {
                     </p>
                   </div>
                 </div>
-                <div className="flex justify-end">
-                  <div className="max-w-2xl text-left md:mt-5">
+                <div className="flex lg:justify-end">
+                  <div className="max-w-2xl text-left ">
                     <h1 className="text-2xl md:text-4xl">YOU ARE INVITED ⋆</h1>
                     <div>
-                      <h1 className="mt-3 text-xl md:text-4xl drop-shadow-title">
+                      <h1 className="mt-3 text-xl md:text-3xl lg:text-4xl drop-shadow-title">
                         co-working by day | event space by night
                       </h1>
                     </div>
                     <div>
-                      <p className="mt-10 text-xl font-light leading-normal md:mb-24 md:mt-16 md:text-3xl">
+                      <p className="mt-10 text-xl font-light leading-normal md:text-2xl md:mb-24 md:mt-16 lg:text-3xl">
                         MOSS is a place for leaders, technologists, creators,
                         artists, writers, and healers to explore, create, and
                         grow together.
@@ -89,14 +119,6 @@ export default function Home() {
               src="/images/section-2.png"
               className="hidden w-full opacity-0 md:block"
             />
-          </div>
-
-          <div
-            className="bg-top bg-no-repeat bg-cover "
-            style={{
-              backgroundImage: "url(/images/section-3.png)",
-            }}
-          >
             <div className="px-4 py-16 bg-top bg-cover lg:min-h-min md:py-0 lg:px-0">
               <div className="space-y-8 text-left md:hidden md:my-0 my-[20%]">
                 <div>
@@ -120,8 +142,15 @@ export default function Home() {
                 </div>
               </div>
             </div>
+          </div>
 
-            <div className="px-4 py-20 md:py-20  bg-cover bg-opacity-[.75] lg:py-[8.2rem] bg-top lg:px-0 relative z-[2] shadow-md ">
+          <div
+            className="bg-top bg-no-repeat bg-cover "
+            style={{
+              backgroundImage: "url(/images/section-3.png)",
+            }}
+          >
+            <div className="px-4 py-20 md:py-24  bg-cover bg-opacity-[.75] lg:py-[8.2rem] bg-top lg:px-0 relative z-[2] shadow-md ">
               <div className="block max-w-5xl mx-auto lg:px-10 lg:py-16 lg:bg-brown lg:bg-opacity-70">
                 <div className="grid gap-10 md:grid-cols-2 md:gap-0">
                   <div className="p-8 text-center md:text-left lg:bg-transparent bg-brown bg-opacity-70 lg:bg-opacity-0 lg:p-0">

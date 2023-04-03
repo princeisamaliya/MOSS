@@ -15,6 +15,7 @@ module.exports = {
         green: "#AAA58C",
       },
       screens: {
+        md: "769px",
         lg: "1025px",
       },
     },
