@@ -229,7 +229,7 @@ export default function Home() {
               <Tab.Group>
                 <>
                   <div className="flex items-center mb-10 md:mb-0">
-                    <Tab.List className="flex items-center justify-between w-full pl-1 mt-5 space-x-0 md:justify-start md:space-x-10 drop-shadow-title">
+                    <Tab.List className="flex items-center justify-between w-full pl-1 mt-5 space-x-0 sm:justify-start sm:space-x-10 drop-shadow-title">
                       <Tab
                         className={({ selected }) =>
                           `category-button ${selected ? "active" : ""}`
