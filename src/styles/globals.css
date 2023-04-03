@@ -63,9 +63,12 @@
   text-decoration: none;
   border-top: 2px solid transparent;
   padding-top: 12px;
+  padding-bottom: 12px;
   transition: border-color 0.2s ease-in-out;
   outline: none !important;
   box-shadow: none !important;
+  padding-left: 1.25rem;
+  padding-right: 1.25rem;
 }
 
 .category-button:hover,

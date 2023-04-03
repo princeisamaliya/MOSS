@@ -36,10 +36,25 @@ export default function Home() {
   console.log(isMobile, "isMobile");
   const size = useWindowSize();
   function getMainBg() {
-    if (size.width <= 769) {
+    if (size.width <= 480) {
       return { backgroundImage: `url(/images/main-bg-mobile.jpg)` };
+    } else if (size.width <= 768) {
+      return { backgroundImage: `url(/images/main-bg-tablet.jpg)` };
     } else {
       return { backgroundImage: `url(/images/main-top-bg.png)` };
+    }
+  }
+  function getsection3bg() {
+    if (size.width <= 480) {
+      return { backgroundImage: `url(/images/section-3-mobile.jpg)` };
+    } else if (size.width <= 768) {
+      return {
+        backgroundImage: "url(/images/section-3-tablet.jpg)",
+      };
+    } else {
+      return {
+        backgroundImage: "url(/images/section-3.jpg)",
+      };
     }
   }
   return (
@@ -47,17 +62,17 @@ export default function Home() {
       <div className="antialiased bg-black">
         <div className="mx-auto text-white bg-[#dbd4c2] text-opacity-90 max-w-[1427px]">
           <div
-            className="bg-top bg-no-repeat lg:bg-cover md:bg-cover "
+            className="bg-no-repeat bg-cover sm:bg-cover lg:bg-top lg:bg-cover "
             style={getMainBg()}
           >
-            <div className="px-4 py-10 text-center ">
-              <h1 className="text-6xl tracking-widest mt-30 lg:mt-36 md:mt-16 md:text-9xl leading-1">
+            <div className="px-4 py-10 text-center sm:py-32 lg:py-10 ">
+              <h1 className="mt-32 text-6xl tracking-widest sm:text-7xl sm:mt-24 lg:mt-36 md:mt-16 md:text-9xl leading-1">
                 MOSS
               </h1>
               <p className="pb-10 text-xl font-light md:-mt-2">
                 co-working + events
               </p>
-              <h1 className="text-2xl tracking-widest mb-60 lg:mb-64 lg:pb-24 md:text-3xl">
+              <h1 className="mb-40 text-2xl tracking-widest sm:mb-60 lg:mb-64 lg:pb-24 md:text-3xl">
                 in the heart of venice
               </h1>
 
@@ -119,8 +134,8 @@ export default function Home() {
               src="/images/section-2.png"
               className="hidden w-full opacity-0 md:block"
             />
-            <div className="px-4 py-16 bg-top bg-cover lg:min-h-min md:py-0 lg:px-0">
-              <div className="space-y-8 text-left md:hidden md:my-0 my-[20%]">
+            <div className="px-4 py-32 bg-top bg-cover sm:py-16 lg:min-h-min md:py-0 lg:px-0">
+              <div className="space-y-8 text-left md:hidden lg:py-0 md:py-[16%] py-[20%]">
                 <div>
                   <h1 className="text-3xl font-semibold">OUR SPACE</h1>
                 </div>
@@ -146,18 +161,16 @@ export default function Home() {
 
           <div
             className="bg-top bg-no-repeat bg-cover "
-            style={{
-              backgroundImage: "url(/images/section-3.png)",
-            }}
+            style={getsection3bg()}
           >
-            <div className="px-4 py-20 md:py-24  bg-cover bg-opacity-[.75] lg:py-[8.2rem] bg-top lg:px-0 relative z-[2] shadow-md ">
-              <div className="block max-w-5xl mx-auto lg:px-10 lg:py-16 lg:bg-brown lg:bg-opacity-70">
-                <div className="grid gap-10 md:grid-cols-2 md:gap-0">
-                  <div className="p-8 text-center md:text-left lg:bg-transparent bg-brown bg-opacity-70 lg:bg-opacity-0 lg:p-0">
+            <div className="px-4 sm:py-40  py-20 md:py-24  bg-cover lg:py-[6.2rem] bg-top lg:px-0 relative z-[2] shadow-md ">
+              <div className="block max-w-5xl mx-auto lg:px-10 lg:py-20 lg:bg-brown lg:bg-opacity-70">
+                <div className="grid gap-10 sm:grid-cols-2 md:gap-0">
+                  <div className="w-full max-w-md p-8 mx-auto text-center md:text-left md:max-w-none lg:bg-transparent bg-brown bg-opacity-70 lg:bg-opacity-0 lg:p-0">
                     <h2 className="mb-5 text-xl leading-normal md:text-2xl lg:text-4xl drop-shadow-title">
                       MOSS WELLNESS OPTIONS
                     </h2>
-                    <ul className="space-y-1 text-xl leading-normal list-none md:text-2xl lg:text-3xl drop-shadow-title">
+                    <ul className="space-y-1 text-xl leading-normal list-none lg:space-y-3 md:text-2xl lg:text-3xl drop-shadow-title">
                       <li>cozy lofts</li>
                       <li>bicycle storage</li>
                       <li>tea + coffee bar</li>
@@ -165,11 +178,11 @@ export default function Home() {
                       <li>rooftop garden + patio</li>
                     </ul>
                   </div>
-                  <div className="p-8 text-center md:text-left lg:bg-transparent bg-brown bg-opacity-70 lg:p-0">
+                  <div className="w-full max-w-md p-8 mx-auto text-center md:text-left md:max-w-none lg:bg-transparent bg-brown bg-opacity-70 lg:p-0">
                     <h2 className="mb-5 text-xl leading-normal md:text-2xl lg:text-4xl drop-shadow-title">
                       MOSS OFFERINGS
                     </h2>
-                    <ul className="space-y-1 text-xl leading-normal list-none md:text-2xl lg:text-3xl drop-shadow-title">
+                    <ul className="space-y-1 text-xl leading-normal list-none lg:space-y-3 md:text-2xl lg:text-3xl drop-shadow-title">
                       <li>nap pod room</li>
                       <li>no-tech tea time</li>
                       <li>red light therapy</li>
@@ -193,7 +206,7 @@ export default function Home() {
             </p>
           </div>
           <div
-            className="relative flex flex-wrap pb-40 text-white md:pb-60 bg-tan font-size-0"
+            className="relative flex flex-wrap pb-40 text-white bg-bottom md:pb-60 bg-tan font-size-0"
             style={{
               backgroundImage:
                 "url(/images/new_landing/member_background.webp)",
@@ -207,7 +220,7 @@ export default function Home() {
               <Tab.Group>
                 <>
                   <div className="flex items-center mb-10 md:mb-0">
-                    <Tab.List className="flex items-center justify-between w-full pl-1 mt-5 space-x-0 md:justify-start md:space-x-20 drop-shadow-title">
+                    <Tab.List className="flex items-center justify-between w-full pl-1 mt-5 space-x-0 md:justify-start md:space-x-10 drop-shadow-title">
                       <Tab
                         className={({ selected }) =>
                           `category-button ${selected ? "active" : ""}`
