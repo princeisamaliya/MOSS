@@ -14,6 +14,9 @@ module.exports = {
         brown: "#7B5037",
         green: "#AAA58C",
       },
+      screens: {
+        lg: "1025px",
+      },
     },
   },
   plugins: [],

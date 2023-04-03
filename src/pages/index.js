@@ -2,52 +2,54 @@ import Head from "next/head";
 import Image from "next/image";
 import { Inter } from "next/font/google";
 import { Tab, Disclosure } from "@headlessui/react";
+import { isMobile } from "mobile-device-detect";
 
 import styles from "@/styles/Home.module.css";
 
 const inter = Inter({ subsets: ["latin"] });
 
 export default function Home() {
+  console.log(isMobile, "isMobile");
+  function getMainBg() {
+    return isMobile
+      ? { backgroundImage: `url(/images/main-bg-mobile.jpg)` }
+      : { backgroundImage: `url(/images/main-top-bg.png)` };
+  }
   return (
     <>
       <div className="antialiased bg-black">
         <div className="mx-auto text-white bg-[#dbd4c2] text-opacity-90 max-w-[1427px]">
-          <div
-            className="bg-top bg-no-repeat bg-cover "
-            style={{
-              backgroundImage: "url(/images/main-top-bg.png)",
-            }}
-          >
+          <div className="bg-top bg-no-repeat bg-cover " style={getMainBg()}>
             <div className="px-4 py-10 text-center ">
-              <h1 className="mt-32 text-6xl tracking-widest md:mt-32 md:text-9xl leading-1">
+              <h1 className="text-6xl tracking-widest mt-30 lg:mt-36 md:mt-30 md:text-9xl leading-1">
                 MOSS
               </h1>
               <p className="pb-10 text-xl font-light md:-mt-2">
                 co-working + events
               </p>
-              <h1 className="text-2xl tracking-widest mb-44 md:mb-64 md:pb-24 md:text-3xl">
+              <h1 className="text-2xl tracking-widest mb-44 lg:mb-64 lg:pb-24 md:text-3xl">
                 in the heart of venice
               </h1>
 
               <div className="grid md:grid-cols-2">
-                <div className="hidden space-y-24 text-left md:block">
+                <div className="hidden max-w-[220px] text-left space-y-14 lg:space-y-24 md:block lg:max-w-none">
                   <div>
-                    <h1 className="text-4xl ">OUR SPACE</h1>
+                    <h1 className="text-3xl lg:text-4xl ">OUR SPACE</h1>
                   </div>
                   <div>
-                    <p className="text-3xl">Bio-architecture</p>
+                    <p className="text-2xl lg:text-3xl">Bio-architecture</p>
                     <p className="text-xl font-light ">
                       live + work in communion with nature
                     </p>
                   </div>
                   <div>
-                    <p className="text-3xl">Wabi Sabi</p>
+                    <p className="text-2xl lg:text-3xl">Wabi Sabi</p>
                     <p className="text-xl font-light">
                       find beauty in the perfectly imperfect
                     </p>
                   </div>
                   <div>
-                    <p className="text-3xl">Minimalism</p>
+                    <p className="text-2xl lg:text-3xl">Minimalism</p>
                     <p className="text-xl font-light">
                       clarity of mind + peace
                     </p>
@@ -119,14 +121,14 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="px-4 py-20  bg-cover bg-opacity-[.75] lg:py-[8.2rem] bg-top lg:px-0 relative z-[2] shadow-md ">
+            <div className="px-4 py-20 md:py-20  bg-cover bg-opacity-[.75] lg:py-[8.2rem] bg-top lg:px-0 relative z-[2] shadow-md ">
               <div className="block max-w-5xl mx-auto lg:px-10 lg:py-16 lg:bg-brown lg:bg-opacity-70">
                 <div className="grid gap-10 md:grid-cols-2 md:gap-0">
                   <div className="p-8 text-center md:text-left lg:bg-transparent bg-brown bg-opacity-70 lg:bg-opacity-0 lg:p-0">
-                    <h2 className="mb-5 text-2xl leading-normal md:text-4xl drop-shadow-title">
+                    <h2 className="mb-5 text-xl leading-normal md:text-2xl lg:text-4xl drop-shadow-title">
                       MOSS WELLNESS OPTIONS
                     </h2>
-                    <ul className="space-y-1 text-xl leading-normal list-none md:text-3xl drop-shadow-title">
+                    <ul className="space-y-1 text-xl leading-normal list-none md:text-2xl lg:text-3xl drop-shadow-title">
                       <li>cozy lofts</li>
                       <li>bicycle storage</li>
                       <li>tea + coffee bar</li>
@@ -135,10 +137,10 @@ export default function Home() {
                     </ul>
                   </div>
                   <div className="p-8 text-center md:text-left lg:bg-transparent bg-brown bg-opacity-70 lg:p-0">
-                    <h2 className="mb-5 text-2xl leading-normal md:text-4xl drop-shadow-title">
+                    <h2 className="mb-5 text-xl leading-normal md:text-2xl lg:text-4xl drop-shadow-title">
                       MOSS OFFERINGS
                     </h2>
-                    <ul className="space-y-1 text-xl leading-normal list-none md:text-3xl drop-shadow-title">
+                    <ul className="space-y-1 text-xl leading-normal list-none md:text-2xl lg:text-3xl drop-shadow-title">
                       <li>nap pod room</li>
                       <li>no-tech tea time</li>
                       <li>red light therapy</li>
@@ -246,7 +248,7 @@ export default function Home() {
             </div>
           </div>
           <div
-            className="relative text-white bg-tan"
+            className="relative text-white bg-center bg-top bg-tan"
             style={{
               backgroundImage: "url(/images/new_landing/wall_shadows.webp)",
             }}
