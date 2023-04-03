@@ -297,9 +297,9 @@ export default function Home() {
           >
             <div className="inset-0 bg-center bg-cover ">
               <div className="w-full">
-                <div className="grid px-4 space-y-4 md:grid-cols-2 md:px-20 md:space-y-0 pt-28">
+                <div className="grid px-4 space-y-4 sm:grid-cols-2 lg:px-20 sm:space-y-0 pt-28">
                   <h1 className="text-3xl">FOUNDING MEMBERSHIP</h1>
-                  <div className="text-xl md:text-2xl">
+                  <div className="pt-10 text-xl sm:text-2xl sm:pt-0">
                     <p>We are inviting YOU to root the culture at MOSS.</p>
                     <p className="mt-3">
                       As a founding member, you will receive exclusive benefits
@@ -310,15 +310,15 @@ export default function Home() {
                   </div>
                 </div>
 
-                <div className="grid px-4 mt-12 md:grid-cols-2 md:px-20">
+                <div className="grid px-4 mt-12 sm:grid-cols-2 lg:px-20">
                   <div>
                     <img
                       className="w-full max-w-sm"
                       src="/images/new_landing/map.png"
                     />
                   </div>
-                  <div className="flex md:justify-end">
-                    <ul className="pt-2 pl-5 space-y-1 text-xl leading-relaxed list-disc md:text-3xl">
+                  <div className="flex sm:justify-end">
+                    <ul className="pt-2 pl-5 mt-20 space-y-1 text-xl leading-relaxed list-disc md:text-3xl lg:text-4xl sm:mt-0">
                       <li>$3500</li>
                       <li>2 months free</li>
                       <li>private rooms</li>
@@ -333,7 +333,7 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex-grow w-full mt-10 md:mt-72 md:pt-5">
+              <div className="flex-grow w-full mt-10 sm:mt-72 md:pt-5">
                 <div className="flex flex-row justify-center w-full">
                   <button className="px-16 py-5 mt-6 text-base text-white bg-brown-500 rounded-3xl drop-shadow-title">
                     <a href="https://buy.stripe.com/test_7sIeW8g7t6VP17afYY">
