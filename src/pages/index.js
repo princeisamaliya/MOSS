@@ -11,140 +11,154 @@ export default function Home() {
   return (
     <>
       <div className="antialiased bg-black">
-        <div className="mx-auto text-white bg-[#dbd4c2] text-opacity-90 max-w-[1447px]">
-          <div
-            className="px-4 py-10 text-center bg-no-repeat bg-cover"
-            style={{
-              backgroundImage: "url(/images/new_landing/hero_compressed.webp)",
-            }}
-          >
-            <h1 className="mt-32 text-6xl tracking-widest md:mt-32 md:text-9xl leading-1">
-              MOSS
-            </h1>
-            <p className="pb-10 text-xl font-light md:-mt-2">
-              co-working + events
-            </p>
-            <h1 className="text-2xl tracking-widest mb-44 md:mb-64 md:pb-24 md:text-3xl">
-              in the heart of venice
-            </h1>
-
-            <div className="grid md:grid-cols-2">
-              <div className="hidden space-y-24 text-left md:block">
+        <div className="mx-auto text-white   max-w-[1447px]">
+          <div className="relative overflow-hidden">
+            <div className="relative z-[1] px-4  ">
+              <div className="aspect-w-[1447] aspect-h-[1340]  text-center">
                 <div>
-                  <h1 className="text-4xl ">OUR SPACE</h1>
-                </div>
-                <div>
-                  <p className="text-3xl">Bio-architecture</p>
-                  <p className="text-xl font-light ">
-                    live + work in communion with nature
-                  </p>
-                </div>
-                <div>
-                  <p className="text-3xl">Wabi Sabi</p>
-                  <p className="text-xl font-light">
-                    find beauty in the perfectly imperfect
-                  </p>
-                </div>
-                <div>
-                  <p className="text-3xl">Minimalism</p>
-                  <p className="text-xl font-light">clarity of mind + peace</p>
-                </div>
-              </div>
-              <div className="flex justify-end">
-                <div className="max-w-2xl text-left md:mt-5">
-                  <h1 className="text-2xl md:text-4xl">YOU ARE INVITED ⋆</h1>
-                  <div>
-                    <h1 className="mt-3 text-xl md:text-4xl drop-shadow-title">
-                      co-working by day | event space by night
+                  <div className="flex flex-col items-center justify-center h-[50%] ">
+                    <h1 className="text-6xl tracking-widest md:text-9xl leading-1">
+                      MOSS
+                    </h1>
+                    <p className="pb-10 text-xl font-light md:-mt-2">
+                      co-working + events
+                    </p>
+                    <h1 className="text-2xl tracking-widest md:text-3xl">
+                      in the heart of venice
                     </h1>
                   </div>
+
+                  <div className="grid md:grid-cols-2 absolute bottom-[0%] left-0 w-full">
+                    <div className="hidden space-y-20 text-left md:block md:max-w-[300px]">
+                      <div>
+                        <h1 className="text-4xl ">OUR SPACE</h1>
+                      </div>
+                      <div>
+                        <p className="text-3xl">Bio-architecture</p>
+                        <p className="text-xl font-light ">
+                          live + work in communion with nature
+                        </p>
+                      </div>
+                      <div>
+                        <p className="text-3xl">Wabi Sabi</p>
+                        <p className="text-xl font-light">
+                          find beauty in the perfectly imperfect
+                        </p>
+                      </div>
+                      <div>
+                        <p className="text-3xl">Minimalism</p>
+                        <p className="text-xl font-light">
+                          clarity of mind + peace
+                        </p>
+                      </div>
+                    </div>
+                    <div className="flex justify-end">
+                      <div className="max-w-2xl text-left md:mt-5">
+                        <h1 className="text-2xl md:text-4xl">
+                          YOU ARE INVITED ⋆
+                        </h1>
+                        <div>
+                          <h1 className="mt-3 text-xl md:text-4xl drop-shadow-title">
+                            co-working by day | event space by night
+                          </h1>
+                        </div>
+                        <div>
+                          <p className="mt-10 text-xl font-light leading-normal md:mb-24 md:mt-16 md:text-3xl">
+                            MOSS is a place for leaders, technologists,
+                            creators, artists, writers, and healers to explore,
+                            create, and grow together.
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div className="flex justify-center mt-10 md:mt-[-4rem] absolute bottom-[0%] left-0 w-full">
+                    <a
+                      href="https://buy.stripe.com/test_7sIeW8g7t6VP17afYY"
+                      className="bg-beige-500 hover:bg-beige-700 text-white py-5 px-8 rounded-3.5xl tracking-tight"
+                    >
+                      <p className="text-2xl drop-shadow-title">
+                        Become a Founding Member
+                      </p>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div className="bg-bottom bg-cover md:bg-center">
+              <div className="px-4 py-16 bg-top bg-cover lg:min-h-min md:py-0 lg:px-0">
+                <img
+                  src="/images/section-2.png"
+                  className="hidden w-full opacity-0 md:block "
+                />
+                <div className="space-y-8 text-left md:hidden md:my-0 my-[20%]">
                   <div>
-                    <p className="mt-10 text-xl font-light leading-normal md:mb-24 md:mt-16 md:text-3xl">
-                      MOSS is a place for leaders, technologists, creators,
-                      artists, writers, and healers to explore, create, and grow
-                      together.
+                    <h1 className="text-3xl font-semibold">OUR SPACE</h1>
+                  </div>
+                  <div>
+                    <p className="text-2xl">Bio-architecture</p>
+                    <p className="text-xl font-light ">
+                      live + work in communion with nature
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-2xl">Wabi Sabi</p>
+                    <p className="text-xl font-light">
+                      find beauty in the perfectly imperfect
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-2xl">Minimalism</p>
+                    <p className="text-xl font-light">
+                      clarity of mind + peace
                     </p>
                   </div>
                 </div>
               </div>
-            </div>
 
-            <div className="flex justify-center mt-10 md:mt-[-3.6rem]">
-              <a
-                href="https://buy.stripe.com/test_7sIeW8g7t6VP17afYY"
-                className="bg-beige-500 hover:bg-beige-700 text-white py-5 px-8 rounded-3.5xl tracking-tight"
-              >
-                <p className="text-2xl drop-shadow-title">
-                  Become a Founding Member
-                </p>
-              </a>
-            </div>
-          </div>
-
-          <div
-            className="bg-bottom bg-cover md:bg-center"
-            style={{
-              backgroundImage: "url(/images/section-bg.png)",
-            }}
-          >
-            <div className="px-4 py-16 bg-top bg-cover lg:min-h-min md:py-0 lg:px-0">
-              <img
-                src="/images/section-2.png"
-                className="hidden w-full opacity-0 md:block"
-              />
-              <div className="space-y-8 text-left md:hidden md:my-0 my-[20%]">
-                <div>
-                  <h1 className="text-3xl font-semibold">OUR SPACE</h1>
-                </div>
-                <div>
-                  <p className="text-2xl">Bio-architecture</p>
-                  <p className="text-xl font-light ">
-                    live + work in communion with nature
-                  </p>
-                </div>
-                <div>
-                  <p className="text-2xl">Wabi Sabi</p>
-                  <p className="text-xl font-light">
-                    find beauty in the perfectly imperfect
-                  </p>
-                </div>
-                <div>
-                  <p className="text-2xl">Minimalism</p>
-                  <p className="text-xl font-light">clarity of mind + peace</p>
-                </div>
-              </div>
-            </div>
-
-            <div className="px-4 py-20 bg-bottom bg-cover bg-opacity-[.75] lg:py-36 lg:px-0 relative z-[2] shadow-md">
-              <div className="block max-w-5xl mx-auto lg:px-10 lg:py-16 lg:bg-brown lg:bg-opacity-70">
-                <div className="grid gap-10 md:grid-cols-2 md:gap-0">
-                  <div className="p-8 text-center md:text-left lg:bg-transparent bg-brown bg-opacity-70 lg:bg-opacity-0 lg:p-0">
-                    <h2 className="mb-5 text-2xl leading-normal md:text-4xl drop-shadow-title">
-                      MOSS WELLNESS OPTIONS
-                    </h2>
-                    <ul className="space-y-1 text-xl leading-normal list-none md:text-3xl drop-shadow-title">
-                      <li>cozy lofts</li>
-                      <li>bicycle storage</li>
-                      <li>tea + coffee bar</li>
-                      <li>recording studio</li>
-                      <li>rooftop garden + patio</li>
-                    </ul>
-                  </div>
-                  <div className="p-8 text-center md:text-left lg:bg-transparent bg-brown bg-opacity-70 lg:p-0">
-                    <h2 className="mb-5 text-2xl leading-normal md:text-4xl drop-shadow-title">
-                      MOSS OFFERINGS
-                    </h2>
-                    <ul className="space-y-1 text-xl leading-normal list-none md:text-3xl drop-shadow-title">
-                      <li>nap pod room</li>
-                      <li>no-tech tea time</li>
-                      <li>red light therapy</li>
-                      <li>meditation studio</li>
-                      <li>sauna + cold plunge</li>
-                    </ul>
+              <div className="px-4 py-20 bg-bottom bg-cover  lg:py-[10.4%] lg:px-0 relative z-[2] shadow-md">
+                <div className="block max-w-5xl mx-auto lg:px-10 lg:py-16 lg:bg-brown lg:bg-opacity-70">
+                  <div className="grid gap-10 md:grid-cols-2 md:gap-0">
+                    <div className="p-8 text-center md:text-left lg:bg-transparent bg-brown bg-opacity-70 lg:bg-opacity-0 lg:p-0">
+                      <h2 className="mb-5 text-2xl leading-normal md:text-4xl drop-shadow-title">
+                        MOSS WELLNESS OPTIONS
+                      </h2>
+                      <ul className="space-y-1 text-xl leading-normal list-none md:text-3xl drop-shadow-title">
+                        <li>cozy lofts</li>
+                        <li>bicycle storage</li>
+                        <li>tea + coffee bar</li>
+                        <li>recording studio</li>
+                        <li>rooftop garden + patio</li>
+                      </ul>
+                    </div>
+                    <div className="p-8 text-center md:text-left lg:bg-transparent bg-brown bg-opacity-70 lg:p-0">
+                      <h2 className="mb-5 text-2xl leading-normal md:text-4xl drop-shadow-title">
+                        MOSS OFFERINGS
+                      </h2>
+                      <ul className="space-y-1 text-xl leading-normal list-none md:text-3xl drop-shadow-title">
+                        <li>nap pod room</li>
+                        <li>no-tech tea time</li>
+                        <li>red light therapy</li>
+                        <li>meditation studio</li>
+                        <li>sauna + cold plunge</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
+            <img
+              src="/images/main-bg.jpg"
+              alt=""
+              className="absolute top-0 left-0 hidden w-full transform -translate-x-1/2 left-1/2 lg:block"
+            />
+            <img
+              src="/images/main-bg-mobile.jpg"
+              alt=""
+              className="absolute top-0 left-0 w-full min-w-[1024px] left-1/2 transform -translate-x-1/2 lg:hidden block "
+            />
           </div>
 
           <div className="px-4 py-16 text-xl text-center md:p-12 md:text-2xl text-offwhite bg-green ">
