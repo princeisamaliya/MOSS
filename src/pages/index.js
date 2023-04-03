@@ -11,87 +11,91 @@ export default function Home() {
   return (
     <>
       <div className="antialiased bg-black">
-        <div className="mx-auto text-white bg-[#dbd4c2] text-opacity-90 max-w-[1447px]">
+        <div className="mx-auto text-white bg-[#dbd4c2] text-opacity-90 max-w-[1427px]">
           <div
-            className="px-4 py-10 text-center bg-no-repeat bg-cover"
+            className="bg-top bg-no-repeat bg-cover "
             style={{
-              backgroundImage: "url(/images/new_landing/hero_compressed.webp)",
+              backgroundImage: "url(/images/main-top-bg.png)",
             }}
           >
-            <h1 className="mt-32 text-6xl tracking-widest md:mt-32 md:text-9xl leading-1">
-              MOSS
-            </h1>
-            <p className="pb-10 text-xl font-light md:-mt-2">
-              co-working + events
-            </p>
-            <h1 className="text-2xl tracking-widest mb-44 md:mb-64 md:pb-24 md:text-3xl">
-              in the heart of venice
-            </h1>
+            <div className="px-4 py-10 text-center ">
+              <h1 className="mt-32 text-6xl tracking-widest md:mt-32 md:text-9xl leading-1">
+                MOSS
+              </h1>
+              <p className="pb-10 text-xl font-light md:-mt-2">
+                co-working + events
+              </p>
+              <h1 className="text-2xl tracking-widest mb-44 md:mb-64 md:pb-24 md:text-3xl">
+                in the heart of venice
+              </h1>
 
-            <div className="grid md:grid-cols-2">
-              <div className="hidden space-y-24 text-left md:block">
-                <div>
-                  <h1 className="text-4xl ">OUR SPACE</h1>
-                </div>
-                <div>
-                  <p className="text-3xl">Bio-architecture</p>
-                  <p className="text-xl font-light ">
-                    live + work in communion with nature
-                  </p>
-                </div>
-                <div>
-                  <p className="text-3xl">Wabi Sabi</p>
-                  <p className="text-xl font-light">
-                    find beauty in the perfectly imperfect
-                  </p>
-                </div>
-                <div>
-                  <p className="text-3xl">Minimalism</p>
-                  <p className="text-xl font-light">clarity of mind + peace</p>
-                </div>
-              </div>
-              <div className="flex justify-end">
-                <div className="max-w-2xl text-left md:mt-5">
-                  <h1 className="text-2xl md:text-4xl">YOU ARE INVITED ⋆</h1>
+              <div className="grid md:grid-cols-2">
+                <div className="hidden space-y-24 text-left md:block">
                   <div>
-                    <h1 className="mt-3 text-xl md:text-4xl drop-shadow-title">
-                      co-working by day | event space by night
-                    </h1>
+                    <h1 className="text-4xl ">OUR SPACE</h1>
                   </div>
                   <div>
-                    <p className="mt-10 text-xl font-light leading-normal md:mb-24 md:mt-16 md:text-3xl">
-                      MOSS is a place for leaders, technologists, creators,
-                      artists, writers, and healers to explore, create, and grow
-                      together.
+                    <p className="text-3xl">Bio-architecture</p>
+                    <p className="text-xl font-light ">
+                      live + work in communion with nature
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-3xl">Wabi Sabi</p>
+                    <p className="text-xl font-light">
+                      find beauty in the perfectly imperfect
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-3xl">Minimalism</p>
+                    <p className="text-xl font-light">
+                      clarity of mind + peace
                     </p>
                   </div>
                 </div>
+                <div className="flex justify-end">
+                  <div className="max-w-2xl text-left md:mt-5">
+                    <h1 className="text-2xl md:text-4xl">YOU ARE INVITED ⋆</h1>
+                    <div>
+                      <h1 className="mt-3 text-xl md:text-4xl drop-shadow-title">
+                        co-working by day | event space by night
+                      </h1>
+                    </div>
+                    <div>
+                      <p className="mt-10 text-xl font-light leading-normal md:mb-24 md:mt-16 md:text-3xl">
+                        MOSS is a place for leaders, technologists, creators,
+                        artists, writers, and healers to explore, create, and
+                        grow together.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div className="flex justify-center mt-10 md:mt-[-3.6rem]">
+                <a
+                  href="https://buy.stripe.com/test_7sIeW8g7t6VP17afYY"
+                  className="bg-beige-500 hover:bg-beige-700 text-white py-5 px-8 rounded-3.5xl tracking-tight"
+                >
+                  <p className="text-2xl drop-shadow-title">
+                    Become a Founding Member
+                  </p>
+                </a>
               </div>
             </div>
-
-            <div className="flex justify-center mt-10 md:mt-[-3.6rem]">
-              <a
-                href="https://buy.stripe.com/test_7sIeW8g7t6VP17afYY"
-                className="bg-beige-500 hover:bg-beige-700 text-white py-5 px-8 rounded-3.5xl tracking-tight"
-              >
-                <p className="text-2xl drop-shadow-title">
-                  Become a Founding Member
-                </p>
-              </a>
-            </div>
+            <img
+              src="/images/section-2.png"
+              className="hidden w-full opacity-0 md:block"
+            />
           </div>
 
           <div
-            className="bg-bottom bg-cover md:bg-center"
+            className="bg-top bg-no-repeat bg-cover "
             style={{
-              backgroundImage: "url(/images/section-bg.png)",
+              backgroundImage: "url(/images/section-3.png)",
             }}
           >
             <div className="px-4 py-16 bg-top bg-cover lg:min-h-min md:py-0 lg:px-0">
-              <img
-                src="/images/section-2.png"
-                className="hidden w-full opacity-0 md:block"
-              />
               <div className="space-y-8 text-left md:hidden md:my-0 my-[20%]">
                 <div>
                   <h1 className="text-3xl font-semibold">OUR SPACE</h1>
@@ -115,7 +119,7 @@ export default function Home() {
               </div>
             </div>
 
-            <div className="px-4 py-20 bg-bottom bg-cover bg-opacity-[.75] lg:py-36 lg:px-0 relative z-[2] shadow-md">
+            <div className="px-4 py-20  bg-cover bg-opacity-[.75] lg:py-[8.2rem] bg-top lg:px-0 relative z-[2] shadow-md ">
               <div className="block max-w-5xl mx-auto lg:px-10 lg:py-16 lg:bg-brown lg:bg-opacity-70">
                 <div className="grid gap-10 md:grid-cols-2 md:gap-0">
                   <div className="p-8 text-center md:text-left lg:bg-transparent bg-brown bg-opacity-70 lg:bg-opacity-0 lg:p-0">
