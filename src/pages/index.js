@@ -57,6 +57,15 @@ export default function Home() {
       };
     }
   }
+  function getFaqbg() {
+    if (size.width <= 480) {
+      return { backgroundImage: "url(/images/faq-image.jpg)" };
+    } else {
+      return {
+        backgroundImage: "url(/images/new_landing/wall_shadows.webp)",
+      };
+    }
+  }
   return (
     <>
       <div className="antialiased bg-black">
@@ -291,9 +300,7 @@ export default function Home() {
           </div>
           <div
             className="relative text-white bg-center bg-top bg-tan"
-            style={{
-              backgroundImage: "url(/images/new_landing/wall_shadows.webp)",
-            }}
+            style={getFaqbg()}
           >
             <div className="inset-0 bg-center bg-cover ">
               <div className="w-full">
@@ -343,7 +350,7 @@ export default function Home() {
                     </a>
                   </button>
                 </div>
-                <div className="container px-4 mx-auto mt-16 text-lg md:px-20 pb-[38%]">
+                <div className="container px-4 mx-auto mt-16 text-lg md:px-20 sm:pb-[38%] pb-[100%]">
                   <h1 className="mb-4 text-4xl font-semibold drop-shadow-title">
                     FAQ
                   </h1>
