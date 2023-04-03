@@ -6,14 +6,14 @@
 @font-face {
   font-family: "35-ftr";
   src: url("/fonts/35-FTR-Regular.woff2") format("woff2"),
-    url("/fonts/35-FTR-Regular.woff") format("woff");
+    url("/fonts/35-FTR Regular.woff") format("woff");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 
 * {
-  font-family: "35-ftr" sans-serif;
+  font-family: "35-ftr";
 }
 
 .text-offwhite {
