@@ -71,17 +71,17 @@ export default function Home() {
       <div className="antialiased bg-black">
         <div className="mx-auto text-white bg-[#dbd4c2] text-opacity-90 max-w-[1427px]">
           <div
-            className="bg-no-repeat bg-cover sm:bg-cover lg:bg-top lg:bg-cover "
+            className="bg-no-repeat bg-cover sm:bg-cover lg:bg-top xl:bg-unset "
             style={getMainBg()}
           >
             <div className="px-4 py-10 text-center sm:py-32 lg:py-10 ">
-              <h1 className="mt-32 text-6xl tracking-widest sm:text-7xl sm:mt-24 lg:mt-36 md:mt-16 md:text-9xl leading-1">
+              <h1 className="mt-24 text-6xl tracking-widest sm:text-7xl sm:mt-24 lg:mt-36 md:mt-16 md:text-9xl leading-1">
                 MOSS
               </h1>
               <p className="pb-10 text-xl font-light md:-mt-2">
                 co-working + events
               </p>
-              <h1 className="mb-40 text-2xl tracking-widest sm:mb-60 lg:mb-64 lg:pb-24 md:text-3xl">
+              <h1 className="text-2xl tracking-widest mb-36 sm:mb-64 lg:mb-64 lg:pb-24 md:text-3xl">
                 in the heart of venice
               </h1>
 
@@ -123,48 +123,109 @@ export default function Home() {
                         artists, writers, and healers to explore, create, and
                         grow together.
                       </p>
+                    </div>{" "}
+                    <div className="flex   mt-10 md:mt-[-3.6rem]">
+                      <a
+                        href="https://buy.stripe.com/test_7sIeW8g7t6VP17afYY"
+                        className="bg-beige-500 hover:bg-beige-700 text-white py-5 px-8 rounded-3.5xl tracking-tight"
+                      >
+                        <p className="text-2xl drop-shadow-title">
+                          Become a Founding Member
+                        </p>
+                      </a>
                     </div>
                   </div>
                 </div>
               </div>
-
-              <div className="flex justify-center mt-10 md:mt-[-3.6rem]">
-                <a
-                  href="https://buy.stripe.com/test_7sIeW8g7t6VP17afYY"
-                  className="bg-beige-500 hover:bg-beige-700 text-white py-5 px-8 rounded-3.5xl tracking-tight"
-                >
-                  <p className="text-2xl drop-shadow-title">
-                    Become a Founding Member
-                  </p>
-                </a>
-              </div>
             </div>
-            <img
-              src="/images/section-2.png"
-              className="hidden w-full opacity-0 md:block"
-            />
-            <div className="px-4 py-32 bg-top bg-cover sm:py-16 lg:min-h-min md:py-0 lg:px-0">
-              <div className="space-y-8 text-left md:hidden lg:py-0 md:py-[16%] py-[20%]">
-                <div>
-                  <h1 className="text-3xl font-semibold">OUR SPACE</h1>
-                </div>
-                <div>
-                  <p className="text-2xl">Bio-architecture</p>
-                  <p className="text-xl font-light ">
-                    live + work in communion with nature
-                  </p>
-                </div>
-                <div>
-                  <p className="text-2xl">Wabi Sabi</p>
-                  <p className="text-xl font-light">
-                    find beauty in the perfectly imperfect
-                  </p>
-                </div>
-                <div>
-                  <p className="text-2xl">Minimalism</p>
-                  <p className="text-xl font-light">clarity of mind + peace</p>
+            <div className="relative overflow-hidden">
+              <div className="px-4 py-16 pb-0 bg-top bg-cover sm:py-16 lg:min-h-min md:py-0 lg:px-0">
+                <div className="space-y-5 text-left md:hidden lg:py-0 ">
+                  <div>
+                    <h1 className="text-3xl font-semibold">OUR SPACE</h1>
+                  </div>
+                  <div>
+                    <p className="text-2xl">Bio-architecture</p>
+                    <p className="text-xl font-light ">
+                      live + work in communion with nature
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-2xl">Wabi Sabi</p>
+                    <p className="text-xl font-light">
+                      find beauty in the perfectly imperfect
+                    </p>
+                  </div>
+                  <div>
+                    <p className="text-2xl">Minimalism</p>
+                    <p className="text-xl font-light">
+                      clarity of mind + peace
+                    </p>
+                  </div>
                 </div>
               </div>
+              <div className="md:absolute top-0 left-0 w-full h-full z-[1]">
+                <div className="grid gap-4 px-4 py-4 sm:py-10 md:px-10 md:py-16 md:grid-cols-2">
+                  <div className="xl:pr-40 lg:pr-32">
+                    <h3 className="mt-5 mb-3 text-2xl md:mb-10 md:text-4xl drop-shadow-title sm:mt-0">
+                      WHY MOSS
+                    </h3>
+                    <div className="px-3 py-5 text-xl font-light !leading-relaxed border border-white sm:py-10 sm:text-2xl xl:text-3xl">
+                      MOSS is venice’s hub to connect over curated events +
+                      co-working
+                      <br />
+                      <br />
+                      conscious co-working with meditative spaces, a lush indoor
+                      jungle, and wellness by day
+                      <br />
+                      <br />
+                      community based events designed to cultivate curiosity,
+                      creativity, and compassion by night
+                    </div>
+                  </div>
+                  <div className="">
+                    <h3 className="mt-5 mb-3 text-2xl md:mb-10 md:text-4xl drop-shadow-title sm:mt-0">
+                      COMMUNITY VALUES
+                    </h3>
+                    <div className="px-3 py-5 pb-10 font-light border border-white text-2x xl:text-3xl ">
+                      <div className="xl:max-w-[200px] max-w-xs text-2xl mx-auto">
+                        <div className="mb-1 text-3xl">curiosity</div>
+                        <p>
+                          exploring new depths of yourself with others + play
+                        </p>
+                      </div>
+                      <div className="my-5 text-center xl:my-8">
+                        <img
+                          src="/images/polygon.png"
+                          className="inline-block"
+                          alt=""
+                        />
+                      </div>
+                      <div className="flex justify-between space-x-5">
+                        <div className="xl:max-w-[200px] text-2xl mx-auto">
+                          <div className="mb-1 text-3xl">creativity</div>
+                          <p>
+                            connecting with something greater than yourself
+                            through creation
+                          </p>
+                        </div>
+                        <div className="xl:max-w-[200px] text-2xl mx-auto">
+                          <div className="mb-1 text-3xl">compassion</div>
+                          <p>
+                            being kind to yourself and allowing it to radiate
+                            outward
+                          </p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <img
+                src="/images/section-2.png"
+                className="hidden   opacity-0 md:block lg:min-w-[1427px] md:min-w-[1280px]"
+                alt=""
+              />
             </div>
           </div>
 
@@ -172,14 +233,14 @@ export default function Home() {
             className="bg-top bg-no-repeat bg-cover "
             style={getsection3bg()}
           >
-            <div className="px-4 sm:py-40  py-20 md:py-24  bg-cover lg:py-[6.2rem] bg-top lg:px-0 relative z-[2] shadow-md ">
+            <div className="px-4 sm:py-40  py-20 md:py-24  bg-cover lg:py-[5.7rem] bg-top lg:px-0 relative z-[2] shadow-md ">
               <div className="block max-w-5xl mx-auto lg:px-10 lg:py-20 lg:bg-brown lg:bg-opacity-70">
                 <div className="grid gap-10 sm:grid-cols-2 md:gap-0">
                   <div className="w-full max-w-md p-8 mx-auto text-center md:text-left md:max-w-none lg:bg-transparent bg-brown bg-opacity-70 lg:bg-opacity-0 lg:p-0">
                     <h2 className="mb-5 text-xl leading-normal md:text-2xl lg:text-4xl drop-shadow-title">
                       MOSS WELLNESS OPTIONS
                     </h2>
-                    <ul className="space-y-1 text-xl leading-normal list-none lg:space-y-3 md:text-2xl lg:text-3xl drop-shadow-title">
+                    <ul className="space-y-1 text-xl leading-normal list-none lg:space-y-3 md:text-2xl lg:text-4xl drop-shadow-title">
                       <li>cozy lofts</li>
                       <li>bicycle storage</li>
                       <li>tea + coffee bar</li>
@@ -191,7 +252,7 @@ export default function Home() {
                     <h2 className="mb-5 text-xl leading-normal md:text-2xl lg:text-4xl drop-shadow-title">
                       MOSS OFFERINGS
                     </h2>
-                    <ul className="space-y-1 text-xl leading-normal list-none lg:space-y-3 md:text-2xl lg:text-3xl drop-shadow-title">
+                    <ul className="space-y-1 text-xl leading-normal list-none lg:space-y-3 md:text-2xl lg:text-4xl drop-shadow-title">
                       <li>nap pod room</li>
                       <li>no-tech tea time</li>
                       <li>red light therapy</li>
@@ -215,7 +276,7 @@ export default function Home() {
             </p>
           </div>
           <div
-            className="relative flex flex-wrap pb-40 text-white bg-bottom md:pb-60 bg-tan font-size-0"
+            className="relative flex flex-wrap pb-40 text-white bg-left-bottom lg:bg-bottom md:pb-60 bg-tan font-size-0"
             style={{
               backgroundImage:
                 "url(/images/new_landing/member_background.webp)",
@@ -304,7 +365,7 @@ export default function Home() {
           >
             <div className="inset-0 bg-center bg-cover ">
               <div className="w-full">
-                <div className="grid px-4 space-y-4 sm:grid-cols-2 lg:px-20 sm:space-y-0 pt-28">
+                <div className="grid px-4 pt-20 space-y-4 sm:grid-cols-2 lg:px-20 sm:space-y-0 md:pt-28">
                   <h1 className="text-3xl">FOUNDING MEMBERSHIP</h1>
                   <div className="pt-10 text-xl sm:text-2xl sm:pt-0">
                     <p>We are inviting YOU to root the culture at MOSS.</p>

@@ -68,7 +68,7 @@
   outline: none !important;
   box-shadow: none !important;
   padding-left: 1.25rem;
-  padding-right: 1.25rem;
+  padding-right: 1 0.25rem;
 }
 
 .category-button:hover,
@@ -97,4 +97,10 @@
 .accordion-item.active .accordion-content {
   max-height: 1000px;
   transition: max-height 0.2s ease-in;
+}
+
+@media (min-width: 1025px) {
+  .lg\:bg-unest {
+    background-size: inherit;
+  }
 }
