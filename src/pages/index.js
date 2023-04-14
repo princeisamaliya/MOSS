@@ -41,7 +41,7 @@ export default function Home() {
     } else if (size.width <= 768) {
       return { backgroundImage: `url(/images/main-bg-tablet.jpg)` };
     } else {
-      return { backgroundImage: `url(/images/main-top-bg.png)` };
+      return { backgroundImage: `url(/images/hero-v2.jpg)` };
     }
   }
   function getsection3bg() {
@@ -70,227 +70,140 @@ export default function Home() {
     <>
       <div className="antialiased bg-black">
         <div className="mx-auto text-white bg-[#dbd4c2] text-opacity-90 max-w-[1427px]">
+          <div className="bg-no-repeat bg-cover lg:bg-top " style={getMainBg()}>
+            <div className="relative px-4 py-10 text-center sm:py-32 md:py-48">
+              <div className="relative z-[1]">
+                <h1 className=" tracking-widest sm:text-7xl md:text-9xl lg:text-[15.313rem] lg:tracking-[0.2em] leading-1">
+                  MOSS
+                </h1>
+                <h2 className="text-xl font-light md:text-3xl ">
+                  in the heart of venice <br />
+                  co-working by day | event space by night
+                </h2>
+                <p className="max-w-6xl mx-auto text-2xl mt-14 md:text-2xl ">
+                  meet the first conscious co-working space in west la <br />
+                  wellness offerings by day, a lush jungle ambiance, and
+                  interactive event space by night. MOSS is venice's hub for
+                  creators, builders and entrepreneurs to explore, create and
+                  grow together.
+                </p>
+                <a
+                  href="https://buy.stripe.com/test_7sIeW8g7t6VP17afYY"
+                  className="inline-block px-8 py-5 tracking-tight text-white bg-beige-500 hover:bg-beige-700 mt-14 rounded-2xl"
+                >
+                  <p className="text-2xl drop-shadow-title">
+                    become a founding member
+                  </p>
+                </a>
+              </div>
+              <div className="absolute bottom-0 left-0 w-full h-72 bg-gradient-to-t from-[#B3AE96] to-transparent" />
+            </div>
+          </div>
+
+          <div className="bg-[#B3AE96] py-16 text-[#393939] text-center lg:px-32 px-4 tracking-wider">
+            <h3 className="text-3xl md:text-4xl lg:text-[42px] mb-14 border-b-2 inline-block border-[#393939] ">
+              OUR SPACE
+            </h3>
+            <div className="grid grid-cols-3 gap-24 mb-24">
+              <div>
+                <p className="text-2xl lg:text-3xl">Bio-architecture</p>
+                <p className="text-xl font-light tracking-wider">
+                  live + work in communion with nature
+                </p>
+              </div>
+              <div>
+                <p className="text-2xl lg:text-3xl">Wabi Sabi</p>
+                <p className="text-xl font-light tracking-wider">
+                  find beauty in the perfectly imperfect
+                </p>
+              </div>
+              <div>
+                <p className="text-2xl lg:text-3xl">Minimalism</p>
+                <p className="text-xl font-light tracking-wider">
+                  clarity of mind + peace
+                </p>
+              </div>
+            </div>
+            <div className="border border-[#393939] grid grid-cols-2 text-left p-20">
+              <div>
+                <h4 className="text-[8rem] leading-[9.6rem] uppercase tracking-[0.5rem]">
+                  WHY MOSS
+                </h4>
+              </div>
+              <div>
+                <p className="text-2xl">
+                  the intention behind MOSS is to connect with yourself and
+                  others in an intimate setting through co-working + events.{" "}
+                  <br />
+                  <br />
+                  we co-host events with our community to create unique
+                  experiences that cultivate creativity, curiosity, and
+                  compassion. <br />
+                  <br />
+                  founding members will have access to wellness offerings and
+                  the ability to host events.{" "}
+                </p>
+              </div>
+            </div>
+          </div>
           <div
-            className="bg-no-repeat bg-cover sm:bg-cover lg:bg-top xl:bg-unset "
-            style={getMainBg()}
+            className="relative px-4 py-16 text-center bg-white bg-cover lg:px-32"
+            style={{
+              backgroundImage: `url(/images/dandelion-v2.png)`,
+            }}
           >
-            <div className="px-4 py-10 text-center sm:py-32 lg:py-10 ">
-              <h1 className="mt-24 text-6xl tracking-widest sm:text-7xl sm:mt-24 lg:mt-36 md:mt-16 md:text-9xl leading-1">
-                MOSS
-              </h1>
-              <p className="pb-10 text-xl font-light md:-mt-2">
-                co-working + events
-              </p>
-              <h1 className="text-2xl tracking-widest mb-36 sm:mb-64 lg:mb-64 lg:pb-24 md:text-3xl">
-                in the heart of venice
-              </h1>
-
-              <div className="grid md:grid-cols-2">
-                <div className="hidden max-w-[220px] text-left space-y-10 lg:space-y-24 md:block lg:max-w-none">
-                  <div>
-                    <h1 className="text-3xl lg:text-4xl ">OUR SPACE</h1>
-                  </div>
-                  <div>
-                    <p className="text-2xl lg:text-3xl">Bio-architecture</p>
-                    <p className="text-xl font-light ">
-                      live + work in communion with nature
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-2xl lg:text-3xl">Wabi Sabi</p>
-                    <p className="text-xl font-light">
-                      find beauty in the perfectly imperfect
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-2xl lg:text-3xl">Minimalism</p>
-                    <p className="text-xl font-light">
-                      clarity of mind + peace
-                    </p>
-                  </div>
+            <div className="absolute top-0 left-0 w-full h-full bg-[#7D7A6A] bg-opacity-80"></div>
+            <div className="relative z-[1]">
+              <h3 className="text-3xl md:text-4xl lg:text-[42px] mb-14 ">
+                COMMUNITY VALUES
+              </h3>
+              <div className="p-8 pb-24 text-center border border-white ">
+                <div className="lg:max-w-[300px] max-w-xs text-2xl mx-auto">
+                  <div className="mb-1 text-3xl">curiosity</div>
+                  <p>exploring new depths of yourself with others + play</p>
                 </div>
-                <div className="flex lg:justify-end">
-                  <div className="max-w-2xl text-left ">
-                    <h1 className="text-2xl md:text-4xl">YOU ARE INVITED ⋆</h1>
-                    <div>
-                      <h1 className="mt-3 text-xl md:text-3xl lg:text-4xl drop-shadow-title">
-                        co-working by day | event space by night
-                      </h1>
-                    </div>
-                    <div>
-                      <p className="mt-10 text-xl font-light leading-normal md:text-2xl md:mb-24 md:mt-16 lg:text-3xl">
-                        MOSS is a place for leaders, technologists, creators,
-                        artists, writers, and healers to explore, create, and
-                        grow together.
-                      </p>
-                    </div>{" "}
-                    <div className="flex   mt-10 md:mt-[-3.6rem]">
-                      <a
-                        href="https://buy.stripe.com/test_7sIeW8g7t6VP17afYY"
-                        className="bg-beige-500 hover:bg-beige-700 text-white py-5 px-8 rounded-3.5xl tracking-tight"
-                      >
-                        <p className="text-2xl drop-shadow-title">
-                          Become a Founding Member
-                        </p>
-                      </a>
-                    </div>
-                  </div>
+                <div className="my-5 text-center xl:my-8">
+                  <img
+                    src="/images/polygon.png"
+                    className="inline-block w-full max-w-xs"
+                    alt=""
+                  />
                 </div>
-              </div>
-            </div>
-            <div className="relative overflow-hidden">
-              <div className="px-4 py-16 pb-0 bg-top bg-cover sm:py-16 lg:min-h-min md:py-0 lg:px-0">
-                <div className="space-y-5 text-left md:hidden lg:py-0 ">
-                  <div>
-                    <h1 className="text-3xl font-semibold">OUR SPACE</h1>
-                  </div>
-                  <div>
-                    <p className="text-2xl">Bio-architecture</p>
-                    <p className="text-xl font-light ">
-                      live + work in communion with nature
+                <div className="flex justify-between -mt-24 space-x-5">
+                  <div className="lg:max-w-[350px] text-2xl  ">
+                    <div className="mb-1 text-3xl">creativity</div>
+                    <p>
+                      connecting with something greater than yourself through
+                      creation
                     </p>
                   </div>
-                  <div>
-                    <p className="text-2xl">Wabi Sabi</p>
-                    <p className="text-xl font-light">
-                      find beauty in the perfectly imperfect
-                    </p>
-                  </div>
-                  <div>
-                    <p className="text-2xl">Minimalism</p>
-                    <p className="text-xl font-light">
-                      clarity of mind + peace
+                  <div className="lg:max-w-[350px] text-2xl  ">
+                    <div className="mb-1 text-3xl">compassion</div>
+                    <p>
+                      being kind to yourself and allowing it to radiate outward
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="md:absolute top-0 left-0 w-full h-full z-[1]">
-                <div className="grid gap-4 px-4 py-4 sm:py-10 md:px-10 md:py-16 md:grid-cols-2">
-                  <div className="xl:pr-40 lg:pr-32">
-                    <h3 className="mt-5 mb-3 text-2xl md:mb-10 md:text-4xl drop-shadow-title sm:mt-0">
-                      WHY MOSS
-                    </h3>
-                    <div className="px-3 py-5 text-xl font-light !leading-relaxed border border-white sm:py-10 sm:text-2xl xl:text-3xl">
-                      MOSS is venice’s hub to connect over curated events +
-                      co-working
-                      <br />
-                      <br />
-                      conscious co-working with meditative spaces, a lush indoor
-                      jungle, and wellness by day
-                      <br />
-                      <br />
-                      community based events designed to cultivate curiosity,
-                      creativity, and compassion by night
-                    </div>
-                  </div>
-                  <div className="">
-                    <h3 className="mt-5 mb-3 text-2xl md:mb-10 md:text-4xl drop-shadow-title sm:mt-0">
-                      COMMUNITY VALUES
-                    </h3>
-                    <div className="px-3 py-5 pb-10 font-light border border-white text-2x xl:text-3xl ">
-                      <div className="xl:max-w-[200px] max-w-xs text-2xl mx-auto">
-                        <div className="mb-1 text-3xl">curiosity</div>
-                        <p>
-                          exploring new depths of yourself with others + play
-                        </p>
-                      </div>
-                      <div className="my-5 text-center xl:my-8">
-                        <img
-                          src="/images/polygon.png"
-                          className="inline-block"
-                          alt=""
-                        />
-                      </div>
-                      <div className="flex justify-between space-x-5">
-                        <div className="xl:max-w-[200px] text-2xl mx-auto">
-                          <div className="mb-1 text-3xl">creativity</div>
-                          <p>
-                            connecting with something greater than yourself
-                            through creation
-                          </p>
-                        </div>
-                        <div className="xl:max-w-[200px] text-2xl mx-auto">
-                          <div className="mb-1 text-3xl">compassion</div>
-                          <p>
-                            being kind to yourself and allowing it to radiate
-                            outward
-                          </p>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <img
-                src="/images/section-2.png"
-                className="hidden   opacity-0 md:block lg:min-w-[1427px] md:min-w-[1280px]"
-                alt=""
-              />
             </div>
           </div>
 
           <div
-            className="bg-top bg-no-repeat bg-cover "
-            style={getsection3bg()}
-          >
-            <div className="px-4 sm:py-40  py-20 md:py-24  bg-cover lg:py-[5.7rem] bg-top lg:px-0 relative z-[2] shadow-md ">
-              <div className="block max-w-5xl mx-auto lg:px-10 lg:py-20 lg:bg-brown lg:bg-opacity-70">
-                <div className="grid gap-10 sm:grid-cols-2 md:gap-0">
-                  <div className="w-full max-w-md p-8 mx-auto text-center md:text-left md:max-w-none lg:bg-transparent bg-brown bg-opacity-70 lg:bg-opacity-0 lg:p-0">
-                    <h2 className="mb-5 text-xl leading-normal md:text-2xl lg:text-4xl drop-shadow-title">
-                      MOSS WELLNESS OPTIONS
-                    </h2>
-                    <ul className="space-y-1 text-xl leading-normal list-none lg:space-y-3 md:text-2xl lg:text-4xl drop-shadow-title">
-                      <li>cozy lofts</li>
-                      <li>bicycle storage</li>
-                      <li>tea + coffee bar</li>
-                      <li>recording studio</li>
-                      <li>rooftop garden + patio</li>
-                    </ul>
-                  </div>
-                  <div className="w-full max-w-md p-8 mx-auto text-center md:text-left md:max-w-none lg:bg-transparent bg-brown bg-opacity-70 lg:p-0">
-                    <h2 className="mb-5 text-xl leading-normal md:text-2xl lg:text-4xl drop-shadow-title">
-                      MOSS OFFERINGS
-                    </h2>
-                    <ul className="space-y-1 text-xl leading-normal list-none lg:space-y-3 md:text-2xl lg:text-4xl drop-shadow-title">
-                      <li>nap pod room</li>
-                      <li>no-tech tea time</li>
-                      <li>red light therapy</li>
-                      <li>meditation studio</li>
-                      <li>sauna + cold plunge</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div className="px-4 py-16 text-xl text-center md:p-12 md:text-2xl text-offwhite bg-green ">
-            <p>
-              Without value-aligned spaces to regularly gather, individuals are
-              left to create community by themselves.
-            </p>
-            <p>
-              Moss is Venice’s hub to connect over curated events and
-              co-working.
-            </p>
-          </div>
-          <div
-            className="relative flex flex-wrap pb-40 text-white bg-left-bottom lg:bg-bottom md:pb-60 bg-tan font-size-0"
+            className="relative flex flex-wrap text-white bg-left-bottom lg:bg-bottom bg-tan font-size-0"
             style={{
               backgroundImage:
                 "url(/images/new_landing/member_background.webp)",
             }}
           >
-            <div className="w-full px-4 pt-20 md:px-20">
-              <h1 className="text-2xl md:text-5xl drop-shadow-title">
+            <div className="w-full px-4 py-16 md:px-20">
+              <h1 className="text-2xl md:text-5xl lg:text-[42px]">
                 MOSS + MEMBER LED EVENTS
               </h1>
 
               <Tab.Group>
                 <>
                   <div className="flex items-center mb-10 md:mb-0">
-                    <Tab.List className="flex items-center justify-between w-full pl-1 mt-5 space-x-0 sm:justify-start sm:space-x-10 drop-shadow-title">
+                    <Tab.List className="flex items-center justify-between w-full pl-1 mt-5 space-x-0 sm:justify-start sm:space-x-10 lg:space-x-20 ">
                       <Tab
                         className={({ selected }) =>
                           `category-button ${selected ? "active" : ""}`
@@ -321,9 +234,9 @@ export default function Home() {
                       </Tab>
                     </Tab.List>
                   </div>
-                  <Tab.Panels className="mt-6 text-2xl text-white md:text-3xl category-content ">
+                  <Tab.Panels className="mt-6 text-xl text-white md:text-2xl category-content ">
                     <Tab.Panel>
-                      <ul className="pl-0 space-y-5 list-disc list-inside category-list connect active">
+                      <ul className="pl-0 space-y-2 list-disc list-inside category-list connect active">
                         <li>live music jams</li>
                         <li>community dinners</li>
                         <li>art shows + gallery</li>
@@ -331,7 +244,7 @@ export default function Home() {
                       </ul>
                     </Tab.Panel>
                     <Tab.Panel>
-                      <ul className="pl-0 space-y-5 list-disc list-inside category-list learn">
+                      <ul className="pl-0 space-y-2 list-disc list-inside category-list learn">
                         <li>creator jams</li>
                         <li>group focus flow</li>
                         <li>bookclubs + discussion</li>
@@ -339,7 +252,7 @@ export default function Home() {
                       </ul>
                     </Tab.Panel>
                     <Tab.Panel>
-                      <ul className="pl-0 space-y-5 list-disc list-inside category-list grow">
+                      <ul className="pl-0 space-y-2 list-disc list-inside category-list grow">
                         <li>art + drawing</li>
                         <li>group journaling</li>
                         <li>creative writing club</li>
@@ -347,74 +260,105 @@ export default function Home() {
                       </ul>
                     </Tab.Panel>
                     <Tab.Panel>
-                      <ul className="pl-0 space-y-5 list-disc list-inside category-list embody">
-                        <li>dance classes</li>
-                        <li>group hikes + travel</li>
-                        <li>sauna + ice bath cycles</li>
-                        <li>breath-work + meditation</li>
+                      <ul className="pl-0 space-y-2 list-disc list-inside category-list embody">
+                        <li>nap pod room</li>
+                        <li>no-tech tea time</li>
+                        <li>red light therapy</li>
                       </ul>
                     </Tab.Panel>
                   </Tab.Panels>
                 </>
               </Tab.Group>
+              <div className="grid grid-cols-2 gap-32 mt-14">
+                <div className="bg-[#66544A] bg-opacity-60 p-10">
+                  <h3 className="text-2xl md:text-5xl lg:text-[42px]  mb-5">
+                    WELLNESS OPTIONS
+                  </h3>
+                  <ul className="grid grid-cols-2 pl-0 text-xl list-none gap-x-10 embody">
+                    <li>dance classes</li>
+                    <li>meditation studio</li>
+                    <li>group hikes + travel</li>
+                    <li>sauna + cold plunge</li>
+                    <li>sauna + ice bath cycles</li>
+                    <li>breath-work + meditation</li>
+                  </ul>
+                </div>
+                <div className="bg-[#66544A] bg-opacity-60 p-10">
+                  <h3 className="text-2xl md:text-5xl lg:text-[42px] mb-5">
+                    AMENITIES
+                  </h3>
+                  <ul className="grid grid-cols-2 pl-0 text-xl list-none gap-x-10 embody">
+                    <li>cozy lofts</li>
+                    <li>recording studio</li>
+                    <li>bicycle storage</li>
+                    <li>rooftop garden + patio</li>
+                    <li>tea + coffee bar</li>
+                  </ul>
+                </div>
+              </div>
             </div>
           </div>
           <div
-            className="relative text-white bg-center bg-top bg-tan"
+            className="relative text-white bg-center bg-tan"
             style={getFaqbg()}
           >
             <div className="inset-0 bg-center bg-cover ">
-              <div className="w-full">
-                <div className="grid px-4 pt-20 space-y-4 sm:grid-cols-2 lg:px-20 sm:space-y-0 md:pt-28">
-                  <h1 className="text-3xl">FOUNDING MEMBERSHIP</h1>
-                  <div className="pt-10 text-xl sm:text-2xl sm:pt-0">
-                    <p>We are inviting YOU to root the culture at MOSS.</p>
-                    <p className="mt-3">
-                      As a founding member, you will receive exclusive benefits
-                    </p>
-                    <p className="mt-3 text-sm">
-                      we kindly ask you do not share this link with others ⋆
-                    </p>
-                  </div>
-                </div>
+              <div className="w-full px-4 pt-20 md:pt-28 md:px-20">
+                <h1 className="text-2xl md:text-5xl lg:text-[42px] mb-5">
+                  FOUNDING MEMBERSHIP
+                </h1>
 
-                <div className="grid px-4 mt-12 sm:grid-cols-2 lg:px-20">
+                <div className="grid gap-10 mt-12 sm:grid-cols-2 ">
                   <div>
                     <img
-                      className="w-full max-w-sm"
+                      className="w-full max-w-xl"
                       src="/images/new_landing/map.png"
                     />
+                    <h5 className="my-10 text-3xl">63/65 spots left</h5>
+                    <a
+                      href="https://buy.stripe.com/test_7sIeW8g7t6VP17afYY"
+                      className="inline-block px-8 py-5 tracking-tight text-white bg-beige-500 hover:bg-beige-700 rounded-2xl"
+                    >
+                      <p className="text-2xl drop-shadow-title">
+                        become a founding member
+                      </p>
+                    </a>
                   </div>
                   <div className="flex sm:justify-end">
-                    <ul className="pt-2 pl-5 mt-20 space-y-1 text-xl leading-relaxed list-disc md:text-3xl lg:text-4xl sm:mt-0">
-                      <li>$3500</li>
-                      <li>2 months free</li>
-                      <li>private rooms</li>
-                      <li>full wellness access</li>
-                      <li>1 year of membership</li>
-                      <li>MOSS opening launch</li>
-                      <li>unlimited event access</li>
-                      <li>10 day access per month</li>
-                      <li>unlimited +1 guest passes</li>
-                    </ul>
+                    <p className="text-2xl">
+                      dear friends, <br />
+                      <br />
+                      we are inviting you to root the culture at MOSS. it is a
+                      place where you are safe to work, play and be. here, you
+                      are encouraged to start new conversations and plant new
+                      seeds. <br />
+                      <br />
+                      founding memberships grant you annual access with two
+                      months free, all-day private co-working rooms, and
+                      wellness offerings (an amenity we are excited to offer, so
+                      you do not have to leave your workspace to decompress in
+                      another). <br />
+                      <br />
+                      you will be able to attend events, and also host. within
+                      your 10 day/ month pass, you have unlimited guest passes.
+                      $3,500 value. <br />
+                      <br />
+                      while our founding memberships are limited, we trust your
+                      judgement for referrals. <br />
+                      <br />
+                      stay tuned for our launch party coming june 2023 🚀
+                      <br />
+                      <br /> xx
+                    </p>
                   </div>
                 </div>
               </div>
 
-              <div className="flex-grow w-full mt-10 sm:mt-72 md:pt-5">
-                <div className="flex flex-row justify-center w-full">
-                  <button className="px-16 py-5 mt-6 text-base text-white bg-brown-500 rounded-3xl drop-shadow-title">
-                    <a href="https://buy.stripe.com/test_7sIeW8g7t6VP17afYY">
-                      <p className="text-lg tracking-wider">
-                        RESERVE YOUR SPOT
-                      </p>
-                    </a>
-                  </button>
-                </div>
-                <div className="container px-4 mx-auto mt-16 text-lg md:px-20 sm:pb-[38%] pb-[100%]">
-                  <h1 className="mb-4 text-4xl font-semibold drop-shadow-title">
+              <div className="flex-grow w-full mt-10 sm:mt-16 lg:mt-44 md:pt-5">
+                <div className="container px-4 mx-auto  text-lg md:px-20 sm:pb-[38%] pb-[100%]">
+                  <h6 className="mb-4 text-4xl font-semibold lg:text-[8rem] traking-[0.2em] leading-none">
                     FAQ
-                  </h1>
+                  </h6>
                   <div className="accordion">
                     <Disclosure>
                       {({ open }) => (
