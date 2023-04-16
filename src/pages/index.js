@@ -37,9 +37,9 @@ export default function Home() {
   const size = useWindowSize();
   function getMainBg() {
     if (size.width <= 480) {
-      return { backgroundImage: `url(/images/main-bg-mobile.jpg)` };
+      return { backgroundImage: `url(/images/main-bg-mobile.png)` };
     } else if (size.width <= 768) {
-      return { backgroundImage: `url(/images/main-bg-tablet.jpg)` };
+      return { backgroundImage: `url(/images/hero-v2.jpg)` };
     } else {
       return { backgroundImage: `url(/images/hero-v2.jpg)` };
     }
@@ -59,10 +59,10 @@ export default function Home() {
   }
   function getFaqbg() {
     if (size.width <= 480) {
-      return { backgroundImage: "url(/images/faq-image.jpg)" };
+      return { backgroundImage: "url(/images/faq-image.png)" };
     } else {
       return {
-        backgroundImage: "url(/images/new_landing/wall_shadows.webp)",
+        backgroundImage: "url(/images/wall_shadows.png)",
       };
     }
   }
@@ -71,13 +71,14 @@ export default function Home() {
       <div className="antialiased bg-black">
         <div className="mx-auto text-white bg-[#dbd4c2] text-opacity-90 max-w-[1427px]">
           <div className="bg-no-repeat bg-cover lg:bg-top " style={getMainBg()}>
-            <div className="relative px-4 py-10 text-center sm:py-32 md:py-48">
+            <div className="relative px-4 py-10 pt-24 text-center sm:py-32 md:py-48">
               <div className="relative z-[1]">
-                <h1 className=" tracking-widest sm:text-7xl md:text-9xl lg:text-[15.313rem] lg:tracking-[0.2em] leading-1">
+                <h1 className=" tracking-widest  text-8xl md:text-9xl lg:text-[15.313rem] lg:tracking-[0.2em] leading-1">
                   MOSS
                 </h1>
-                <h2 className="text-xl font-light md:text-3xl ">
-                  in the heart of venice <br />
+                <h2 className="text-2xl font-light md:text-[2rem] ">
+                  <span className="text-[2rem]"> in the heart of venice</span>{" "}
+                  <br />
                   co-working by day | event space by night
                 </h2>
                 <p className="max-w-6xl mx-auto text-2xl mt-14 md:text-2xl ">
@@ -96,42 +97,42 @@ export default function Home() {
                   </p>
                 </a>
               </div>
-              <div className="absolute bottom-0 left-0 w-full h-72 bg-gradient-to-t from-[#B3AE96] to-transparent" />
+              <div className="absolute -bottom-1 left-0 w-full h-72 bg-gradient-to-t from-[#B3AE96] to-transparent" />
             </div>
           </div>
 
-          <div className="bg-[#B3AE96] py-16 text-[#393939] text-center lg:px-32 px-4 tracking-wider">
-            <h3 className="text-3xl md:text-4xl lg:text-[42px] mb-14 border-b-2 inline-block border-[#393939] ">
+          <div className="bg-[#B3AE96] py-16 text-[#393939] text-center xl:px-32 lg:px-16 px-4 tracking-wider">
+            <h3 className="text-[2rem] md:text-4xl lg:text-[42px] mb-10 sm:mb-14 border-b-2 inline-block border-[#393939] ">
               OUR SPACE
             </h3>
-            <div className="grid grid-cols-3 gap-24 mb-24">
+            <div className="grid gap-10 mb-24 sm:grid-cols-3 md:gap-24">
               <div>
-                <p className="text-2xl lg:text-3xl">Bio-architecture</p>
-                <p className="text-xl font-light tracking-wider">
+                <p className="text-[2rem] lg:text-[2rem]">Bio-architecture</p>
+                <p className="text-[1.375rem] font-light tracking-wider">
                   live + work in communion with nature
                 </p>
               </div>
               <div>
-                <p className="text-2xl lg:text-3xl">Wabi Sabi</p>
-                <p className="text-xl font-light tracking-wider">
+                <p className="text-[2rem] lg:text-[2rem]">Wabi Sabi</p>
+                <p className="text-[1.375rem] font-light tracking-wider">
                   find beauty in the perfectly imperfect
                 </p>
               </div>
               <div>
-                <p className="text-2xl lg:text-3xl">Minimalism</p>
-                <p className="text-xl font-light tracking-wider">
+                <p className="text-[2rem] lg:text-[2rem]">Minimalism</p>
+                <p className="text-[1.375rem] font-light tracking-wider">
                   clarity of mind + peace
                 </p>
               </div>
             </div>
-            <div className="border border-[#393939] grid grid-cols-2 text-left p-20">
+            <div className="border border-[#393939] grid sm:grid-cols-2 text-left p-8 sm:p-10 xl:p-20">
               <div>
-                <h4 className="text-[8rem] leading-[9.6rem] uppercase tracking-[0.5rem]">
+                <h4 className="md:text-[8rem] text-[6rem] md:leading-[9.6rem] leading-[6rem] uppercase tracking-[0.5rem]">
                   WHY MOSS
                 </h4>
               </div>
               <div>
-                <p className="text-2xl">
+                <p className="text-[1.375rem] md:text-2xl">
                   the intention behind MOSS is to connect with yourself and
                   others in an intimate setting through co-working + events.{" "}
                   <br />
@@ -147,38 +148,38 @@ export default function Home() {
             </div>
           </div>
           <div
-            className="relative px-4 py-16 text-center bg-white bg-cover lg:px-32"
+            className="relative px-4 py-16 text-center bg-white bg-cover xl:px-32 lg:px-16"
             style={{
               backgroundImage: `url(/images/dandelion-v2.png)`,
             }}
           >
             <div className="absolute top-0 left-0 w-full h-full bg-[#7D7A6A] bg-opacity-80"></div>
             <div className="relative z-[1]">
-              <h3 className="text-3xl md:text-4xl lg:text-[42px] mb-14 ">
+              <h3 className="text-[2rem] md:text-4xl lg:text-[42px] mb-6 sm:mb-14 ">
                 COMMUNITY VALUES
               </h3>
-              <div className="p-8 pb-24 text-center border border-white ">
-                <div className="lg:max-w-[300px] max-w-xs text-2xl mx-auto">
-                  <div className="mb-1 text-3xl">curiosity</div>
+              <div className="p-6 text-center border border-white sm:p-8 sm:pb-24 ">
+                <div className="lg:max-w-[300px] max-w-xs text-[1.375rem] sm:text-2xl mx-auto">
+                  <div className="mb-1 text-[2rem]">curiosity</div>
                   <p>exploring new depths of yourself with others + play</p>
                 </div>
                 <div className="my-5 text-center xl:my-8">
                   <img
                     src="/images/polygon.png"
-                    className="inline-block w-full max-w-xs"
+                    className="inline-block w-full xl:max-w-xs max-w-[150px] sm:max-w-[250px]"
                     alt=""
                   />
                 </div>
-                <div className="flex justify-between -mt-24 space-x-5">
-                  <div className="lg:max-w-[350px] text-2xl  ">
-                    <div className="mb-1 text-3xl">creativity</div>
+                <div className="grid justify-between grid-cols-2 gap-10 lg:flex lg:gap-0 lg:-mt-24">
+                  <div className="lg:max-w-[350px] text-[1.375rem] sm:text-2xl  ">
+                    <div className="mb-1 text-[2rem]">creativity</div>
                     <p>
                       connecting with something greater than yourself through
                       creation
                     </p>
                   </div>
-                  <div className="lg:max-w-[350px] text-2xl  ">
-                    <div className="mb-1 text-3xl">compassion</div>
+                  <div className="lg:max-w-[350px] text-[1.375rem] sm:text-2xl  ">
+                    <div className="mb-1 text-[2rem]">compassion</div>
                     <p>
                       being kind to yourself and allowing it to radiate outward
                     </p>
@@ -189,21 +190,20 @@ export default function Home() {
           </div>
 
           <div
-            className="relative flex flex-wrap text-white bg-left-bottom lg:bg-bottom bg-tan font-size-0"
+            className="relative flex flex-wrap text-white bg-center bg-cover lg:bg-center bg-tan font-size-0"
             style={{
-              backgroundImage:
-                "url(/images/new_landing/member_background.webp)",
+              backgroundImage: "url(/images/member_background.jpg)",
             }}
           >
-            <div className="w-full px-4 py-16 md:px-20">
-              <h1 className="text-2xl md:text-5xl lg:text-[42px]">
+            <div className="w-full px-4 py-16 lg:px-20">
+              <h1 className="text-[2rem] md:text-4xl  sm:text-left text-center  lg:text-[42px]">
                 MOSS + MEMBER LED EVENTS
               </h1>
 
               <Tab.Group>
                 <>
                   <div className="flex items-center mb-10 md:mb-0">
-                    <Tab.List className="flex items-center justify-between w-full pl-1 mt-5 space-x-0 sm:justify-start sm:space-x-10 lg:space-x-20 ">
+                    <Tab.List className="flex flex-col items-start justify-between w-full pl-1 mt-5 space-x-0 space-y-3 sm:space-y-0 sm:items-center sm:flex-row sm:justify-start sm:space-x-10 lg:space-x-20 ">
                       <Tab
                         className={({ selected }) =>
                           `category-button ${selected ? "active" : ""}`
@@ -234,7 +234,7 @@ export default function Home() {
                       </Tab>
                     </Tab.List>
                   </div>
-                  <Tab.Panels className="mt-6 text-xl text-white md:text-2xl category-content ">
+                  <Tab.Panels className="mt-6 text-[1.375rem] text-white md:text-2xl category-content ">
                     <Tab.Panel>
                       <ul className="pl-0 space-y-2 list-disc list-inside category-list connect active">
                         <li>live music jams</li>
@@ -269,12 +269,12 @@ export default function Home() {
                   </Tab.Panels>
                 </>
               </Tab.Group>
-              <div className="grid grid-cols-2 gap-32 mt-14">
-                <div className="bg-[#66544A] bg-opacity-60 p-10">
-                  <h3 className="text-2xl md:text-5xl lg:text-[42px]  mb-5">
+              <div className="grid gap-10 sm:grid-cols-2 md:gap-20 xl:gap-32 mt-14">
+                <div className="bg-[#66544A] bg-opacity-60 p-10 mix-blend-luminosity">
+                  <h3 className="text-[2rem] md:text-5xl lg:text-[42px]  mb-5">
                     WELLNESS OPTIONS
                   </h3>
-                  <ul className="grid grid-cols-2 pl-0 text-xl list-none gap-x-10 embody">
+                  <ul className="grid pl-0 text-[1.375rem] list-none sm:grid-cols-2 gap-x-10 embody">
                     <li>dance classes</li>
                     <li>meditation studio</li>
                     <li>group hikes + travel</li>
@@ -283,11 +283,11 @@ export default function Home() {
                     <li>breath-work + meditation</li>
                   </ul>
                 </div>
-                <div className="bg-[#66544A] bg-opacity-60 p-10">
-                  <h3 className="text-2xl md:text-5xl lg:text-[42px] mb-5">
+                <div className="bg-[#66544A] bg-opacity-60 p-10 mix-blend-luminosity">
+                  <h3 className="text-[2rem] md:text-5xl lg:text-[42px] mb-5">
                     AMENITIES
                   </h3>
-                  <ul className="grid grid-cols-2 pl-0 text-xl list-none gap-x-10 embody">
+                  <ul className="grid pl-0 text-[1.375rem] list-none sm:grid-cols-2 gap-x-10 embody">
                     <li>cozy lofts</li>
                     <li>recording studio</li>
                     <li>bicycle storage</li>
@@ -299,22 +299,24 @@ export default function Home() {
             </div>
           </div>
           <div
-            className="relative text-white bg-center bg-tan"
+            className="relative text-white sm:bg-[#393939] md:bg-center bg-cover bg-top"
             style={getFaqbg()}
           >
             <div className="inset-0 bg-center bg-cover ">
-              <div className="w-full px-4 pt-20 md:pt-28 md:px-20">
-                <h1 className="text-2xl md:text-5xl lg:text-[42px] mb-5">
+              <div className="w-full px-4 pt-20 md:pt-28 lg:px-20">
+                <h1 className="text-[2rem] md:text-5xl lg:text-[42px] mb-5 sm:text-left text-center">
                   FOUNDING MEMBERSHIP
                 </h1>
 
                 <div className="grid gap-10 mt-12 sm:grid-cols-2 ">
-                  <div>
+                  <div className="text-center sm:text-left">
                     <img
                       className="w-full max-w-xl"
                       src="/images/new_landing/map.png"
                     />
-                    <h5 className="my-10 text-3xl">63/65 spots left</h5>
+                    <h5 className="my-6 text-[2rem] sm:my-10">
+                      63/65 spots left
+                    </h5>
                     <a
                       href="https://buy.stripe.com/test_7sIeW8g7t6VP17afYY"
                       className="inline-block px-8 py-5 tracking-tight text-white bg-beige-500 hover:bg-beige-700 rounded-2xl"
@@ -354,124 +356,59 @@ export default function Home() {
                 </div>
               </div>
 
-              <div className="flex-grow w-full mt-10 sm:mt-16 lg:mt-44 md:pt-5">
-                <div className="container px-4 mx-auto  text-lg md:px-20 sm:pb-[38%] pb-[100%]">
-                  <h6 className="mb-4 text-4xl font-semibold lg:text-[8rem] traking-[0.2em] leading-none">
-                    FAQ
-                  </h6>
-                  <div className="accordion">
-                    <Disclosure>
-                      {({ open }) => (
-                        <>
-                          <Disclosure.Button className={"w-full"}>
-                            <div className="flex justify-between text-xl md:text-3xl accordion-title">
-                              <h3>Can I host an event at MOSS?</h3>
-                              <span className="icon">
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  fill="none"
-                                  viewBox="0 0 24 24"
-                                  stroke-width="1.5"
-                                  stroke="currentColor"
-                                  className={`w-6 h-6 transform transition-all ${
-                                    open ? "rotate-180" : ""
-                                  }`}
-                                >
-                                  <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                                  ></path>
-                                </svg>
-                              </span>
-                            </div>
-                          </Disclosure.Button>
-                          <Disclosure.Panel>
-                            <p>
-                              Yes. MOSS is a place where members are allowed to
-                              host events for free as an offering to the
-                              community. For private events, please contact us
-                              separately about space rentals.
-                            </p>
-                          </Disclosure.Panel>
-                        </>
-                      )}
-                    </Disclosure>
-                    <Disclosure>
-                      {({ open }) => (
-                        <>
-                          <Disclosure.Button className={"w-full"}>
-                            <div className="flex justify-between text-xl md:text-3xl accordion-title">
-                              <h3>What are your hours of operation?</h3>
-                              <span className="icon">
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  fill="none"
-                                  viewBox="0 0 24 24"
-                                  stroke-width="1.5"
-                                  stroke="currentColor"
-                                  className={`w-6 h-6 transform transition-all ${
-                                    open ? "rotate-180" : ""
-                                  }`}
-                                >
-                                  <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                                  ></path>
-                                </svg>
-                              </span>
-                            </div>
-                          </Disclosure.Button>
-                          <Disclosure.Panel>
-                            <h4>CO-WORKING</h4>
-                            <p>8am - 7pm Monday to Friday</p>
-                            <p>10am - 3pm Saturday to Sunday</p>
-                            <h4 className="mt-4">EVENTS</h4>
-                            <p>7pm - 11pm Monday to Sunday</p>
-                          </Disclosure.Panel>
-                        </>
-                      )}
-                    </Disclosure>
-                    <Disclosure>
-                      {({ open }) => (
-                        <>
-                          <Disclosure.Button className={"w-full"}>
-                            <div className="flex justify-between text-xl md:text-3xl accordion-title">
-                              <h3>Can anyone join MOSS?</h3>
-                              <span className="icon">
-                                <svg
-                                  xmlns="http://www.w3.org/2000/svg"
-                                  fill="none"
-                                  viewBox="0 0 24 24"
-                                  stroke-width="1.5"
-                                  stroke="currentColor"
-                                  className={`w-6 h-6 transform transition-all ${
-                                    open ? "rotate-180" : ""
-                                  }`}
-                                >
-                                  <path
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                    d="M19.5 8.25l-7.5 7.5-7.5-7.5"
-                                  ></path>
-                                </svg>
-                              </span>
-                            </div>
-                          </Disclosure.Button>
-                          <Disclosure.Panel>
-                            <p>
-                              While MOSS will have experiences open to the
-                              public, memberships are granted by referral and
-                              application only. Our intention is to cultivate a
-                              diverse community that is compassionate, curious,
-                              and creative.
-                            </p>
-                          </Disclosure.Panel>
-                        </>
-                      )}
-                    </Disclosure>
+              <div className="flex-grow w-full pb-24 mt-10 sm:mt-16 lg:mt-44 md:pt-5">
+                <div className="lg:container px-4 mx-auto  grid sm:grid-cols-3 text-lg xl:px-20 lg:px-14 sm:pb-24 pb-[25%]">
+                  <div className="flex items-end col-span-1">
+                    <h6 className="   font-normal md:text-[8rem] text-[7rem] traking-[0.2em] leading-none">
+                      FAQ
+                    </h6>
                   </div>
+                  <div className="sm:col-span-2 accordion">
+                    <div className="justify-between text-[2rem] md:text-[2rem] inline-block border-b-2 border-[#393939] mb-2 leading-tight">
+                      <h3>Can I host an event at MOSS?</h3>
+                    </div>
+
+                    <p className="text-[1.375rem] lg:text-[1.375rem]">
+                      Yes. MOSS is a place where members are allowed to host
+                      events for free as an offering to the community. For
+                      private events, please contact us separately about space
+                      rentals.
+                    </p>
+
+                    <div className="justify-between text-[2rem] md:text-[2rem] inline-block border-b-2 border-[#393939] mt-10 mb-2 leading-tight">
+                      <h3>What are your hours of operation?</h3>
+                    </div>
+                    <div className="text-[1.375rem] lg:text-[1.375rem]">
+                      <h4>CO-WORKING</h4>
+                      <p>8am - 7pm Monday to Friday</p>
+                      <p>10am - 3pm Saturday to Sunday</p>
+                      <h4 className="mt-4">EVENTS</h4>
+                      <p>7pm - 11pm Monday to Sunday</p>
+                    </div>
+
+                    <div className="justify-between text-[2rem] md:text-[2rem] inline-block border-b-2 border-[#393939] mt-10 mb-2 leading-tight">
+                      <h3>Can anyone join MOSS?</h3>
+                    </div>
+
+                    <div className="text-[1.375rem] lg:text-[1.375rem]">
+                      <p>
+                        While MOSS will have experiences open to the public,
+                        memberships are granted by referral and application
+                        only. Our intention is to cultivate a diverse community
+                        that is compassionate, curious, and creative.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div className="text-center">
+                  <h5 className="text-[2rem] lg:text-5xl">
+                    {" "}
+                    thank you and we hope to see you soon at MOSS!
+                  </h5>
+                  <p className="mt-5 text-2xl">
+                    {" "}
+                    (240) 383 7928 | team@mosscollective.co
+                  </p>
                 </div>
               </div>
             </div>

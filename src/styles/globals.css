@@ -65,6 +65,7 @@
   transition: border-color 0.2s ease-in-out;
   outline: none !important;
   box-shadow: none !important;
+  line-height: 1;
 }
 
 .category-button:hover,
