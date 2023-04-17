@@ -262,7 +262,7 @@ export default function Home() {
                       <ul className="pl-0 space-y-2 list-disc list-inside category-list embody">
                         <li>meditation</li>
                         <li>breath-work</li>
-                        <li>wellness seminar</li>
+                        <li>wellness seminars</li>
                         <li>body work + reiki</li>
                       </ul>
                     </Tab.Panel>
