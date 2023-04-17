@@ -237,32 +237,33 @@ export default function Home() {
                     <Tab.Panel>
                       <ul className="pl-0 space-y-2 list-disc list-inside category-list connect active">
                         <li>live music jams</li>
-                        <li>community dinners</li>
+                        <li>thinker dinners</li>
                         <li>art shows + gallery</li>
                         <li>late night tea + conversation</li>
                       </ul>
                     </Tab.Panel>
                     <Tab.Panel>
                       <ul className="pl-0 space-y-2 list-disc list-inside category-list learn">
-                        <li>creator jams</li>
-                        <li>group focus flow</li>
+                        <li>creator circle </li>
+                        <li>group focus co-work</li>
                         <li>bookclubs + discussion</li>
                         <li>speaker series + workshops</li>
                       </ul>
                     </Tab.Panel>
                     <Tab.Panel>
                       <ul className="pl-0 space-y-2 list-disc list-inside category-list grow">
-                        <li>art + drawing</li>
-                        <li>group journaling</li>
-                        <li>creative writing club</li>
+                        <li>art classes</li>
+                        <li>comedy + improv</li>
+                        <li>skill-share seminars</li>
                         <li>women's / men's circles</li>
                       </ul>
                     </Tab.Panel>
                     <Tab.Panel>
                       <ul className="pl-0 space-y-2 list-disc list-inside category-list embody">
-                        <li>nap pod room</li>
-                        <li>no-tech tea time</li>
-                        <li>red light therapy</li>
+                        <li>meditation</li>
+                        <li>breath-work</li>
+                        <li>wellness seminar</li>
+                        <li>body work + reiki</li>
                       </ul>
                     </Tab.Panel>
                   </Tab.Panels>
@@ -274,12 +275,11 @@ export default function Home() {
                     WELLNESS OPTIONS
                   </h3>
                   <ul className="grid pl-0 text-[1.375rem] list-none sm:grid-cols-2 gap-x-10 embody">
-                    <li>dance classes</li>
+                    <li>nap pod room</li>
+                    <li>no-tech tea time</li>
+                    <li>red light therapy</li>
                     <li>meditation studio</li>
-                    <li>group hikes + travel</li>
                     <li>sauna + cold plunge</li>
-                    <li>sauna + ice bath cycles</li>
-                    <li>breath-work + meditation</li>
                   </ul>
                 </div>
                 <div className="bg-[#66544A] bg-opacity-60 p-10 mix-blend-luminosity">
@@ -288,9 +288,9 @@ export default function Home() {
                   </h3>
                   <ul className="grid pl-0 text-[1.375rem] list-none sm:grid-cols-2 gap-x-10 embody">
                     <li>cozy lofts</li>
+                    <li>outdoor patio</li>
                     <li>recording studio</li>
                     <li>bicycle storage</li>
-                    <li>rooftop garden + patio</li>
                     <li>tea + coffee bar</li>
                   </ul>
                 </div>
