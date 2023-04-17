@@ -89,7 +89,7 @@ export default function Home() {
                   grow together.
                 </p>
                 <a
-                  href="https://buy.stripe.com/test_7sIeW8g7t6VP17afYY"
+                  href="#founding-membership-header"
                   className="inline-block px-8 py-5 tracking-tight text-white bg-beige-500 hover:bg-beige-700 mt-14 rounded-2xl"
                 >
                   <p className="text-2xl drop-shadow-title">
@@ -304,7 +304,7 @@ export default function Home() {
           >
             <div className="inset-0 bg-center bg-cover ">
               <div className="w-full px-4 pt-20 md:pt-28 lg:px-20">
-                <h1 className="text-[2rem] md:text-5xl lg:text-[42px] mb-5 sm:text-left text-center">
+                <h1 id="founding-membership-header" className="text-[2rem] md:text-5xl lg:text-[42px] mb-5 sm:text-left text-center">
                   FOUNDING MEMBERSHIP
                 </h1>
 
