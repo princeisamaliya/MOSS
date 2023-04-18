@@ -39,9 +39,9 @@ export default function Home() {
     if (size.width <= 480) {
       return { backgroundImage: `url(/images/main-bg-mobile.png)` };
     } else if (size.width <= 768) {
-      return { backgroundImage: `url(/images/hero-v2.jpg)` };
+      return { backgroundImage: `url(/images/hero-v3.png)` };
     } else {
-      return { backgroundImage: `url(/images/hero-v2.jpg)` };
+      return { backgroundImage: `url(/images/hero-v3.png)` };
     }
   }
   function getsection3bg() {
@@ -101,7 +101,7 @@ export default function Home() {
           </div>
 
           <div className="bg-[#B3AE96] py-16 text-[#393939] text-center xl:px-32 lg:px-16 px-4 tracking-wider">
-            <h3 className="text-[2rem] md:text-4xl lg:text-[42px] mb-10 sm:mb-14 border-b-2 inline-block border-[#393939] ">
+            <h3 className="text-[2rem] md:text-4xl lg:text-[42px] mb-10 sm:mb-14 inline-block border-[#393939] ">
               OUR SPACE
             </h3>
             <div className="grid gap-10 mb-24 sm:grid-cols-3 md:gap-24">
@@ -164,7 +164,7 @@ export default function Home() {
                 </div>
                 <div className="my-5 text-center xl:my-8">
                   <img
-                    src="/images/polygon.png"
+                    src="/images/triangle.png"
                     className="inline-block w-full xl:max-w-xs max-w-[150px] sm:max-w-[250px]"
                     alt=""
                   />
@@ -235,7 +235,7 @@ export default function Home() {
                   </div>
                   <Tab.Panels className="mt-6 text-[1.375rem] text-white md:text-2xl category-content ">
                     <Tab.Panel>
-                      <ul className="pl-0 space-y-2 list-disc list-inside category-list connect active">
+                      <ul className="pl-0 space-y-2 list-none list-inside category-list connect active">
                         <li>live music jams</li>
                         <li>thinker dinners</li>
                         <li>art shows + gallery</li>
@@ -243,7 +243,7 @@ export default function Home() {
                       </ul>
                     </Tab.Panel>
                     <Tab.Panel>
-                      <ul className="pl-0 space-y-2 list-disc list-inside category-list learn">
+                      <ul className="pl-0 space-y-2 list-none list-inside category-list learn">
                         <li>creator circle </li>
                         <li>group focus co-work</li>
                         <li>bookclubs + discussion</li>
@@ -251,7 +251,7 @@ export default function Home() {
                       </ul>
                     </Tab.Panel>
                     <Tab.Panel>
-                      <ul className="pl-0 space-y-2 list-disc list-inside category-list grow">
+                      <ul className="pl-0 space-y-2 list-none list-inside category-list grow">
                         <li>art classes</li>
                         <li>comedy + improv</li>
                         <li>skill-share seminars</li>
@@ -259,7 +259,7 @@ export default function Home() {
                       </ul>
                     </Tab.Panel>
                     <Tab.Panel>
-                      <ul className="pl-0 space-y-2 list-disc list-inside category-list embody">
+                      <ul className="pl-0 space-y-2 list-none list-inside category-list embody">
                         <li>meditation</li>
                         <li>breath-work</li>
                         <li>wellness seminars</li>
