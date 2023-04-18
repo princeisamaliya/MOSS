@@ -85,7 +85,6 @@ export default function Home() {
                   meet the first conscious co-working space in west la <br />
                   wellness offerings by day, a lush jungle ambiance, and
                   interactive event space by night. <br />
-                  MOSS is venice's hub for creators, builders and entrepreneurs to explore, create and grow together.
                 </p>
                 <a
                   href="#founding-membership-header"
