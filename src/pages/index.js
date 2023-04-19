@@ -76,7 +76,7 @@ export default function Home() {
                 <h1 className=" tracking-widest  text-8xl md:text-9xl lg:text-[15.313rem] lg:tracking-[0.2em] leading-1">
                   MOSS
                 </h1>
-                <h2 className="text-2xl font-light md:text-[2rem] ">
+                <h2 className="text-2xl font-light md:text-[2rem] mt-6 sm:mt-0">
                   <span className="text-[2rem]"> in the heart of venice</span>{" "}
                   <br />
                   co-working by day | event space by night
@@ -159,8 +159,8 @@ export default function Home() {
               </h3>
               <div className="p-6 text-center border border-white sm:p-8 sm:pb-24 ">
                 <div className="lg:max-w-[300px] max-w-xs text-[1.375rem] sm:text-2xl mx-auto">
-                  <div className="mb-1 text-[2rem]">curiosity</div>
-                  <p>exploring new depths of yourself with others + play</p>
+                  <div className="mb-1 text-[2rem]">compassion</div>
+                  <p>being kind to yourself and allowing it to radiate outward</p>
                 </div>
                 <div className="my-5 text-center xl:my-8">
                   <img
@@ -178,9 +178,9 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="lg:max-w-[350px] text-[1.375rem] sm:text-2xl  ">
-                    <div className="mb-1 text-[2rem]">compassion</div>
+                    <div className="mb-1 text-[2rem]">curiosity</div>
                     <p>
-                      being kind to yourself and allowing it to radiate outward
+                      exploring new depths of yourself with others + play
                     </p>
                   </div>
                 </div>
