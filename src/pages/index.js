@@ -68,6 +68,9 @@ export default function Home() {
   }
   return (
     <>
+      <Head>
+        <title>MOOS | in the heart of venice</title>
+      </Head>
       <div className="antialiased bg-black">
         <div className="mx-auto text-white bg-[#dbd4c2] text-opacity-90 max-w-[1427px]">
           <div className="bg-no-repeat bg-cover lg:bg-top " style={getMainBg()}>
