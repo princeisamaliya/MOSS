@@ -1,8 +1,14 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Head from "next/head";
 import Image from "next/image";
 import { Tab, Disclosure } from "@headlessui/react";
 import { isMobile } from "mobile-device-detect";
+import { Swiper, SwiperSlide } from "swiper/react";
+import "swiper/css/navigation";
+import { Navigation } from "swiper";
+
+// Import Swiper styles
+import "swiper/css";
 
 import styles from "@/styles/Home.module.css";
 
@@ -66,6 +72,8 @@ export default function Home() {
       };
     }
   }
+  const navigationPrevRef = React.useRef(null);
+  const navigationNextRef = React.useRef(null);
   return (
     <>
       <Head>
@@ -79,16 +87,20 @@ export default function Home() {
                 <h1 className=" tracking-widest  text-8xl md:text-9xl lg:text-[15.313rem] lg:tracking-[0.2em] leading-1">
                   MOSS
                 </h1>
-                <h2 className="text-2xl font-light md:text-[2rem] mt-6 sm:mt-0">
+                <h2 className="text-[22px] font-light md:text-[2rem] mt-6 sm:mt-0">
                   <span className="text-[2rem]"> in the heart of venice</span>{" "}
                   <br />
                   co-working by day | event space by night
                 </h2>
-                <p className="max-w-6xl mx-auto text-2xl mt-14 md:text-2xl ">
-                  meet the first conscious co-working space in west la <br />
+                <p className="max-w-6xl mx-auto text-2xl mt-14 md:text-2xl">
+                  meet the first conscious co-working space in west la{" "}
+                  <br className="md:hidden" />
+                  <br />
                   wellness offerings by day, a lush jungle ambiance, and
                   interactive event space by night. <br />
-                  MOSS is venice's hub for creators, builders and entrepreneurs to explore, create and grow together.
+                  <br className="md:hidden" />
+                  MOSS is venice's hub for creators, builders and entrepreneurs
+                  to explore, create and grow together.
                 </p>
                 <a
                   href="#founding-membership-header"
@@ -128,8 +140,8 @@ export default function Home() {
               </div>
             </div>
             <div className="border border-[#393939] grid sm:grid-cols-2 text-left p-8 sm:p-10 xl:p-20">
-              <div>
-                <h4 className="md:text-[8rem] text-[6rem] md:leading-[9.6rem] leading-[6rem] uppercase tracking-[0.5rem]">
+              <div className="flex items-center">
+                <h4 className="md:text-[6rem] text-[6rem] md:leading-[8rem] leading-[6rem] uppercase tracking-[0.5rem]">
                   WHY MOSS
                 </h4>
               </div>
@@ -163,12 +175,14 @@ export default function Home() {
               <div className="p-6 text-center border border-white sm:p-8 sm:pb-24 ">
                 <div className="lg:max-w-[300px] max-w-xs text-[1.375rem] sm:text-2xl mx-auto">
                   <div className="mb-1 text-[2rem]">compassion</div>
-                  <p>being kind to yourself and allowing it to radiate outward</p>
+                  <p>
+                    being kind to yourself and allowing it to radiate outward
+                  </p>
                 </div>
                 <div className="my-5 text-center xl:my-8">
                   <img
                     src="/images/triangle.png"
-                    className="inline-block w-full xl:max-w-xs max-w-[150px] sm:max-w-[250px]"
+                    className="inline-block w-full xl:max-w-[280px] max-w-[150px] sm:max-w-[250px]"
                     alt=""
                   />
                 </div>
@@ -182,12 +196,103 @@ export default function Home() {
                   </div>
                   <div className="lg:max-w-[350px] text-[1.375rem] sm:text-2xl  ">
                     <div className="mb-1 text-[2rem]">curiosity</div>
-                    <p>
-                      exploring new depths of yourself with others + play
-                    </p>
+                    <p>exploring new depths of yourself with others + play</p>
                   </div>
                 </div>
               </div>
+            </div>
+          </div>
+          <div className="relative">
+            <Swiper
+              // install Swiper modules
+              modules={[Navigation]}
+              spaceBetween={0}
+              slidesPerView={4}
+              pagination={{ clickable: true }}
+              scrollbar={{ draggable: true }}
+              navigation={{
+                prevEl: navigationPrevRef.current,
+                nextEl: navigationNextRef.current,
+              }}
+              breakpoints={{
+                100: {
+                  slidesPerView: 2.1,
+                },
+                568: {
+                  slidesPerView: 2.2,
+                },
+                768: {
+                  slidesPerView: 2.5,
+                },
+                1024: {
+                  slidesPerView: 3.4,
+                },
+              }}
+            >
+              <SwiperSlide>
+                <div className="relative group">
+                  <img src="/images/image-50.jpg" className="w-full" alt="" />
+                  <div className="absolute top-0 left-0 flex items-center w-full h-full p-5 transition-all opacity-0 bg-black/20 group-hover:opacity-100">
+                    <p className="text-lg text-center">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="relative group">
+                  <img src="/images/image-51.jpg" alt="" className="w-full" />
+                  <div className="absolute top-0 left-0 flex items-center w-full h-full p-5 transition-all opacity-0 bg-black/20 group-hover:opacity-100">
+                    <p className="text-lg text-center">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                <div className="relative group">
+                  <img src="/images/image-51.jpg" alt="" className="w-full" />
+                  <div className="absolute top-0 left-0 flex items-center w-full h-full p-5 transition-all opacity-0 bg-black/20 group-hover:opacity-100">
+                    <p className="text-lg text-center">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <div className="relative group">
+                  <img src="/images/image-52.jpg" alt="" className="w-full" />
+                  <div className="absolute top-0 left-0 flex items-center w-full h-full p-5 transition-all opacity-0 bg-black/20 group-hover:opacity-100">
+                    <p className="text-lg text-center">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+              <SwiperSlide>
+                {" "}
+                <div className="relative group">
+                  <img src="/images/image-51.jpg" alt="" className="w-full" />
+                  <div className="absolute top-0 left-0 flex items-center w-full h-full p-5 transition-all opacity-0 bg-black/20 group-hover:opacity-100">
+                    <p className="text-lg text-center">
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                    </p>
+                  </div>
+                </div>
+              </SwiperSlide>
+            </Swiper>
+            <div
+              ref={navigationPrevRef}
+              className="absolute transform -translate-y-1/2 top-1/2 left-3 z-[1] cursor-pointer"
+            >
+              <img src="/images/arrorw.png" alt="" className="w-8 md:w-auto" />
+            </div>
+            <div
+              ref={navigationNextRef}
+              className="transform rotate-180 absolute   -translate-y-1/2 top-1/2 right-3 z-[1] cursor-pointer"
+            >
+              <img src="/images/arrorw.png" alt="" className="w-8 md:w-auto" />
             </div>
           </div>
 
@@ -301,12 +406,51 @@ export default function Home() {
             </div>
           </div>
           <div
+            className="px-4 py-10 lg:py-24 lg:px-20"
+            style={{
+              backgroundImage: `url(/images/welness-bg.jpg)`,
+            }}
+          >
+            <div className="bg-[#66544A] text-white gap-3 bg-opacity-60 lg:px-16 md:px-10 px-5 lg:py-20 py-10 mix-blend-luminosity grid lg:grid-cols-12">
+              <div className="lg:col-span-7">
+                <h1 class="text-[3rem] md:text-5xl lg:text-[6rem] mb-8 sm:text-left leading-none tracking-[0.2em] text-center lg:leading-tight">
+                  WELLNESS AT MOSS
+                </h1>
+                <p className="md:text-2xl text-[22px]">
+                  MOSS is a space that aims to provide productivity and
+                  relaxation in the same sphere. Our nature room, meditation
+                  studio and wellness center will be available for founding
+                  members during the daytime and night hours. You do not have to
+                  tap out of your flow or leave the workspace to tap into your
+                  inner peace.
+                  <br />
+                  <br />A custom sauna, built in ice bath, and red light therapy
+                  will be available on a free sign up basis with membership. Our
+                  meditation studio will be available for free use, and custom
+                  events during the evenings. As a special feature our nature
+                  room, is designed to fully immerse you in a new environment,
+                  with colors and sounds and natural scents you can acclimate to
+                  your desired mood.
+                </p>
+              </div>
+              <div className="flex flex-col-reverse items-center lg:col-span-5 lg:pl-20 lg:block">
+                <img src="/images/welness-timeline.svg" alt="" />
+                <h6 className="text-[2rem]  mt-16  lg:text-[2rem] sm:text-left text-center lg:mb-0 leading-none mb-5">
+                  A DAY IN THE LIFE OF MOSS
+                </h6>
+              </div>
+            </div>
+          </div>
+          <div
             className="relative text-white sm:bg-[#393939] md:bg-center bg-cover bg-top"
             style={getFaqbg()}
           >
             <div className="inset-0 bg-center bg-cover ">
               <div className="w-full px-4 pt-20 md:pt-28 lg:px-20">
-                <h1 id="founding-membership-header" className="text-[2rem] md:text-5xl lg:text-[42px] mb-5 sm:text-left text-center">
+                <h1
+                  id="founding-membership-header"
+                  className="text-[2rem] md:text-5xl lg:text-[42px] mb-5 sm:text-left text-center"
+                >
                   FOUNDING MEMBERSHIP
                 </h1>
 
@@ -348,7 +492,11 @@ export default function Home() {
                       $3,500 value. <br />
                       <br />
                       while our founding memberships are limited, we trust your
-                      judgement for referrals. <br />
+                      judgement for{" "}
+                      <a className="underline" href="">
+                        referrals
+                      </a>
+                      . <br />
                       <br />
                       stay tuned for our launch party coming june 2023 🚀
                       <br />
@@ -407,10 +555,18 @@ export default function Home() {
                     {" "}
                     thank you and we hope to see you soon at MOSS!
                   </h5>
-                  <p className="mt-5 text-2xl">
+                  <p className="mt-5 mb-8 text-2xl">
                     {" "}
                     (240) 383 7928 | team@mosscollective.co
                   </p>
+                  <a
+                    href="https://buy.stripe.com/test_7sIeW8g7t6VP17afYY"
+                    className="inline-block px-16 py-5 tracking-tight text-white bg-beige-500 hover:bg-beige-700 rounded-2xl"
+                  >
+                    <p className="text-2xl drop-shadow-title">
+                      ask us a question
+                    </p>
+                  </a>
                 </div>
               </div>
             </div>
