@@ -60,7 +60,7 @@
 .category-button {
   font-size: 2rem;
   text-decoration: none;
-  border-bottom: 2px solid transparent;
+  border-bottom: 4px solid transparent;
   padding-bottom: 5px;
   transition: border-color 0.2s ease-in-out;
   outline: none !important;
@@ -70,11 +70,11 @@
 
 .category-button:hover,
 .category-button:focus {
-  border-bottom-color: #393939;
+  border-bottom-color: #f7f7ff;
 }
 
 .category-button.active {
-  border-bottom-color: #393939;
+  border-bottom-color: #f7f7ff;
 }
 
 .accordion-title {

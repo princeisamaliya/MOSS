@@ -39,9 +39,9 @@ export default function Home() {
     if (size.width <= 480) {
       return { backgroundImage: `url(/images/main-bg-mobile.png)` };
     } else if (size.width <= 768) {
-      return { backgroundImage: `url(/images/hero-v2.jpg)` };
+      return { backgroundImage: `url(/images/hero-v3.png)` };
     } else {
-      return { backgroundImage: `url(/images/hero-v2.jpg)` };
+      return { backgroundImage: `url(/images/hero-v3.png)` };
     }
   }
   function getsection3bg() {
@@ -79,7 +79,7 @@ export default function Home() {
                 <h1 className=" tracking-widest  text-8xl md:text-9xl lg:text-[15.313rem] lg:tracking-[0.2em] leading-1">
                   MOSS
                 </h1>
-                <h2 className="text-2xl font-light md:text-[2rem] ">
+                <h2 className="text-2xl font-light md:text-[2rem] mt-6 sm:mt-0">
                   <span className="text-[2rem]"> in the heart of venice</span>{" "}
                   <br />
                   co-working by day | event space by night
@@ -87,12 +87,11 @@ export default function Home() {
                 <p className="max-w-6xl mx-auto text-2xl mt-14 md:text-2xl ">
                   meet the first conscious co-working space in west la <br />
                   wellness offerings by day, a lush jungle ambiance, and
-                  interactive event space by night. MOSS is venice's hub for
-                  creators, builders and entrepreneurs to explore, create and
-                  grow together.
+                  interactive event space by night. <br />
+                  MOSS is venice's hub for creators, builders and entrepreneurs to explore, create and grow together.
                 </p>
                 <a
-                  href="https://buy.stripe.com/test_7sIeW8g7t6VP17afYY"
+                  href="#founding-membership-header"
                   className="inline-block px-8 py-5 tracking-tight text-white bg-beige-500 hover:bg-beige-700 mt-14 rounded-2xl"
                 >
                   <p className="text-2xl drop-shadow-title">
@@ -105,7 +104,7 @@ export default function Home() {
           </div>
 
           <div className="bg-[#B3AE96] py-16 text-[#393939] text-center xl:px-32 lg:px-16 px-4 tracking-wider">
-            <h3 className="text-[2rem] md:text-4xl lg:text-[42px] mb-10 sm:mb-14 border-b-2 inline-block border-[#393939] ">
+            <h3 className="text-[2rem] md:text-4xl lg:text-[42px] mb-10 sm:mb-14 inline-block border-[#393939] ">
               OUR SPACE
             </h3>
             <div className="grid gap-10 mb-24 sm:grid-cols-3 md:gap-24">
@@ -163,12 +162,12 @@ export default function Home() {
               </h3>
               <div className="p-6 text-center border border-white sm:p-8 sm:pb-24 ">
                 <div className="lg:max-w-[300px] max-w-xs text-[1.375rem] sm:text-2xl mx-auto">
-                  <div className="mb-1 text-[2rem]">curiosity</div>
-                  <p>exploring new depths of yourself with others + play</p>
+                  <div className="mb-1 text-[2rem]">compassion</div>
+                  <p>being kind to yourself and allowing it to radiate outward</p>
                 </div>
                 <div className="my-5 text-center xl:my-8">
                   <img
-                    src="/images/polygon.png"
+                    src="/images/triangle.png"
                     className="inline-block w-full xl:max-w-xs max-w-[150px] sm:max-w-[250px]"
                     alt=""
                   />
@@ -182,9 +181,9 @@ export default function Home() {
                     </p>
                   </div>
                   <div className="lg:max-w-[350px] text-[1.375rem] sm:text-2xl  ">
-                    <div className="mb-1 text-[2rem]">compassion</div>
+                    <div className="mb-1 text-[2rem]">curiosity</div>
                     <p>
-                      being kind to yourself and allowing it to radiate outward
+                      exploring new depths of yourself with others + play
                     </p>
                   </div>
                 </div>
@@ -239,34 +238,35 @@ export default function Home() {
                   </div>
                   <Tab.Panels className="mt-6 text-[1.375rem] text-white md:text-2xl category-content ">
                     <Tab.Panel>
-                      <ul className="pl-0 space-y-2 list-disc list-inside category-list connect active">
+                      <ul className="pl-0 space-y-2 list-none list-inside category-list connect active">
                         <li>live music jams</li>
-                        <li>community dinners</li>
+                        <li>thinker dinners</li>
                         <li>art shows + gallery</li>
                         <li>late night tea + conversation</li>
                       </ul>
                     </Tab.Panel>
                     <Tab.Panel>
-                      <ul className="pl-0 space-y-2 list-disc list-inside category-list learn">
-                        <li>creator jams</li>
-                        <li>group focus flow</li>
+                      <ul className="pl-0 space-y-2 list-none list-inside category-list learn">
+                        <li>creator circle </li>
+                        <li>group focus co-work</li>
                         <li>bookclubs + discussion</li>
                         <li>speaker series + workshops</li>
                       </ul>
                     </Tab.Panel>
                     <Tab.Panel>
-                      <ul className="pl-0 space-y-2 list-disc list-inside category-list grow">
-                        <li>art + drawing</li>
-                        <li>group journaling</li>
-                        <li>creative writing club</li>
+                      <ul className="pl-0 space-y-2 list-none list-inside category-list grow">
+                        <li>art classes</li>
+                        <li>comedy + improv</li>
+                        <li>skill-share seminars</li>
                         <li>women's / men's circles</li>
                       </ul>
                     </Tab.Panel>
                     <Tab.Panel>
-                      <ul className="pl-0 space-y-2 list-disc list-inside category-list embody">
-                        <li>nap pod room</li>
-                        <li>no-tech tea time</li>
-                        <li>red light therapy</li>
+                      <ul className="pl-0 space-y-2 list-none list-inside category-list embody">
+                        <li>meditation</li>
+                        <li>breath-work</li>
+                        <li>wellness seminars</li>
+                        <li>body work + reiki</li>
                       </ul>
                     </Tab.Panel>
                   </Tab.Panels>
@@ -278,12 +278,11 @@ export default function Home() {
                     WELLNESS OPTIONS
                   </h3>
                   <ul className="grid pl-0 text-[1.375rem] list-none sm:grid-cols-2 gap-x-10 embody">
-                    <li>dance classes</li>
+                    <li>nap pod room</li>
+                    <li>no-tech tea time</li>
+                    <li>red light therapy</li>
                     <li>meditation studio</li>
-                    <li>group hikes + travel</li>
                     <li>sauna + cold plunge</li>
-                    <li>sauna + ice bath cycles</li>
-                    <li>breath-work + meditation</li>
                   </ul>
                 </div>
                 <div className="bg-[#66544A] bg-opacity-60 p-10 mix-blend-luminosity">
@@ -292,9 +291,9 @@ export default function Home() {
                   </h3>
                   <ul className="grid pl-0 text-[1.375rem] list-none sm:grid-cols-2 gap-x-10 embody">
                     <li>cozy lofts</li>
+                    <li>outdoor patio</li>
                     <li>recording studio</li>
                     <li>bicycle storage</li>
-                    <li>rooftop garden + patio</li>
                     <li>tea + coffee bar</li>
                   </ul>
                 </div>
@@ -307,7 +306,7 @@ export default function Home() {
           >
             <div className="inset-0 bg-center bg-cover ">
               <div className="w-full px-4 pt-20 md:pt-28 lg:px-20">
-                <h1 className="text-[2rem] md:text-5xl lg:text-[42px] mb-5 sm:text-left text-center">
+                <h1 id="founding-membership-header" className="text-[2rem] md:text-5xl lg:text-[42px] mb-5 sm:text-left text-center">
                   FOUNDING MEMBERSHIP
                 </h1>
 
