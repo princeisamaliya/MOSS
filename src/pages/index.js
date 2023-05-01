@@ -116,37 +116,37 @@ export default function Home() {
           </div>
 
           <div className="bg-[#B3AE96] py-16 text-[#393939] text-center xl:px-32 lg:px-16 px-4 tracking-wider">
-            <h3 className="text-[2rem] md:text-4xl lg:text-[42px] mb-10 sm:mb-14 inline-block border-[#393939] ">
+            <h3 className="text-[2rem] md:text-4xl lg:text-[42px] mb-10 sm:mb-14 inline-block md:border-b-0 border-b border-[#393939] ">
               OUR SPACE
             </h3>
             <div className="grid gap-10 mb-24 sm:grid-cols-3 md:gap-24">
               <div>
-                <p className="text-[2rem] lg:text-[2rem]">Bio-architecture</p>
-                <p className="text-[1.375rem] font-light tracking-wider">
+                <p className="text-[25px] lg:text-[2rem]">Bio-architecture</p>
+                <p className="text-[20px] lg:text-[1.375rem] font-light tracking-wider">
                   live + work in communion with nature
                 </p>
               </div>
               <div>
-                <p className="text-[2rem] lg:text-[2rem]">Wabi Sabi</p>
-                <p className="text-[1.375rem] font-light tracking-wider">
+                <p className="text-[25px] lg:text-[2rem]">Wabi Sabi</p>
+                <p className="text-[20px] lg:text-[1.375rem] font-light tracking-wider">
                   find beauty in the perfectly imperfect
                 </p>
               </div>
               <div>
-                <p className="text-[2rem] lg:text-[2rem]">Minimalism</p>
-                <p className="text-[1.375rem] font-light tracking-wider">
+                <p className="text-[25px] lg:text-[2rem]">Minimalism</p>
+                <p className="text-[20px] lg:text-[1.375rem] font-light tracking-wider">
                   clarity of mind + peace
                 </p>
               </div>
             </div>
             <div className="border border-[#393939] grid sm:grid-cols-2 text-left p-8 sm:p-10 xl:p-20">
               <div className="flex items-center">
-                <h4 className="md:text-[6rem] text-[6rem] md:leading-[8rem] leading-[6rem] uppercase tracking-[0.5rem]">
+                <h4 className="md:text-[6rem] text-[3.75rem] md:leading-[8rem] leading-[72px] uppercase tracking-[0.5rem]">
                   WHY MOSS
                 </h4>
               </div>
               <div>
-                <p className="text-[1.375rem] md:text-2xl">
+                <p className="mt-5 text-xl md:text-2xl md:mt-0">
                   the intention behind MOSS is to connect with yourself and
                   others in an intimate setting through co-working + events.{" "}
                   <br />
@@ -173,8 +173,10 @@ export default function Home() {
                 COMMUNITY VALUES
               </h3>
               <div className="p-6 text-center border border-white sm:p-8 sm:pb-24 ">
-                <div className="lg:max-w-[300px] max-w-xs text-[1.375rem] sm:text-2xl mx-auto">
-                  <div className="mb-1 text-[2rem]">compassion</div>
+                <div className="lg:max-w-[300px] max-w-xs text-[20px] leading-6 sm:text-2xl mx-auto">
+                  <div className="mb-1  text-[25px] leading-[30px] md:text-[2rem]">
+                    compassion
+                  </div>
                   <p>
                     being kind to yourself and allowing it to radiate outward
                   </p>
@@ -187,15 +189,19 @@ export default function Home() {
                   />
                 </div>
                 <div className="grid justify-between grid-cols-2 gap-10 lg:flex lg:gap-0 lg:-mt-24">
-                  <div className="lg:max-w-[350px] text-[1.375rem] sm:text-2xl  ">
-                    <div className="mb-1 text-[2rem]">creativity</div>
+                  <div className="lg:max-w-[350px] text-[20px] sm:text-2xl  leading-6">
+                    <div className="mb-1 text-[25px] leading-[30px] md:text-[2rem]">
+                      creativity
+                    </div>
                     <p>
                       connecting with something greater than yourself through
                       creation
                     </p>
                   </div>
-                  <div className="lg:max-w-[350px] text-[1.375rem] sm:text-2xl  ">
-                    <div className="mb-1 text-[2rem]">curiosity</div>
+                  <div className="lg:max-w-[350px] text-[20px] sm:text-2xl leading-6  ">
+                    <div className="mb-1 text-[25px] leading-[30px] md:text-[2rem]">
+                      curiosity
+                    </div>
                     <p>exploring new depths of yourself with others + play</p>
                   </div>
                 </div>
@@ -282,7 +288,7 @@ export default function Home() {
                 </div>
               </SwiperSlide>
             </Swiper>*/}
-  {/*          <div
+            {/*          <div
               ref={navigationPrevRef}
               className="absolute transform -translate-y-1/2 top-1/2 left-3 z-[1] cursor-pointer"
             >
@@ -550,12 +556,12 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-                <div className="text-center">
+                <div className="px-4 text-center">
                   <h5 className="text-[2rem] lg:text-5xl">
                     {" "}
-                    thank you and we hope to see you soon at MOSS!
+                    Thank you and we hope to see you soon at MOSS!
                   </h5>
-                  <p className="mt-5 mb-8 text-2xl">
+                  <p className="mt-5 mb-8 text-xl md:text-2xl">
                     {" "}
                     (240) 383 7928 | team@mosscollective.co
                   </p>
