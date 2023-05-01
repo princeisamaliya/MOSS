@@ -93,7 +93,7 @@ export default function Home() {
                   co-working by day | event space by night
                 </h2>
                 <p className="max-w-6xl mx-auto text-2xl mt-14 md:text-2xl">
-                  meet the first conscious co-working space in west la{" "}
+                  the first conscious co-working space in west la{" "}
                   <br className="md:hidden" />
                   <br />
                   wellness offerings by day, a lush jungle ambiance, and
