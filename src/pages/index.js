@@ -203,7 +203,7 @@ export default function Home() {
             </div>
           </div>
           <div className="relative">
-            <Swiper
+            {/*<Swiper
               // install Swiper modules
               modules={[Navigation]}
               spaceBetween={0}
@@ -281,8 +281,8 @@ export default function Home() {
                   </div>
                 </div>
               </SwiperSlide>
-            </Swiper>
-            <div
+            </Swiper>*/}
+  {/*          <div
               ref={navigationPrevRef}
               className="absolute transform -translate-y-1/2 top-1/2 left-3 z-[1] cursor-pointer"
             >
@@ -293,7 +293,7 @@ export default function Home() {
               className="transform rotate-180 absolute   -translate-y-1/2 top-1/2 right-3 z-[1] cursor-pointer"
             >
               <img src="/images/arrorw.png" alt="" className="w-8 md:w-auto" />
-            </div>
+            </div>*/}
           </div>
 
           <div
