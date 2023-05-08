@@ -122,19 +122,19 @@ export default function Home() {
             </h3>
             <div className="grid gap-10 mb-24 sm:grid-cols-3 md:gap-24">
               <div>
-                <p className="text-[25px] lg:text-[2rem]">Bio-architecture</p>
+                <p className="text-[25px] lg:text-[2rem]">bio-architecture</p>
                 <p className="text-[20px] lg:text-[1.375rem] font-light tracking-wider">
                   live + work in communion with nature
                 </p>
               </div>
               <div>
-                <p className="text-[25px] lg:text-[2rem]">Wabi Sabi</p>
+                <p className="text-[25px] lg:text-[2rem]">wabi sabi</p>
                 <p className="text-[20px] lg:text-[1.375rem] font-light tracking-wider">
                   find beauty in the perfectly imperfect
                 </p>
               </div>
               <div>
-                <p className="text-[25px] lg:text-[2rem]">Minimalism</p>
+                <p className="text-[25px] lg:text-[2rem]">minimalism</p>
                 <p className="text-[20px] lg:text-[1.375rem] font-light tracking-wider">
                   clarity of mind + peace
                 </p>
