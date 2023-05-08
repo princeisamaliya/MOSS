@@ -92,8 +92,8 @@ export default function Home() {
                   <br />
                   co-working by day | event space by night
                 </h2>
-                <p className="max-w-6xl mx-auto text-[20px] mt-14 md:text-[25px]">
-                  conscious co-working space in west la{" "}
+                <p className="max-w-6xl mx-[25px] text-[20px] mt-14 md:text-[25px] md:mx-auto">
+                  conscious co-working in west la{" "}
                   <br className="hidden md:visible" />
                   <br />
                   <br />
