@@ -87,7 +87,8 @@ export default function Home() {
                 <h1 className=" tracking-widest text-8xl md:text-9xl lg:text-[15.313rem] lg:tracking-[0.2em] leading-1">
                   MOSS
                 </h1>
-                <h2 className="text-[20px] font-light md:text-[2rem] mt-6 sm:mt-0">
+                <h2 className="text-[20px] font-light md:text-[2rem] mt-6">
+                  <br />
                   <span className="text-[2rem]">in the heart of venice</span>{" "}
                   <br />
                   co-working by day | event space by night
@@ -99,9 +100,6 @@ export default function Home() {
                   <br />
                   wellness offerings by day, a lush jungle ambiance, and
                   interactive event space by night. <br />
-                  <br className="md:hidden" />
-                  MOSS is venice's hub for creators, builders and entrepreneurs
-                  to explore, create and grow together.
                 </p>
                 <a
                   href="#founding-membership-header"
