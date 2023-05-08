@@ -427,14 +427,14 @@ export default function Home() {
                   MOSS is a space that aims to provide productivity and
                   relaxation in the same sphere. Our nature room, meditation
                   studio and wellness center will be available for founding
-                  members during the daytime and night hours. You do not have to
+                  members during the daytime and night hours. you do not have to
                   tap out of your flow or leave the workspace to tap into your
                   inner peace.
                   <br />
-                  <br />A custom sauna, built in ice bath, and red light therapy
+                  <br />a custom sauna, built in ice bath, and red light therapy
                   will be available on a free sign up basis with membership. Our
                   meditation studio will be available for free use, and custom
-                  events during the evenings. As a special feature our nature
+                  events during the evenings. as a special feature our nature
                   room, is designed to fully immerse you in a new environment,
                   with colors and sounds and natural scents you can acclimate to
                   your desired mood.
@@ -442,7 +442,7 @@ export default function Home() {
               </div>
               <div className="flex flex-col-reverse items-center lg:col-span-5 lg:pl-20 lg:block">
                 <img src="/images/welness-timeline.svg" alt="" />
-                <h6 className="text-[2rem]  mt-16  lg:text-[2rem] sm:text-left text-center lg:mb-0 leading-none mb-5">
+                <h6 className="text-[2rem] mt-16 lg:text-[2rem] sm:text-left text-center lg:mb-0 leading-none mb-5">
                   A DAY IN THE LIFE OF MOSS
                 </h6>
               </div>
