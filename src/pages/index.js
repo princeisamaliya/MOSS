@@ -413,7 +413,7 @@ export default function Home() {
             </div>
           </div>
           <div
-            className="px-4 py-10 lg:py-24 lg:px-20"
+            className="px-4 py-10 lg:py-24 lg:px-20 bg-cover"
             style={{
               backgroundImage: `url(/images/welness-bg.jpg)`,
             }}
