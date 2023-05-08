@@ -516,7 +516,7 @@ export default function Home() {
               <div className="flex-grow w-full pb-24 mt-10 sm:mt-16 lg:mt-44 md:pt-5">
                 <div className="lg:container px-4 mx-auto  grid sm:grid-cols-3 text-lg xl:px-20 lg:px-14 sm:pb-24 pb-[25%]">
                   <div className="flex items-end col-span-1">
-                    <h6 className="   font-normal md:text-[8rem] text-[7rem] traking-[0.2em] leading-none">
+                    <h6 className="   font-normal md:text-[8rem] text-[7rem] tracking-[0.2em] leading-none">
                       FAQ
                     </h6>
                   </div>
@@ -526,8 +526,8 @@ export default function Home() {
                     </div>
 
                     <p className="text-[1.375rem] lg:text-[1.375rem]">
-                      Yes. MOSS is a place where members are allowed to host
-                      events for free as an offering to the community. For
+                      yes. MOSS is a place where members are allowed to host
+                      events for free as an offering to the community. for
                       private events, please contact us separately about space
                       rentals.
                     </p>
@@ -537,10 +537,10 @@ export default function Home() {
                     </div>
                     <div className="text-[1.375rem] lg:text-[1.375rem]">
                       <h4>CO-WORKING</h4>
-                      <p>8am - 7pm Monday to Friday</p>
-                      <p>10am - 3pm Saturday to Sunday</p>
+                      <p>8am - 7pm monday to friday</p>
+                      <p>10am - 3pm saturday to sunday</p>
                       <h4 className="mt-4">EVENTS</h4>
-                      <p>7pm - 11pm Monday to Sunday</p>
+                      <p>7pm - 11pm monday to sunday</p>
                     </div>
 
                     <div className="justify-between text-[2rem] md:text-[2rem] inline-block border-b-2 border-[#393939] mt-10 mb-2 leading-tight">
@@ -549,7 +549,7 @@ export default function Home() {
 
                     <div className="text-[1.375rem] lg:text-[1.375rem]">
                       <p>
-                        While MOSS will have experiences open to the public,
+                        while MOSS will have experiences open to the public,
                         memberships are granted by referral and application
                         only. Our intention is to cultivate a diverse community
                         that is compassionate, curious, and creative.
