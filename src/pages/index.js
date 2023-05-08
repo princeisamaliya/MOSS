@@ -420,7 +420,7 @@ export default function Home() {
           >
             <div className="bg-[#66544A] text-white gap-3 bg-opacity-60 lg:px-16 md:px-10 px-5 lg:py-20 py-10 mix-blend-luminosity grid lg:grid-cols-12">
               <div className="lg:col-span-7">
-                <h1 class="text-[3rem] md:text-5xl lg:text-[6rem] mb-20 md:mb-8 text-left leading-none tracking-[0.2em] lg:leading-tight">
+                <h1 class="text-[3rem] md:text-5xl lg:text-[6rem] mb-12 md:mb-8 text-left leading-none tracking-[0.2em] lg:leading-tight">
                   WELLNESS AT MOSS
                 </h1>
                 <p className="md:text-2xl text-[20px]">
