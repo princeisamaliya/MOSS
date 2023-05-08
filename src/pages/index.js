@@ -321,7 +321,7 @@ export default function Home() {
                           `category-button ${selected ? "active" : ""}`
                         }
                       >
-                        connect
+                        grow
                       </Tab>
                       <Tab
                         className={({ selected }) =>
@@ -335,24 +335,24 @@ export default function Home() {
                           `category-button ${selected ? "active" : ""}`
                         }
                       >
-                        grow
+                        embody
                       </Tab>
                       <Tab
                         className={({ selected }) =>
                           `category-button ${selected ? "active" : ""}`
                         }
                       >
-                        embody
+                        connect
                       </Tab>
                     </Tab.List>
                   </div>
                   <Tab.Panels className="mt-6 text-[1.375rem] text-white md:text-2xl category-content ">
                     <Tab.Panel>
-                      <ul className="pl-0 space-y-2 list-none list-inside category-list connect active">
-                        <li>live music jams</li>
-                        <li>thinker dinners</li>
-                        <li>art shows + gallery</li>
-                        <li>late night tea + conversation</li>
+                      <ul className="pl-0 space-y-2 list-none list-inside category-list grow active">
+                        <li>art classes</li>
+                        <li>comedy + improv</li>
+                        <li>skill-share seminars</li>
+                        <li>women's / men's circles</li>
                       </ul>
                     </Tab.Panel>
                     <Tab.Panel>
@@ -364,19 +364,19 @@ export default function Home() {
                       </ul>
                     </Tab.Panel>
                     <Tab.Panel>
-                      <ul className="pl-0 space-y-2 list-none list-inside category-list grow">
-                        <li>art classes</li>
-                        <li>comedy + improv</li>
-                        <li>skill-share seminars</li>
-                        <li>women's / men's circles</li>
-                      </ul>
-                    </Tab.Panel>
-                    <Tab.Panel>
                       <ul className="pl-0 space-y-2 list-none list-inside category-list embody">
                         <li>meditation</li>
                         <li>breath-work</li>
                         <li>wellness seminars</li>
                         <li>body work + reiki</li>
+                      </ul>
+                    </Tab.Panel>
+                    <Tab.Panel>
+                      <ul className="pl-0 space-y-2 list-none list-inside category-list connect">
+                        <li>live music jams</li>
+                        <li>thinker dinners</li>
+                        <li>art shows + gallery</li>
+                        <li>late night tea + conversation</li>
                       </ul>
                     </Tab.Panel>
                   </Tab.Panels>
