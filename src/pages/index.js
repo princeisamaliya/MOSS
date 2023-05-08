@@ -84,17 +84,18 @@ export default function Home() {
           <div className="bg-no-repeat bg-cover lg:bg-top " style={getMainBg()}>
             <div className="relative px-4 py-10 pt-24 text-center sm:py-32 md:py-48">
               <div className="relative z-[1]">
-                <h1 className=" tracking-widest  text-8xl md:text-9xl lg:text-[15.313rem] lg:tracking-[0.2em] leading-1">
+                <h1 className=" tracking-widest text-8xl md:text-9xl lg:text-[15.313rem] lg:tracking-[0.2em] leading-1">
                   MOSS
                 </h1>
-                <h2 className="text-[22px] font-light md:text-[2rem] mt-6 sm:mt-0">
-                  <span className="text-[2rem]"> in the heart of venice</span>{" "}
+                <h2 className="text-[20px] font-light md:text-[2rem] mt-6 sm:mt-0">
+                  <span className="text-[2rem]">in the heart of venice</span>{" "}
                   <br />
                   co-working by day | event space by night
                 </h2>
-                <p className="max-w-6xl mx-auto text-2xl mt-14 md:text-2xl">
+                <p className="max-w-6xl mx-auto text-[20px] mt-14 md:text-[25px]">
                   conscious co-working space in west la{" "}
-                  <br className="md:hidden" />
+                  <br className="hidden md:visible" />
+                  <br />
                   <br />
                   wellness offerings by day, a lush jungle ambiance, and
                   interactive event space by night. <br />
