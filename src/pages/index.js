@@ -516,13 +516,13 @@ export default function Home() {
               <div className="flex-grow w-full pb-24 mt-10 sm:mt-16 lg:mt-44 md:pt-5">
                 <div className="lg:container px-4 mx-auto  grid sm:grid-cols-3 text-lg xl:px-20 lg:px-14 sm:pb-24 pb-[25%]">
                   <div className="flex items-end col-span-1">
-                    <h6 className="   font-normal md:text-[8rem] text-[7rem] tracking-[0.2em] leading-none">
+                    <h6 className="   font-normal md:text-[8rem] text-[7rem] tracking-[0.2em] leading-none mb-20 md:mb-0">
                       FAQ
                     </h6>
                   </div>
                   <div className="sm:col-span-2 accordion">
                     <div className="justify-between text-[2rem] md:text-[2rem] inline-block border-b-2 border-[#393939] mb-2 leading-tight">
-                      <h3>Can I host an event at MOSS?</h3>
+                      <h3>can I host an event at MOSS?</h3>
                     </div>
 
                     <p className="text-[1.375rem] lg:text-[1.375rem]">
@@ -533,25 +533,25 @@ export default function Home() {
                     </p>
 
                     <div className="justify-between text-[2rem] md:text-[2rem] inline-block border-b-2 border-[#393939] mt-10 mb-2 leading-tight">
-                      <h3>What are your hours of operation?</h3>
+                      <h3>what are your hours of operation?</h3>
                     </div>
                     <div className="text-[1.375rem] lg:text-[1.375rem]">
-                      <h4>CO-WORKING</h4>
+                      <h4>co-working</h4>
                       <p>8am - 7pm monday to friday</p>
                       <p>10am - 3pm saturday to sunday</p>
-                      <h4 className="mt-4">EVENTS</h4>
+                      <h4 className="mt-4">events</h4>
                       <p>7pm - 11pm monday to sunday</p>
                     </div>
 
                     <div className="justify-between text-[2rem] md:text-[2rem] inline-block border-b-2 border-[#393939] mt-10 mb-2 leading-tight">
-                      <h3>Can anyone join MOSS?</h3>
+                      <h3>can anyone join MOSS?</h3>
                     </div>
 
                     <div className="text-[1.375rem] lg:text-[1.375rem]">
                       <p>
                         while MOSS will have experiences open to the public,
                         memberships are granted by referral and application
-                        only. Our intention is to cultivate a diverse community
+                        only. our intention is to cultivate a diverse community
                         that is compassionate, curious, and creative.
                       </p>
                     </div>
