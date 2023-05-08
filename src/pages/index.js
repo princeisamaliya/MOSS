@@ -423,7 +423,7 @@ export default function Home() {
                 </h1>
                 <p className="md:text-2xl text-[20px]">
                   MOSS is a space that aims to provide productivity and
-                  relaxation in the same sphere. Our nature room, meditation
+                  relaxation in the same sphere. our nature room, meditation
                   studio and wellness center will be available for founding
                   members during the daytime and night hours. you do not have to
                   tap out of your flow or leave the workspace to tap into your
