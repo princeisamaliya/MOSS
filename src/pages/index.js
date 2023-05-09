@@ -469,7 +469,7 @@ export default function Home() {
                       63/65 spots left
                     </h5>
                     <a
-                      href="https://buy.stripe.com/test_7sIeW8g7t6VP17afYY"
+                      href="https://buy.stripe.com/bIY7vS2hw6cR8ggaEE"
                       className="inline-block px-8 py-5 tracking-tight text-white bg-beige-500 hover:bg-beige-700 rounded-2xl"
                     >
                       <p className="text-2xl drop-shadow-title">
@@ -565,7 +565,7 @@ export default function Home() {
                     (240) 383 7928 | team@mosscollective.co
                   </p>
                   <a
-                    href="https://buy.stripe.com/test_7sIeW8g7t6VP17afYY"
+                    href="https://buy.stripe.com/bIY7vS2hw6cR8ggaEE"
                     className="inline-block px-16 py-5 tracking-tight text-white bg-beige-500 hover:bg-beige-700 rounded-2xl"
                   >
                     <p className="text-2xl drop-shadow-title">
