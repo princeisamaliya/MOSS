@@ -116,7 +116,7 @@ export default function Home() {
 
           <div className="bg-[#B3AE96] py-16 text-[#393939] text-center xl:px-32 lg:px-16 px-4 tracking-wider">
             <h3 className="text-[2rem] md:text-4xl lg:text-[42px] mb-10 sm:mb-14 inline-block md:border-b-0 border-b border-[#393939] ">
-              OUR SPACE
+              our space
             </h3>
             <div className="grid gap-10 mb-24 sm:grid-cols-3 md:gap-24">
               <div>
@@ -140,8 +140,8 @@ export default function Home() {
             </div>
             <div className="border border-[#393939] grid sm:grid-cols-2 text-left p-8 sm:p-10 xl:p-20">
               <div className="flex items-center">
-                <h4 className="md:text-[6rem] text-[3.75rem] md:leading-[8rem] leading-[72px] uppercase tracking-[0.5rem]">
-                  why moss
+                <h4 className="md:text-[6rem] text-[3.75rem] md:leading-[8rem] leading-[72px] tracking-[0.5rem]">
+                  why <br /> moss
                 </h4>
               </div>
               <div>
@@ -558,7 +558,7 @@ export default function Home() {
                 <div className="px-4 text-center">
                   <h5 className="text-[2rem] lg:text-5xl">
                     {" "}
-                    Thank you and we hope to see you soon at moss!
+                    thank you and we hope to see you soon at moss!
                   </h5>
                   <p className="mt-5 mb-8 text-xl md:text-2xl">
                     {" "}
