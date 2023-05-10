@@ -366,7 +366,7 @@ export default function Home() {
                     <Tab.Panel>
                       <ul className="pl-0 space-y-2 list-none list-inside category-list embody">
                         <li>meditation</li>
-                        <li>breath-work</li>
+                        <li>breathwork</li>
                         <li>wellness seminars</li>
                         <li>body work + reiki</li>
                       </ul>
@@ -430,7 +430,7 @@ export default function Home() {
                   inner peace.
                   <br />
                   <br />a custom sauna, built in ice bath, and red light therapy
-                  will be available on a free sign up basis with membership. Our
+                  will be available on a free sign up basis with membership. our
                   meditation studio will be available for free use, and custom
                   events during the evenings. as a special feature our nature
                   room, is designed to fully immerse you in a new environment,
@@ -439,7 +439,7 @@ export default function Home() {
                 </p>
               </div>
               <div className="flex flex-col-reverse items-center lg:col-span-5 lg:pl-20 lg:block">
-                <img src="/images/welness-timeline.svg" alt="" />
+                <img src="/images/wellness-timeline.svg" alt="" />
                 <h6 className="text-[2rem] mt-16 lg:text-[2rem] sm:text-left text-center lg:mb-0 leading-none mb-10">
                   a day in the life of moss
                 </h6>
@@ -503,7 +503,7 @@ export default function Home() {
                       </a>
                       . <br />
                       <br />
-                      stay tuned for our launch party coming june 2023 🚀
+                      stay tuned for our launch party coming august 2023 🚀
                       <br />
                       <br /> xx
                     </p>
