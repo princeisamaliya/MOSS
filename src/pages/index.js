@@ -441,7 +441,7 @@ export default function Home() {
               <div className="flex flex-col-reverse items-center lg:col-span-5 lg:pl-20 lg:block">
                 <img src="/images/wellness-timeline.svg" alt="" />
                 <h6 className="text-[2rem] mt-16 lg:text-[2rem] sm:text-left text-center lg:mb-0 leading-none mb-10">
-                  a day in the life of moss
+                  a day in the life at moss
                 </h6>
               </div>
             </div>
