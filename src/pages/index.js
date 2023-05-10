@@ -498,7 +498,7 @@ export default function Home() {
                       <br />
                       while our founding memberships are limited, we trust your
                       judgement for{" "}
-                      <a className="underline" href="">
+                      <a className="underline" href="https://form.typeform.com/to/HkzCVbfl">
                         referrals
                       </a>
                       . <br />
