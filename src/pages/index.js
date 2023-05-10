@@ -469,7 +469,7 @@ export default function Home() {
                       63/65 spots left
                     </h5>
                     <a
-                      href="https://form.typeform.com/to/wZNSy6Fu"
+                      href="https://buy.stripe.com/bIY7vS2hw6cR8ggaEE"
                       className="inline-block px-8 py-5 tracking-tight text-white bg-beige-500 hover:bg-beige-700 rounded-2xl"
                     >
                       <p className="text-2xl drop-shadow-title">
