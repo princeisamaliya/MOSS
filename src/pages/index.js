@@ -77,7 +77,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>MOSS | in the heart of venice</title>
+        <title>moss | in the heart of venice</title>
       </Head>
       <div className="antialiased bg-black">
         <div className="mx-auto text-white bg-[#dbd4c2] text-opacity-90 max-w-[1427px]">
@@ -85,7 +85,7 @@ export default function Home() {
             <div className="relative px-4 py-10 pt-24 text-center sm:py-32 md:py-48">
               <div className="relative z-[1]">
                 <h1 className=" tracking-widest text-8xl md:text-9xl lg:text-[15.313rem] lg:tracking-[0.2em] leading-1">
-                  MOSS
+                  moss
                 </h1>
                 <h2 className="text-[20px] font-light md:text-[2rem] mt-6">
                   <br />
@@ -141,12 +141,12 @@ export default function Home() {
             <div className="border border-[#393939] grid sm:grid-cols-2 text-left p-8 sm:p-10 xl:p-20">
               <div className="flex items-center">
                 <h4 className="md:text-[6rem] text-[3.75rem] md:leading-[8rem] leading-[72px] uppercase tracking-[0.5rem]">
-                  WHY MOSS
+                  why moss
                 </h4>
               </div>
               <div>
                 <p className="mt-5 text-xl md:text-2xl md:mt-0">
-                  the intention behind MOSS is to connect with yourself and
+                  the intention behind moss is to connect with yourself and
                   others in an intimate setting through co-working + events.{" "}
                   <br />
                   <br />
@@ -169,7 +169,7 @@ export default function Home() {
             <div className="absolute top-0 left-0 w-full h-full bg-[#7D7A6A] bg-opacity-80"></div>
             <div className="relative z-[1]">
               <h3 className="text-[2rem] md:text-4xl lg:text-[42px] mb-6 sm:mb-14 ">
-                COMMUNITY VALUES
+                community values
               </h3>
               <div className="p-6 text-center border border-white sm:p-8 sm:pb-24 ">
                 <div className="lg:max-w-[300px] max-w-xs text-[20px] leading-6 sm:text-2xl mx-auto">
@@ -309,7 +309,7 @@ export default function Home() {
           >
             <div className="w-full px-4 py-16 lg:px-20">
               <h1 className="text-[2rem] md:text-4xl  sm:text-left text-center  lg:text-[42px]">
-                MOSS + MEMBER LED EVENTS
+                moss + member led events
               </h1>
 
               <Tab.Group>
@@ -385,7 +385,7 @@ export default function Home() {
               <div className="grid gap-10 sm:grid-cols-2 md:gap-20 xl:gap-32 mt-14">
                 <div className="bg-[#66544A] bg-opacity-60 p-10 mix-blend-luminosity">
                   <h3 className="text-[2rem] md:text-5xl lg:text-[42px]  mb-5">
-                    WELLNESS OPTIONS
+                    wellness options
                   </h3>
                   <ul className="grid pl-0 text-[1.375rem] list-none sm:grid-cols-2 gap-x-10 embody">
                     <li>nap pod room</li>
@@ -397,7 +397,7 @@ export default function Home() {
                 </div>
                 <div className="bg-[#66544A] bg-opacity-60 p-10 mix-blend-luminosity">
                   <h3 className="text-[2rem] md:text-5xl lg:text-[42px] mb-5">
-                    AMENITIES
+                    amenities
                   </h3>
                   <ul className="grid pl-0 text-[1.375rem] list-none sm:grid-cols-2 gap-x-10 embody">
                     <li>cozy lofts</li>
@@ -419,10 +419,10 @@ export default function Home() {
             <div className="bg-[#66544A] text-white gap-3 bg-opacity-60 lg:px-16 md:px-10 px-5 lg:py-20 py-10 mix-blend-luminosity grid lg:grid-cols-12">
               <div className="lg:col-span-7">
                 <h1 class="text-[3rem] md:text-5xl lg:text-[6rem] mb-12 md:mb-8 text-left leading-none tracking-[0.2em] lg:leading-tight">
-                  WELLNESS AT MOSS
+                  wellness at moss
                 </h1>
                 <p className="md:text-2xl text-[20px]">
-                  MOSS is a space that aims to provide productivity and
+                  moss is a space that aims to provide productivity and
                   relaxation in the same sphere. our nature room, meditation
                   studio and wellness center will be available for founding
                   members during the daytime and night hours. you do not have to
@@ -441,7 +441,7 @@ export default function Home() {
               <div className="flex flex-col-reverse items-center lg:col-span-5 lg:pl-20 lg:block">
                 <img src="/images/welness-timeline.svg" alt="" />
                 <h6 className="text-[2rem] mt-16 lg:text-[2rem] sm:text-left text-center lg:mb-0 leading-none mb-10">
-                  A DAY IN THE LIFE OF MOSS
+                  a day in the life of moss
                 </h6>
               </div>
             </div>
@@ -456,7 +456,7 @@ export default function Home() {
                   id="founding-membership-header"
                   className="text-[2rem] md:text-5xl lg:text-[42px] mb-5 sm:text-left text-center"
                 >
-                  FOUNDING MEMBERSHIP
+                  founding memberships
                 </h1>
 
                 <div className="grid gap-10 mt-12 sm:grid-cols-2 ">
@@ -481,7 +481,7 @@ export default function Home() {
                     <p className="text-2xl">
                       dear friends, <br />
                       <br />
-                      we are inviting you to root the culture at MOSS. it is a
+                      we are inviting you to root the culture at moss. it is a
                       place where you are safe to work, play and be. here, you
                       are encouraged to start new conversations and plant new
                       seeds. <br />
@@ -515,16 +515,16 @@ export default function Home() {
                 <div className="lg:container px-4 mx-auto  grid sm:grid-cols-3 text-lg xl:px-20 lg:px-14 sm:pb-24 pb-[25%]">
                   <div className="flex items-end col-span-1">
                     <h6 className="   font-normal md:text-[8rem] text-[7rem] tracking-[0.2em] leading-none mb-20 md:mb-0">
-                      FAQ
+                      faq
                     </h6>
                   </div>
                   <div className="sm:col-span-2 accordion">
                     <div className="justify-between text-[2rem] md:text-[2rem] inline-block border-b-2 border-[#393939] mb-2 leading-tight">
-                      <h3>can I host an event at MOSS?</h3>
+                      <h3>can I host an event at moss?</h3>
                     </div>
 
                     <p className="text-[1.375rem] lg:text-[1.375rem]">
-                      yes. MOSS is a place where members are allowed to host
+                      yes. moss is a place where members are allowed to host
                       events for free as an offering to the community. for
                       private events, please contact us separately about space
                       rentals.
@@ -542,12 +542,12 @@ export default function Home() {
                     </div>
 
                     <div className="justify-between text-[2rem] md:text-[2rem] inline-block border-b-2 border-[#393939] mt-10 mb-2 leading-tight">
-                      <h3>can anyone join MOSS?</h3>
+                      <h3>can anyone join moss?</h3>
                     </div>
 
                     <div className="text-[1.375rem] lg:text-[1.375rem]">
                       <p>
-                        while MOSS will have experiences open to the public,
+                        while moss will have experiences open to the public,
                         memberships are granted by referral and application
                         only. our intention is to cultivate a diverse community
                         that is compassionate, curious, and creative.
@@ -558,7 +558,7 @@ export default function Home() {
                 <div className="px-4 text-center">
                   <h5 className="text-[2rem] lg:text-5xl">
                     {" "}
-                    Thank you and we hope to see you soon at MOSS!
+                    Thank you and we hope to see you soon at moss!
                   </h5>
                   <p className="mt-5 mb-8 text-xl md:text-2xl">
                     {" "}
