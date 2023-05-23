@@ -77,7 +77,7 @@ export default function Home() {
   return (
     <>
       <Head>
-        <title>moss | in the heart of venice</title>
+        <title>moss | co-working + wellness</title>
       </Head>
       <div className="antialiased bg-black">
         <div className="mx-auto text-white bg-[#dbd4c2] text-opacity-90 max-w-[1427px]">
@@ -89,7 +89,7 @@ export default function Home() {
                 </h1>
                 <h2 className="text-[20px] font-light md:text-[2rem] mt-6">
                   <br />
-                  <span className="text-[2rem]">in the heart of venice</span>{" "}
+                  <span className="text-[2rem]">venice, california</span>{" "}
                   <br />
                   co-working by day | event space by night
                 </h2>
@@ -469,7 +469,8 @@ export default function Home() {
                       63/65 spots left
                     </h5>
                     <a
-                      href="https://buy.stripe.com/bIY7vS2hw6cR8ggaEE"
+                      // href="https://buy.stripe.com/bIY7vS2hw6cR8ggaEE"
+                      href="https://buy.stripe.com/5kA03qf4i8kZbsseUV"
                       className="inline-block px-8 py-5 tracking-tight text-white bg-beige-500 hover:bg-beige-700 rounded-2xl"
                     >
                       <p className="text-2xl drop-shadow-title">
