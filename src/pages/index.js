@@ -469,8 +469,8 @@ export default function Home() {
                       63/65 spots left
                     </h5>
                     <a
-                      // href="https://buy.stripe.com/bIY7vS2hw6cR8ggaEE"
-                      href="https://buy.stripe.com/5kA03qf4i8kZbsseUV"
+                      href="https://buy.stripe.com/bIY7vS2hw6cR8ggaEE"
+                      // href="https://buy.stripe.com/5kA03qf4i8kZbsseUV"
                       className="inline-block px-8 py-5 tracking-tight text-white bg-beige-500 hover:bg-beige-700 rounded-2xl"
                     >
                       <p className="text-2xl drop-shadow-title">
