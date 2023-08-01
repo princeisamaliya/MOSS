@@ -466,7 +466,7 @@ export default function Home() {
                       src="/images/new_landing/map.png"
                     />
                     <h5 className="my-6 text-[2rem] sm:my-10">
-                      63/65 spots left
+                      78/85 spots left
                     </h5>
                     <a
                       href="https://buy.stripe.com/bIY7vS2hw6cR8ggaEE"
