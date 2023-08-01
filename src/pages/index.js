@@ -504,7 +504,7 @@ export default function Home() {
                       </a>
                       . <br />
                       <br />
-                      stay tuned for our launch party coming Fall 2023 🚀
+                      stay tuned for our launch party coming fall 2023 🚀
                       <br />
                       <br /> xx
                     </p>
