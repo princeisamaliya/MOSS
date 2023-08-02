@@ -66,10 +66,10 @@ export default function Home() {
   }
   function getFaqbg() {
     if (size.width <= 480) {
-      return { backgroundImage: "url(/images/faq-image.png)" };
+      return { backgroundImage: "url(/images/faq-image.jpg)" };
     } else {
       return {
-        backgroundImage: "url(/images/wall_shadows.png)",
+        backgroundImage: "url(/images/wall_shadows.jpg)",
       };
     }
   }
@@ -164,7 +164,7 @@ export default function Home() {
           <div
             className="relative px-4 py-16 text-center bg-white bg-cover xl:px-32 lg:px-16"
             style={{
-              backgroundImage: `url(/images/dandelion-v2.png)`,
+              backgroundImage: `url(/images/dandelion-v2.jpg)`,
             }}
           >
             <div className="absolute top-0 left-0 w-full h-full bg-[#7D7A6A] bg-opacity-80"></div>
@@ -464,7 +464,7 @@ export default function Home() {
                   <div className="text-center sm:text-left">
                     <img
                       className="w-full max-w-xl"
-                      src="/images/new_landing/map.png"
+                      src="/images/new_landing/map.jpg"
                     />
                     <h5 className="my-6 text-[2rem] sm:my-10">
                       78/85 spots left
