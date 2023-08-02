@@ -44,11 +44,11 @@ export default function Home() {
   const size = useWindowSize();
   function getMainBg() {
     if (size.width <= 480) {
-      return { backgroundImage: `url(/images/main-bg-mobile.png)` };
+      return { backgroundImage: `url(/images/main-bg-mobile.jpg)` };
     } else if (size.width <= 768) {
-      return { backgroundImage: `url(/images/hero-v3.png)` };
+      return { backgroundImage: `url(/images/hero-v3.jpg)` };
     } else {
-      return { backgroundImage: `url(/images/hero-v3.png)` };
+      return { backgroundImage: `url(/images/hero-v3.jpg)` };
     }
   }
   function getsection3bg() {
@@ -535,7 +535,7 @@ export default function Home() {
                     </div>
                     <div className="text-[1.375rem] lg:text-[1.375rem]">
                       <p>
-                        yes! founding members are allowed to bring 1 guest
+                        yes. founding members are allowed to bring 1 guest
                       </p>
                     </div>
 
