@@ -81,7 +81,7 @@ export default function Home() {
         <title>moss | co-working + wellness</title>
       </Head>
       <div className="antialiased bg-black">
-        <div className="mx-auto text-white bg-[#dbd4c2] text-opacity-90 max-w-[1427px]">
+        <div className="mx-auto text-white bg-[#dbd4c2] text-opacity-90">
           <div className="bg-no-repeat bg-cover lg:bg-top " style={getMainBg()}>
             <div className="relative px-4 py-10 pt-24 text-center sm:py-32 md:py-48">
               <div className="relative z-[1]">
