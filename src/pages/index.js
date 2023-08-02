@@ -6,6 +6,7 @@ import { isMobile } from "mobile-device-detect";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css/navigation";
 import { Navigation } from "swiper";
+import Link from 'next/link';
 
 // Import Swiper styles
 import "swiper/css";
@@ -468,15 +469,14 @@ export default function Home() {
                     <h5 className="my-6 text-[2rem] sm:my-10">
                       78/85 spots left
                     </h5>
-                    <a
-                      href="https://buy.stripe.com/bIY7vS2hw6cR8ggaEE"
-                      // href="https://buy.stripe.com/5kA03qf4i8kZbsseUV"
-                      className="inline-block px-8 py-5 tracking-tight text-white bg-beige-500 hover:bg-beige-700 rounded-2xl"
-                    >
+                    <Link href="/checkout" className="inline-block px-8 py-5 tracking-tight text-white bg-beige-500 hover:bg-beige-700 rounded-2xl">
+                      {/*// href="https://buy.stripe.com/bIY7vS2hw6cR8ggaEE"
+                      // href="https://buy.stripe.com/5kA03qf4i8kZbsseUV"*/}
                       <p className="text-2xl drop-shadow-title">
                         become a founding member
                       </p>
-                    </a>
+                    </Link>
+                    
                   </div>
                   <div className="flex sm:justify-end">
                     <p className="text-2xl">
