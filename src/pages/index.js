@@ -535,7 +535,7 @@ export default function Home() {
                     </div>
                     <div className="text-[1.375rem] lg:text-[1.375rem]">
                       <p>
-                        yes! founding members have unlimited guest passes
+                        yes! founding members are allowed to bring 1 guest
                       </p>
                     </div>
 
@@ -547,7 +547,7 @@ export default function Home() {
                       yes. moss is a place where members are allowed to host
                       events for free as an offering to the community. for
                       private events, please contact us separately about space
-                      rentals.
+                      rentals at team@mosscollective.co
                     </p>
 
                     <div className="justify-between text-[2rem] md:text-[2rem] inline-block border-b-2 border-[#393939] mt-10 mb-2 leading-tight">
@@ -580,7 +580,7 @@ export default function Home() {
                     </div>
 
                     <div className="text-[1.375rem] lg:text-[1.375rem]">
-                      <p>you can specifics of our membership policy here.</p>
+                      <p>you can see specifics of our membership policy here.</p>
                     </div>
                   </div>
                 </div>
