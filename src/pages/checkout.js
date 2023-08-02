@@ -74,6 +74,7 @@ export default function checkoutPage() {
                     <li>tea + elixir bar</li>
                     <li>meditation studio</li>
                     <li>sauna + cold plunge</li>
+                    <li>full co-working access</li>
                     <li>unlimited events access</li>
                     <li>launch party in fall 2023</li>
                     <li>10 day passes per month</li>
