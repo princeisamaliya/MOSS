@@ -99,7 +99,7 @@ export default function Home() {
                   <br className="hidden md:visible" />
                   <br />
                   <br />
-                  wellness offerings by day, a lush jungle ambiance, and
+                  wellness offerings by day, jungle ambiance, and
                   interactive event space by night. <br />
                 </p>
                 <a
@@ -123,19 +123,19 @@ export default function Home() {
               <div>
                 <p className="text-[25px] lg:text-[2rem]">bio-architecture</p>
                 <p className="text-[20px] lg:text-[1.375rem] font-light tracking-wider">
-                  live + work in communion with nature
+                  work in communion with nature
                 </p>
               </div>
               <div>
                 <p className="text-[25px] lg:text-[2rem]">wabi sabi</p>
                 <p className="text-[20px] lg:text-[1.375rem] font-light tracking-wider">
-                  find beauty in the perfectly imperfect
+                  beauty in the perfectly imperfect
                 </p>
               </div>
               <div>
                 <p className="text-[25px] lg:text-[2rem]">minimalism</p>
                 <p className="text-[20px] lg:text-[1.375rem] font-light tracking-wider">
-                  clarity of mind + peace
+                  clarity of mind
                 </p>
               </div>
             </div>
@@ -147,16 +147,12 @@ export default function Home() {
               </div>
               <div>
                 <p className="mt-5 text-xl md:text-2xl md:mt-0">
-                  the intention behind moss is to connect with yourself and
-                  others in an intimate setting through co-working + events.{" "}
+                  connect with yourself and others in an intimate setting through co-working + events{" "}
                   <br />
                   <br />
-                  we co-host events with our community to create unique
-                  experiences that cultivate creativity, curiosity, and
-                  compassion. <br />
+                  attend unique experiences co-hosted with our community. <br />
                   <br />
-                  founding members will have access to wellness offerings and
-                  the ability to host events.{" "}
+                  access to wellness offerings{" "}
                 </p>
               </div>
             </div>
@@ -178,7 +174,7 @@ export default function Home() {
                     compassion
                   </div>
                   <p>
-                    being kind to yourself and allowing it to radiate outward
+                    how kind are you to yourself, and how do you radiate outwards? 
                   </p>
                 </div>
                 <div className="my-5 text-center xl:my-8">
@@ -194,15 +190,14 @@ export default function Home() {
                       creativity
                     </div>
                     <p>
-                      connecting with something greater than yourself through
-                      creation
+                      how inspired are you currently by your inner circle? 
                     </p>
                   </div>
                   <div className="lg:max-w-[350px] text-[20px] sm:text-2xl leading-6  ">
                     <div className="mb-1 text-[25px] leading-[30px] md:text-[2rem]">
                       curiosity
                     </div>
-                    <p>exploring new depths of yourself with others + play</p>
+                    <p>what is a concept you want to explore but don't have the resources?</p>
                   </div>
                 </div>
               </div>
@@ -359,7 +354,7 @@ export default function Home() {
                     <Tab.Panel>
                       <ul className="pl-0 space-y-2 list-none list-inside category-list learn">
                         <li>creator circle </li>
-                        <li>group focus co-work</li>
+                        <li>group co-work</li>
                         <li>bookclubs + discussion</li>
                         <li>speaker series + workshops</li>
                       </ul>
@@ -389,7 +384,6 @@ export default function Home() {
                     wellness options
                   </h3>
                   <ul className="grid pl-0 text-[1.375rem] list-none sm:grid-cols-2 gap-x-10 embody">
-                    <li>nap pod room</li>
                     <li>no-tech tea time</li>
                     <li>red light therapy</li>
                     <li>meditation studio</li>
@@ -401,8 +395,7 @@ export default function Home() {
                     amenities
                   </h3>
                   <ul className="grid pl-0 text-[1.375rem] list-none sm:grid-cols-2 gap-x-10 embody">
-                    <li>cozy lofts</li>
-                    <li>outdoor patio</li>
+                    <li>patio</li>
                     <li>recording studio</li>
                     <li>bicycle storage</li>
                     <li>tea + coffee bar</li>
@@ -420,24 +413,15 @@ export default function Home() {
             <div className="bg-[#66544A] text-white gap-3 bg-opacity-60 lg:px-16 md:px-10 px-5 lg:py-20 py-10 mix-blend-luminosity grid lg:grid-cols-12">
               <div className="lg:col-span-7">
                 <h1 class="text-[3rem] md:text-5xl lg:text-[6rem] mb-12 md:mb-8 text-left leading-none tracking-[0.2em] lg:leading-tight">
-                  wellness at moss
+                  a day in the life of moss
                 </h1>
                 <p className="md:text-2xl text-[20px]">
-                  moss is a space that aims to provide productivity and
-                  relaxation in the same sphere. our nature room, meditation
-                  studio and wellness center will be available for founding
-                  members during the daytime and night hours. you do not have to
-                  tap out of your flow or leave the workspace to tap into your
-                  inner peace.
+                  moss is venice's new productive and
+                  zen space. we believe you do not have to
+                  tap out of flowstate or leave the workspace to decompress.
                   <br />
-                  <br />a custom sauna, built in ice bath, and red light therapy
-                  will be available on a free sign up basis with membership. our
-                  meditation studio will be available for free use, and custom
-                  events during the evenings. as a special feature our nature
-                  room, is designed to fully immerse you in a new environment,
-                  with colors and sounds and natural scents you can acclimate to
-                  your desired mood.
-                </p>
+                  <br />for a limited time, we are offering our founding members our custom built wellness offerings. 
+                </p> 
               </div>
               <div className="flex flex-col-reverse items-center lg:col-span-5 lg:pl-20 lg:block">
                 <img src="/images/wellness-timeline.svg" alt="" />
@@ -467,7 +451,7 @@ export default function Home() {
                       src="/images/new_landing/map.jpg"
                     />
                     <h5 className="my-6 text-[2rem] sm:my-10">
-                      78/85 spots left
+                      70/85 spots left
                     </h5>
                     <Link href="/checkout" className="inline-block px-8 py-5 tracking-tight text-white bg-beige-500 hover:bg-beige-700 rounded-2xl">
                       {/*// href="https://buy.stripe.com/bIY7vS2hw6cR8ggaEE"
@@ -587,7 +571,7 @@ export default function Home() {
                 <div className="px-4 text-center">
                   <h5 className="text-[2rem] lg:text-5xl">
                     {" "}
-                    thank you and we hope to see you soon at moss!
+                    thank you for visiting
                   </h5>
                   <p className="mt-5 mb-8 text-xl md:text-2xl">
                     {" "}
