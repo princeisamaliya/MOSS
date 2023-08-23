@@ -99,7 +99,7 @@ export default function Home() {
                   <br className="hidden md:visible" />
                   <br />
                   <br />
-                  wellness offerings by day, jungle ambiance, and
+                  wellness by day, jungle ambiance, and
                   interactive event space by night. <br />
                 </p>
                 <a
@@ -150,56 +150,54 @@ export default function Home() {
                   connect with yourself and others in an intimate setting through co-working + events{" "}
                   <br />
                   <br />
-                  attend unique experiences co-hosted with our community. <br />
+                  attend unique experiences co-hosted by our community. <br />
                   <br />
-                  access to wellness offerings{" "}
+                  access to wellness offerings {" "}
                 </p>
               </div>
             </div>
           </div>
+          
           <div
-            className="relative px-4 py-16 text-center bg-white bg-cover xl:px-32 lg:px-16"
+            className="px-4 py-10 lg:py-24 lg:px-20 bg-cover"
             style={{
-              backgroundImage: `url(/images/dandelion-v2.jpg)`,
+              backgroundImage: `url(/images/welness-bg.jpg)`,
             }}
           >
-            <div className="absolute top-0 left-0 w-full h-full bg-[#7D7A6A] bg-opacity-80"></div>
-            <div className="relative z-[1]">
-              <h3 className="text-[2rem] md:text-4xl lg:text-[42px] mb-6 sm:mb-14 ">
-                community values
-              </h3>
-              <div className="p-6 text-center border border-white sm:p-8 sm:pb-24 ">
-                <div className="lg:max-w-[300px] max-w-xs text-[20px] leading-6 sm:text-2xl mx-auto">
-                  <div className="mb-1  text-[25px] leading-[30px] md:text-[2rem]">
-                    compassion
+            <div className="bg-[#66544A] text-white gap-3 bg-opacity-60 lg:px-16 md:px-10 px-5 lg:py-20 py-10 mix-blend-luminosity grid lg:grid-cols-12">
+              <div className="lg:col-span-7">
+                <h4 class="text-[2rem] md:text-3xl lg:text-[3rem] mb-12 md:mb-8 text-left leading-none tracking-[0.2em] lg:leading-tight">
+                  a day in the life of moss
+                </h4>
+                <div className="grid gap-5 md:gap-10 xl:gap-16 mt-14">
+                  <div className="bg-[#66544A] bg-opacity-60 p-10 mix-blend-luminosity">
+                    <h3 className="text-[2rem] md:text-5xl lg:text-[42px]  mb-5">
+                      wellness options
+                    </h3>
+                    <ul className="grid pl-0 text-[1.375rem] list-none sm:grid-cols-2 gap-x-10 embody">
+                      <li>no-tech tea time</li>
+                      <li>red light therapy</li>
+                      <li>meditation studio</li>
+                      <li>sauna + cold plunge</li>
+                    </ul>
                   </div>
-                  <p>
-                    how kind are you to yourself, and how do you radiate outwards? 
-                  </p>
-                </div>
-                <div className="my-5 text-center xl:my-8">
-                  <img
-                    src="/images/triangle.png"
-                    className="inline-block w-full xl:max-w-[280px] max-w-[150px] sm:max-w-[250px]"
-                    alt=""
-                  />
-                </div>
-                <div className="grid justify-between grid-cols-2 gap-10 lg:flex lg:gap-0 lg:-mt-24">
-                  <div className="lg:max-w-[350px] text-[20px] sm:text-2xl  leading-6">
-                    <div className="mb-1 text-[25px] leading-[30px] md:text-[2rem]">
-                      creativity
-                    </div>
-                    <p>
-                      how inspired are you currently by your inner circle? 
-                    </p>
-                  </div>
-                  <div className="lg:max-w-[350px] text-[20px] sm:text-2xl leading-6  ">
-                    <div className="mb-1 text-[25px] leading-[30px] md:text-[2rem]">
-                      curiosity
-                    </div>
-                    <p>what is a concept you want to explore but don't have the resources?</p>
+                  <div className="bg-[#66544A] bg-opacity-60 p-10 mix-blend-luminosity">
+                    <h3 className="text-[2rem] md:text-5xl lg:text-[42px] mb-5">
+                      amenities
+                    </h3>
+                    <ul className="grid pl-0 text-[1.375rem] list-none sm:grid-cols-2 gap-x-10 embody">
+                      <li>patio</li>
+                      <li>recording studio</li>
+                      <li>bicycle storage</li>
+                      <li>tea + coffee bar</li>
+                    </ul>
                   </div>
                 </div>
+              </div>
+              <div className="flex flex-col-reverse items-center lg:col-span-5 lg:pl-20 lg:block">
+                <img src="/images/wellness-timeline.svg" alt="" />
+                <h6 className="text-[2rem] mt-16 lg:text-[2rem] sm:text-left text-center lg:mb-0 leading-none mb-10">
+                </h6>
               </div>
             </div>
           </div>
@@ -296,6 +294,52 @@ export default function Home() {
               <img src="/images/arrorw.png" alt="" className="w-8 md:w-auto" />
             </div>*/}
           </div>
+          <div
+            className="relative px-4 py-16 text-center bg-white bg-cover xl:px-32 lg:px-16"
+            style={{
+              backgroundImage: `url(/images/dandelion-v2.jpg)`,
+            }}
+          >
+            <div className="absolute top-0 left-0 w-full h-full bg-[#7D7A6A] bg-opacity-80"></div>
+            <div className="relative z-[1]">
+              <h3 className="text-[2rem] md:text-4xl lg:text-[42px] mb-6 sm:mb-14 ">
+                community values
+              </h3>
+              <div className="p-6 text-center border border-white sm:p-8 sm:pb-24 ">
+                <div className="lg:max-w-[300px] max-w-xs text-[20px] leading-6 sm:text-2xl mx-auto">
+                  <div className="mb-1  text-[25px] leading-[30px] md:text-[2rem]">
+                    compassion
+                  </div>
+                  <p>
+                    how kind are you to yourself, and how do you radiate outwards? 
+                  </p>
+                </div>
+                <div className="my-5 text-center xl:my-8">
+                  <img
+                    src="/images/triangle.png"
+                    className="inline-block w-full xl:max-w-[280px] max-w-[150px] sm:max-w-[250px]"
+                    alt=""
+                  />
+                </div>
+                <div className="grid justify-between grid-cols-2 gap-10 lg:flex lg:gap-0 lg:-mt-24">
+                  <div className="lg:max-w-[350px] text-[20px] sm:text-2xl  leading-6">
+                    <div className="mb-1 text-[25px] leading-[30px] md:text-[2rem]">
+                      creativity
+                    </div>
+                    <p>
+                      how inspired are you currently by your inner circle? 
+                    </p>
+                  </div>
+                  <div className="lg:max-w-[350px] text-[20px] sm:text-2xl leading-6  ">
+                    <div className="mb-1 text-[25px] leading-[30px] md:text-[2rem]">
+                      curiosity
+                    </div>
+                    <p>what is a concept you want to explore but don't have the resources?</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
 
           <div
             className="relative flex flex-wrap text-white bg-center bg-cover lg:bg-center bg-tan font-size-0"
@@ -355,7 +399,7 @@ export default function Home() {
                       <ul className="pl-0 space-y-2 list-none list-inside category-list learn">
                         <li>creator circle </li>
                         <li>group co-work</li>
-                        <li>bookclubs + discussion</li>
+                        <li>book club</li>
                         <li>speaker series + workshops</li>
                       </ul>
                     </Tab.Panel>
@@ -364,7 +408,7 @@ export default function Home() {
                         <li>meditation</li>
                         <li>breathwork</li>
                         <li>wellness seminars</li>
-                        <li>body work + reiki</li>
+                        <li>reiki</li>
                       </ul>
                     </Tab.Panel>
                     <Tab.Panel>
@@ -372,63 +416,11 @@ export default function Home() {
                         <li>live music jams</li>
                         <li>thinker dinners</li>
                         <li>art shows + gallery</li>
-                        <li>late night tea + conversation</li>
                       </ul>
                     </Tab.Panel>
                   </Tab.Panels>
                 </>
               </Tab.Group>
-              <div className="grid gap-10 sm:grid-cols-2 md:gap-20 xl:gap-32 mt-14">
-                <div className="bg-[#66544A] bg-opacity-60 p-10 mix-blend-luminosity">
-                  <h3 className="text-[2rem] md:text-5xl lg:text-[42px]  mb-5">
-                    wellness options
-                  </h3>
-                  <ul className="grid pl-0 text-[1.375rem] list-none sm:grid-cols-2 gap-x-10 embody">
-                    <li>no-tech tea time</li>
-                    <li>red light therapy</li>
-                    <li>meditation studio</li>
-                    <li>sauna + cold plunge</li>
-                  </ul>
-                </div>
-                <div className="bg-[#66544A] bg-opacity-60 p-10 mix-blend-luminosity">
-                  <h3 className="text-[2rem] md:text-5xl lg:text-[42px] mb-5">
-                    amenities
-                  </h3>
-                  <ul className="grid pl-0 text-[1.375rem] list-none sm:grid-cols-2 gap-x-10 embody">
-                    <li>patio</li>
-                    <li>recording studio</li>
-                    <li>bicycle storage</li>
-                    <li>tea + coffee bar</li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div
-            className="px-4 py-10 lg:py-24 lg:px-20 bg-cover"
-            style={{
-              backgroundImage: `url(/images/welness-bg.jpg)`,
-            }}
-          >
-            <div className="bg-[#66544A] text-white gap-3 bg-opacity-60 lg:px-16 md:px-10 px-5 lg:py-20 py-10 mix-blend-luminosity grid lg:grid-cols-12">
-              <div className="lg:col-span-7">
-                <h1 class="text-[3rem] md:text-5xl lg:text-[6rem] mb-12 md:mb-8 text-left leading-none tracking-[0.2em] lg:leading-tight">
-                  a day in the life of moss
-                </h1>
-                <p className="md:text-2xl text-[20px]">
-                  moss is venice's new productive and
-                  zen space. we believe you do not have to
-                  tap out of flowstate or leave the workspace to decompress.
-                  <br />
-                  <br />for a limited time, we are offering our founding members our custom built wellness offerings. 
-                </p> 
-              </div>
-              <div className="flex flex-col-reverse items-center lg:col-span-5 lg:pl-20 lg:block">
-                <img src="/images/wellness-timeline.svg" alt="" />
-                <h6 className="text-[2rem] mt-16 lg:text-[2rem] sm:text-left text-center lg:mb-0 leading-none mb-10">
-                  a day in the life at moss
-                </h6>
-              </div>
             </div>
           </div>
           <div
@@ -468,17 +460,15 @@ export default function Home() {
                       <br />
                       we are inviting you to root the culture at moss. it is a
                       place where you are safe to work, play and be. here, you
-                      are encouraged to start new conversations and plant new
+                      are encouraged to start conversations and plant
                       seeds. <br />
                       <br />
                       founding memberships grant you annual access with two
                       months free, all-day private co-working rooms, and
-                      wellness offerings (an amenity we are excited to offer, so
-                      you do not have to leave your workspace to decompress in
-                      another). <br />
+                      wellness offerings. <br />
                       <br />
-                      you will be able to attend events, and also host. within
-                      your 10 day/ month pass, you have unlimited guest passes.
+                      you will be able to attend events at night, and also host. within
+                      your 10 day/ month pass, you have 5 guest passes per month.
                       $3,500 value. <br />
                       <br />
                       while our founding memberships are limited, we trust your
