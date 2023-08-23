@@ -390,25 +390,22 @@ export default function Home() {
                     <Tab.Panel>
                       <ul className="pl-0 space-y-2 list-none list-inside category-list grow active">
                         <li>art classes</li>
-                        <li>comedy + improv</li>
                         <li>skill-share seminars</li>
                         <li>women's / men's circles</li>
                       </ul>
                     </Tab.Panel>
                     <Tab.Panel>
                       <ul className="pl-0 space-y-2 list-none list-inside category-list learn">
-                        <li>creator circle </li>
-                        <li>group co-work</li>
                         <li>book club</li>
+                        <li>creator circle </li>
                         <li>speaker series + workshops</li>
                       </ul>
                     </Tab.Panel>
                     <Tab.Panel>
                       <ul className="pl-0 space-y-2 list-none list-inside category-list embody">
-                        <li>meditation</li>
-                        <li>breathwork</li>
-                        <li>wellness seminars</li>
                         <li>reiki</li>
+                        <li>wellness seminars</li>
+                        <li>meditation + breathwork</li>
                       </ul>
                     </Tab.Panel>
                     <Tab.Panel>
